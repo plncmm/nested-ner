@@ -5,7 +5,7 @@ from eval import evaluate
 from metrics import entity_f1_score
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
-def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab):
+def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab, entities):
     model.train() 
     epoch_loss = []
     f1 = []
@@ -20,7 +20,7 @@ def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab
         loss = loss_function(output_batch, labels_batch.type_as(output_batch))
         epoch_loss.append(loss.item())
         output_batch = output_batch.detach().numpy()
-        output_batch = (output_batch > 0.5) # Aquí el 0.5 debiese ser hiperparámetro según tipo| 
+        output_batch = (output_batch > 0.3) # Aquí el 0.5 debiese ser hiperparámetro según tipo| 
         labels_batch = labels_batch.detach().numpy()
         
         for i, (a, b) in enumerate(zip(output_batch, labels_batch)):
@@ -29,12 +29,11 @@ def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab
               real.append([list(tags.keys())[list(tags.values()).index(i)] for i,value in enumerate(b) if value])
         loss.backward()
         optimizer.step()
-    entities = ['Finding', 'Procedure', 'Disease', 'Body_Part', 'Abbreviation', 'Family_Member', 'Medication']
     table, strict_f1_score = entity_f1_score(real, pred, entities)
     return np.mean(np.array(epoch_loss)), strict_f1_score
 
 
-def train(model, optimizer, loss_function, data_loader, train_data, val_data, test_data, max_epochs, batch_size, tags, vocab, no_improvement, checkpoint_path):
+def train(model, optimizer, loss_function, data_loader, train_data, val_data, test_data, max_epochs, batch_size, tags, vocab, entities, no_improvement, patience, checkpoint_path):
     history = {"num_params": model.count_parameters(),
     'train_loss': [],
     'train_f1': [],
@@ -49,7 +48,7 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
     # improvement after 3 epochs
     lr_scheduler = ReduceLROnPlateau(
         optimizer=optimizer,
-        patience=3,
+        patience=patience,
         factor=0.3,
         mode="max",
         verbose=True
@@ -64,14 +63,14 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
         start_time = time.time()
         num_steps = (train_data['size']) // batch_size
         train_data_iterator = data_loader.iterator(train_data, batch_size, len(tags), shuffle=True)
-        train_loss, train_f1 = epoch(model, optimizer, loss_function, train_data_iterator, num_steps, tags, vocab)
+        train_loss, train_f1 = epoch(model, optimizer, loss_function, train_data_iterator, num_steps, tags, vocab, entities)
         print(f"\tTrain Loss: {train_loss} ")
         print(f"\tTrain F1-Score: {train_f1}\n")
         history['train_loss'].append(train_loss)
         history['train_f1'].append(train_f1)
         num_steps = (val_data['size']) // batch_size
         val_data_iterator = data_loader.iterator(val_data, batch_size, len(tags), shuffle=True)
-        val_loss, val_f1 = evaluate(model, loss_function, val_data_iterator, num_steps, tags, vocab, show_results = False)
+        val_loss, val_f1 = evaluate(model, loss_function, val_data_iterator, num_steps, tags, vocab, entities,  show_results = False)
         print(f"\tValidation Loss: {val_loss}")
         print(f"\tValidation F1-Score: {val_f1}\n")
         end_time = time.time()
@@ -101,7 +100,7 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
         model.load_state(checkpoint_path)
     num_steps = (test_data['size']) // batch_size
     test_data_iterator = data_loader.iterator(test_data, batch_size, len(tags), shuffle=False)
-    test_loss,test_f1 = evaluate(model, loss_function, test_data_iterator, num_steps, tags, vocab, show_results = True)
+    test_loss,test_f1 = evaluate(model, loss_function, test_data_iterator, num_steps, tags, vocab, entities,  show_results = True)
     print(f"\tTest Loss: {test_loss}")
     print(f"\tTest Best F1-Score: {test_f1} \n")
     return history

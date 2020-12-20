@@ -4,22 +4,30 @@ import torch
 from torch.autograd import Variable
 
 class DataLoader:
-    def pad_labels(self, n, n_tags):
-        final_array = []
-        padded_array = [0]*(n_tags-1)
-        padded_array.insert(0,1)
+
+    def pad_labels(self, n, n_tags):  
+        """
+        Function used to pad labels. A 1 is placed in the first position, which corresponds to the pad index.
+        """
+
+        sentence_labels = []
+        token_labels = [0]*(n_tags-1)
+        token_labels.insert(0,1)
+        
         for i in range(n):
-            final_array.append(padded_array)
-        return final_array
+            sentence_labels.append(token_labels)
+        return sentence_labels
 
     def iterator(self, data, batch_size, n_tags, shuffle=False):
+        """
+        Returns an iterator on the batches of the dataset.
+        """
+
         order = list(range(data['size']))
         if shuffle:
-            random.seed(230)
             random.shuffle(order)
         
         for i in range((data['size'])//batch_size):
-            #voy aquí
             lens = []
             batch_sentences = [data['data'][idx] for idx in order[i*batch_size:(i+1)*batch_size]]
             batch_tags = [data['labels'][idx] for idx in order[i*batch_size:(i+1)*batch_size]]

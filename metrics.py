@@ -418,40 +418,8 @@ def get_labels_from_conll(conll):
             labels.append(line_info[1:])
     return labels
 
-if __name__ == "__main__":
-    entities = ['Finding', 'Procedure', 'Disease', 'Body_Part', 'Abbreviation', 'Family_Member', 'Medication']
-    nn_output = codecs.open('testing.conll', 'r', 'utf-8').read()
-    real_output = codecs.open('real.conll', 'r', 'utf-8').read()
-
-    pred = get_labels_from_conll(nn_output)
-    true = get_labels_from_conll(real_output)
-    pred_fixed = keep_bio_format(fix(pred, entities))
-    
-
-    # Token level evaluation
-    print(f'El accuracy a nivel de token es: {round(accuracy_score(true, pred, ignore = None),2)}')
-    print(f'El accuracy a nivel de token es: {round(accuracy_score(true, pred_fixed, ignore = None),2)}')
 
 
-    print(f"El accuracy a nivel de token sin considerar el token O es: {round(accuracy_score(true, pred, ignore = 'O'),2)}")
-    print(f"El accuracy a nivel de token sin considerar el token O es: {round(accuracy_score(true, pred_fixed, ignore = 'O'),2)}")
-    
-    print(f"El accuracy en tokens múltiples es: {round(accuracy_score(true, pred, ignore = 'O', multiple=True),2)}")
-    print(f"El accuracy en tokens múltiples es: {round(accuracy_score(true, pred_fixed, ignore = 'O', multiple=True),2)}")
-    
-    print(tabulate_dict(token_accuracy_strict(true, pred, entities)))
-    print(tabulate_dict(token_accuracy_strict(true, pred_fixed, entities)))
-    
-    print(tabulate_dict(f1_score_token(true, pred,  entities)))
-    print(tabulate_dict(f1_score_token(true, pred_fixed,  entities)))
-
-    # Entity level evaluation
-    print(tabulate_f1_score(entity_f1_score(true, fix(pred, entities), entities)[0], include_mean=True))
-   # print(tabulate_f1_score(entity_f1_score(true, pred_fixed, entities)[0], include_mean=True))
-
-
-    #print(tabulate_f1_score(exact_entity_f1_score(true, pred, entities), include_mean=True))
-    #print(tabulate_f1_score(exact_entity_f1_score(true, pred_fixed, entities), include_mean=True))
 
 
     

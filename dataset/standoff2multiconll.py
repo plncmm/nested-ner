@@ -80,7 +80,7 @@ def get_nested_entities(annotation, referral):
     for line in annotation.splitlines():
         entity_info = {}
         entity = line.split()
-        if entity[0].startswith('T') and not ';' in entity[3]:
+        if entity[0].startswith('T') and not ';' in entity[3] and simplify_entity(entity[1])=='Abbreviation':
           
             entity_info['label'] = simplify_entity(entity[1]) 
             entity_info['start_idx'] = int(entity[2])
@@ -159,11 +159,12 @@ def convert_to_conll(referrals, annotations, tokenizer_type, lower_tokens, no_ac
         if tokenizer_type == 'spacy': sentences = tokenize_with_spacy(referral[1], flat_entities, tokenizer, lower_tokens, no_accent_marks, referral_name= referral[0])
 
         for sentence in sentences:
-            inside_entity = {'Disease': 0, 'Abbreviation': 0, 'Finding': 0, 'Procedure': 0, 'Body_Part': 0, 'Family_Member': 0, 'Medication': 0}
+            inside_entity = {'Abbreviation':0}
+            # inside_entity = {'Disease': 0, 'Abbreviation': 0, 'Finding': 0, 'Procedure': 0, 'Body_Part': 0, 'Family_Member': 0, 'Medication': 0}
             for i, token in enumerate(sentence):
                 token['label'] = 'O'
                 token_labels = []
-                for entity in nested_entities:
+                for entity in flat_entities:
                     
                     if token['start_idx'] < entity['start_idx']:
                         continue

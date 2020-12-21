@@ -4,7 +4,7 @@ import torch
 from eval import evaluate
 from metrics import entity_f1_score
 from torch.optim.lr_scheduler import ReduceLROnPlateau
-
+torch.manual_seed(0)
 def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab, entities):
     model.train() 
     epoch_loss = []
@@ -20,7 +20,7 @@ def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab
         loss = loss_function(output_batch, labels_batch.type_as(output_batch))
         epoch_loss.append(loss.item())
         output_batch = output_batch.detach().numpy()
-        output_batch = (output_batch > 0.3) # Aquí el 0.5 debiese ser hiperparámetro según tipo| 
+        output_batch = (output_batch > 0.5) # Aquí el 0.5 debiese ser hiperparámetro según tipo| 
         labels_batch = labels_batch.detach().numpy()
         
         for i, (a, b) in enumerate(zip(output_batch, labels_batch)):
@@ -98,6 +98,7 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
     
     if checkpoint_path and best_val_f1 > 0:
         model.load_state(checkpoint_path)
+        
     num_steps = (test_data['size']) // batch_size
     test_data_iterator = data_loader.iterator(test_data, batch_size, len(tags), shuffle=False)
     test_loss,test_f1 = evaluate(model, loss_function, test_data_iterator, num_steps, tags, vocab, entities,  show_results = True)

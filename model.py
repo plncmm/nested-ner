@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
-
+torch.manual_seed(0)
 class BiLSTM(nn.Module):
   def __init__(self, vocab_size, n_tags, embedding_dim, lstm_dim, embedding_dropout, lstm_dropout, output_layer_dropout, lstm_layers, embedding_weights, use_bilstm, static_embeddings):
     super(BiLSTM, self).__init__()
@@ -20,7 +20,7 @@ class BiLSTM(nn.Module):
     self.init_embeddings(embedding_dim, embedding_weights)
 
   def save_state(self, path):
-        torch.save(self.state_dict(), path)
+      torch.save(self.state_dict(), path)
 
   def load_state(self, path):
       self.load_state_dict(torch.load(path))
@@ -42,7 +42,7 @@ class BiLSTM(nn.Module):
   def count_parameters(self):
     return sum(p.numel() for p in self.parameters() if p.requires_grad)
   
-  
+
   def init_hidden(self, batch_size):
         h, c = (Variable(torch.zeros(self.num_layers * 2, batch_size, self.lstm_dim)),
                 Variable(torch.zeros(self.num_layers * 2, batch_size, self.lstm_dim)))

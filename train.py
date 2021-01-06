@@ -18,11 +18,10 @@ def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab
         output_batch = output_batch.view(-1, output_batch.shape[-1]) # batch_size*n_tokens x n_tags
         labels_batch = labels_batch.view(-1, labels_batch.shape[-1])   # 
         loss = loss_function(output_batch, labels_batch.type_as(output_batch))
-        epoch_loss.append(loss.item())
+        epoch_loss.append(loss.item()*8)
         output_batch = output_batch.detach().numpy()
         output_batch = (output_batch > 0.5) # Aquí el 0.5 debiese ser hiperparámetro según tipo| 
         labels_batch = labels_batch.detach().numpy()
-        
         for i, (a, b) in enumerate(zip(output_batch, labels_batch)):
             if vocab[train_batch.view(output_batch.shape[0], -1).numpy()[i][0]]!='PAD':
               pred.append([list(tags.keys())[list(tags.values()).index(i)] for i,value in enumerate(a) if value])
@@ -41,7 +40,7 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
     'val_f1': []
     }
     
-    best_val_f1 = 0
+    best_val_loss = np.inf
     best_epoch = None
     # scheduler object from pytorch
     # reduce learning rate by a factor of 0.3 if there is no performance
@@ -62,14 +61,14 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
     while not stop:
         start_time = time.time()
         num_steps = (train_data['size']) // batch_size
-        train_data_iterator = data_loader.iterator(train_data, batch_size, len(tags), shuffle=True)
+        train_data_iterator = data_loader.iterator(train_data, batch_size, len(tags), shuffle=False)
         train_loss, train_f1 = epoch(model, optimizer, loss_function, train_data_iterator, num_steps, tags, vocab, entities)
         print(f"\tTrain Loss: {train_loss} ")
         print(f"\tTrain F1-Score: {train_f1}\n")
         history['train_loss'].append(train_loss)
         history['train_f1'].append(train_f1)
         num_steps = (val_data['size']) // batch_size
-        val_data_iterator = data_loader.iterator(val_data, batch_size, len(tags), shuffle=True)
+        val_data_iterator = data_loader.iterator(val_data, batch_size, len(tags), shuffle=False)
         val_loss, val_f1 = evaluate(model, loss_function, val_data_iterator, num_steps, tags, vocab, entities,  show_results = False)
         print(f"\tValidation Loss: {val_loss}")
         print(f"\tValidation F1-Score: {val_f1}\n")
@@ -77,10 +76,10 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
         epoch_time = end_time - start_time
         print(f'Epoch time: {epoch_time}s')
         lr_scheduler.step(val_f1)
-        if val_f1 > (1.005 * best_val_f1):
-                print(f"Epoch {n_epoch:5d}: found better Val F1: {val_f1:.4f} (Train F1: {train_f1:.4f}), saving model...")
+        if (1.01 * val_loss) < (best_val_loss):
+                print(f"Epoch {n_epoch:5d}: found better Val loss: {val_loss:.4f} (Train loss: {train_loss:.4f}), saving model...")
                 model.save_state(checkpoint_path)
-                best_val_f1 = val_f1
+                best_val_loss = val_loss
                 best_epoch = n_epoch
                 n_stagnant = 0
         else:
@@ -96,7 +95,7 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
         else:
             n_epoch += 1
     
-    if checkpoint_path and best_val_f1 > 0:
+    if checkpoint_path:
         model.load_state(checkpoint_path)
         
     num_steps = (test_data['size']) // batch_size

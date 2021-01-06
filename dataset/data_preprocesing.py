@@ -5,20 +5,11 @@ import sys
 sys.path.append('')
 from utils.dataset_utils import simplify_entity
 from dataset.vectorizer import Vectorizer
+from sklearn import model_selection
+import numpy as np
+random.seed(0)
+np.random.seed(0)
 
-
-def split_sentences(sentences, labels, train_size, val_size, test_size):
-    n_examples = len(sentences)
-    n_train = math.floor(n_examples*train_size)
-    n_val =  math.floor(n_examples*val_size)
-    n_test =  n_examples - n_train - n_val 
-    c = list(zip(sentences, labels))
-    random.shuffle(c)
-    sentences, labels = zip(*c)
-    x_train, y_train = sentences[:n_train], labels[:n_train]
-    x_val, y_val = sentences[n_train: n_train+n_val], labels[n_train: n_train+n_val]
-    x_test, y_test = sentences[-n_test:], labels[-n_test:]
-    return x_train, y_train, x_val, y_val, x_test, y_test
 
 def fix(labels):
     new_labels = labels
@@ -44,10 +35,22 @@ def create_dataset(conll_path, train_size, dev_size, test_size):
     sentences = [[line.split(' ')[:-1][0] for line in anno.splitlines()] for anno in annotations]
     labels = [[list(map(lambda x: simplify_entity(x), line.split(' ')[1:])) for line in anno.splitlines()] for anno in annotations]
     labels = fix(labels)
+    vocab_file = codecs.open('vocab.txt', 'w', 'UTF-8')
     vocab = sorted(list(set([token for sent in sentences for token in sent])))
+    for word in vocab: 
+        vocab_file.write(word + '\n')
+    vocab_file.close()
+    
+
+    tags_file = codecs.open('tags.txt', 'w', 'UTF-8')
     tags = sorted(list(set([value for sentence_labels in labels for label in sentence_labels for value in label])))
+    for tag in tags:
+        tags_file.write(tag+'\n')
+    tags_file.close()
+    
     vectorizer = Vectorizer(vocab, tags)
-    x_train, y_train, x_val, y_val, x_test, y_test = split_sentences(sentences, labels, train_size, dev_size, test_size)
+    (x_train, x_test, y_train, y_test) = model_selection.train_test_split(sentences, labels, random_state=1, test_size = test_size)
+    (x_train, x_val, y_train, y_val) = model_selection.train_test_split(x_train, y_train, random_state=1, test_size = dev_size)
     x_train, y_train = vectorizer.transform_to_index(x_train, y_train)
     x_val, y_val = vectorizer.transform_to_index(x_val, y_val)
     x_test, y_test = vectorizer.transform_to_index(x_test, y_test)

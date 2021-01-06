@@ -2,7 +2,13 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
+import random 
+import numpy as np 
+
+random.seed(0)
 torch.manual_seed(0)
+np.random.seed(0)
+
 class BiLSTM(nn.Module):
   def __init__(self, vocab_size, n_tags, embedding_dim, lstm_dim, embedding_dropout, lstm_dropout, output_layer_dropout, lstm_layers, embedding_weights, use_bilstm, static_embeddings):
     super(BiLSTM, self).__init__()
@@ -41,20 +47,12 @@ class BiLSTM(nn.Module):
 
   def count_parameters(self):
     return sum(p.numel() for p in self.parameters() if p.requires_grad)
-  
-
-  def init_hidden(self, batch_size):
-        h, c = (Variable(torch.zeros(self.num_layers * 2, batch_size, self.lstm_dim)),
-                Variable(torch.zeros(self.num_layers * 2, batch_size, self.lstm_dim)))
-        return h, c
 
   def forward(self, input, lens):
-    h_0, c_0 = self.init_hidden(input.shape[0])
     emb = self.embedding_layer_dropout(self.embedding_layer(input)) # dim: batch_size x batch_max_len x embedding_dim
     packed_embedded = pack_padded_sequence(emb, lens, batch_first=True, enforce_sorted=False)
-    lstm, _ = self.lstm(packed_embedded, (h_0, c_0))
-    lstm_unpacked, _ = pad_packed_sequence(lstm, batch_first=True)            
-    lstm_output = lstm_unpacked.reshape(-1, lstm_unpacked.shape[2])  # dim: batch_size*batch_max_len x lstm_hidden_dim
+    lstm, _ = self.lstm(packed_embedded)
+    lstm_output, _ = pad_packed_sequence(lstm, batch_first=True)            
     output = self.output_layer_dropout(self.output_layer(lstm_output))  
     output = torch.sigmoid(output) 
     return output

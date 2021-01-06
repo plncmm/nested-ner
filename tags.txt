@@ -1,0 +1,15 @@
+B-Abbreviation
+B-Body_Part
+B-Disease
+B-Family_Member
+B-Finding
+B-Medication
+B-Procedure
+I-Abbreviation
+I-Body_Part
+I-Disease
+I-Family_Member
+I-Finding
+I-Medication
+I-Procedure
+O

@@ -1,7 +1,6 @@
 import numpy as np
 import random
 import torch 
-from torch.autograd import Variable
 
 class DataLoader:
 
@@ -47,6 +46,6 @@ class DataLoader:
             if torch.cuda.is_available():
                 batch_data, batch_labels = batch_data.cuda(), batch_labels.cuda()
 
-            batch_data, batch_labels = Variable(batch_data), Variable(batch_labels)
+            batch_data, batch_labels = batch_data, batch_labels
             yield batch_data, batch_labels, lens
 

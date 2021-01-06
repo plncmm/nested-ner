@@ -8,6 +8,7 @@ venv/
 # Ignore models and embeddings data
 embeddings/
 models/
+api/best_model.pt
 
 
 

@@ -6,6 +6,7 @@ from metrics import entity_f1_score
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from metrics import get_entities_from_multi_label_conll, get_multi_conll_entities, micro_f1_score, keep_bio_format, fix
 torch.manual_seed(0)
+
 def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab, entities, threshold):
     model.train() 
     epoch_loss = []
@@ -80,18 +81,18 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
         history['train_loss'].append(train_loss)
         history['train_f1'].append(train_f1)
         num_steps = (val_data['size']) // batch_size
-        val_data_iterator = data_loader.iterator(val_data, batch_size, len(tags), shuffle=True)
-        val_loss, val_f1 = evaluate(model, loss_function, val_data_iterator, num_steps, tags, vocab, entities, threshold, show_results = True)
+        val_data_iterator = data_loader.iterator(val_data, batch_size, len(tags), shuffle=False)
+        val_loss, val_f1 = evaluate(model, loss_function, val_data_iterator, num_steps, tags, vocab, entities, threshold, show_results = False)
         print(f"\tValidation Loss: {val_loss}")
         print(f"\tValidation F1-Score: {val_f1}\n")
         end_time = time.time()
         epoch_time = end_time - start_time
         print(f'Epoch time: {epoch_time}s')
         lr_scheduler.step(val_f1)
-        if val_f1 > best_f1_score:
-                print(f"Epoch {n_epoch:5d}: found better Val f1: {val_f1:.4f} (Train f1: {train_f1:.4f}), saving model...")
+        if val_loss*1.0001 < best_val_loss:
+                print(f"Epoch {n_epoch:5d}: found better Val Loss: {val_loss:.4f} (Train Loss: {train_loss:.4f}), saving model...")
                 model.save_state(checkpoint_path)
-                best_f1_score = val_f1
+                best_val_loss = val_loss
                 best_epoch = n_epoch
                 n_stagnant = 0
         else:

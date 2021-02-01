@@ -1,1 +1,0 @@
-{"train_size": 0.9, "dev_size": 0.1, "test_size": 0.1, "static_embeddings": false, "add_clinical_embeddings": true, "add_spanish_embeddings": true, "embedding_dim": 600, "lstm_dim": 150, "embedding_dropout": 0.3, "lstm_dropout": 0.3, "linear_dropout": 0.25, "lstm_layers": 2, "use_bilstm": true, "max_epochs": 30, "batch_size": 16, "patience": 3, "no_improvement": 3, "lr": 0.001}

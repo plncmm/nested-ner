@@ -4,62 +4,50 @@ from tabulate import tabulate
 
 def fix(pred, entities):
     new_pred = []
+    total_o = 0
     for token_labels in pred:
-        new_token_labels = []
         if 'O' in token_labels and len(token_labels)>1:
             ar = []
             for tag in token_labels:
                 if tag!='O':
                     ar.append(tag)
-
             for entity in entities:
                 if f'B-{entity}' in ar and f'I-{entity}' in ar:
-                    ar.remove(f'I-{entity}')
+                    ar.remove(f'B-{entity}')
             new_pred.append(ar)
         
         else:
             ar = []
             for tag in token_labels:
                 ar.append(tag)
-
             for entity in entities:
                 if f'B-{entity}' in ar and f'I-{entity}' in ar:
-                    ar.remove(f'I-{entity}')
+                    ar.remove(f'B-{entity}')
             new_pred.append(ar)
     return new_pred
 
 
 def keep_bio_format(pred):
-    cnt = 0
     new_pred = []
     new_pred.append(pred[0])
-    for elem in pred[1:]:
-        previous_token = pred[cnt]
-        cnt+=1
-        new_val = []
+    for i, elem in enumerate(pred[1:]):
+        if i==0: 
+          previous_token = pred[0]
+        ar = []
         for tag in elem:
-            new_val.append(tag)
+            ar.append(tag)
 
-        for tag in new_val:
+        for tag in ar:
             if tag.startswith('I-'):
                 if f'B-{tag[2:]}' not in previous_token and f'I-{tag[2:]}' not in previous_token:
-                    new_val.remove(tag)
-                    new_val.append(f'B-{tag[2:]}') 
-                    break 
-         
-        new_pred.append(new_val)
-        
-        
+                    ar.remove(tag)
+                   
+        previous_token = ar
+        new_pred.append(ar)
+  
     return new_pred
 
-
-
-
-
-
-
-
-def entities_start_end(entities_dict, entities, debug=False):
+def get_multi_conll_entities(entities_dict, entities):
     new_dict = {}
     for entity in entities:
         new_dict[entity]=[]
@@ -98,9 +86,8 @@ def entities_start_end(entities_dict, entities, debug=False):
     return new_dict
 
 
-
+def get_entities_from_multi_label_conll(labels, entities):
     
-def get_all_entities(labels, entities, debug=False):
     entities_dict = {}
     for entity in entities:
         entities_dict[entity]=[]
@@ -111,321 +98,84 @@ def get_all_entities(labels, entities, debug=False):
                 if tag[2:]==k:
                     entities_dict[k].append([tag, i])
     
-    original_entities = entities_dict
-    entities_dict = entities_start_end(entities_dict, entities, debug)
-    
-    entities_mean = {}
-    for k,v in entities_dict.items():
-        entities_mean[k] = len(original_entities[k])/len(entities_dict[k]) if len(entities_dict[k])>0 else 0
-    return entities_dict, entities_mean
+    multi_conll_entities = get_multi_conll_entities(entities_dict, entities)
+    return multi_conll_entities
 
-
-
-
-
-def exact_entity_f1_score(y_true, y_pred, entities):
-    entities_support = {}
-    pred_support = {}
+def entity_f1_score(true, pred, entities):
     prec_dict = {}
     recall_dict = {}
     f1_dict = {}
+
     for entity in entities:
-        entities_support[entity] = 0
-        pred_support[entity] = 0
         prec_dict[entity] = 0
         recall_dict[entity] = 0
         f1_dict[entity] = 0
-
-    real_entities, entities_mean = get_all_entities(y_true, entities)
-    pred_entities, pred_mean = get_all_entities(y_pred, entities, debug=True)
-
     
-
-
-    for k, _ in recall_dict.items():
-        cnt = 0
-
-        for elem in real_entities[k]:
-            for elem2 in pred_entities[k]:
-                if elem[1]==elem2[1] and elem[2]==elem[2]:
-                    cnt+=1
-                    break 
-        entities_support[k]+=len(real_entities[k])
-        recall_dict[k]=cnt/len(real_entities[k]) if len(real_entities[k])!=0 else 1
-     
-    
-    for k, _ in prec_dict.items():
-        cnt = 0
-        for elem in pred_entities[k]:
-            for elem2 in real_entities[k]:
-                if elem[1]==elem2[1] and elem[2]==elem[2]:
-                    cnt+=1
-                    break
-
-        pred_support[k]+=len(pred_entities[k])
-        prec_dict[k]=cnt/len(pred_entities[k]) if len(pred_entities[k])!=0 else 1
-    
-    
-    for k,v in prec_dict.items():
-        f1_dict[k]=(round(2*prec_dict[k]*recall_dict[k]/(prec_dict[k]+recall_dict[k]),2), entities_support[k], entities_mean[k]) if (prec_dict[k]+recall_dict[k])!=0 else (0,entities_support[k])
-
-    weighted_f1 = 0
-    macro_f1 = 0
-    total_entities = 0
-    for k,v in f1_dict.items():
-        if v[1]!=0:
-            total_entities+=1
-        weighted_f1+=v[0]*v[1]
-        macro_f1+=v[0]
-
-    total_support = 0
-    for k,v in entities_support.items():
-        total_support+=v
-
-    print('\n')
-    print(f'Weighted entity-level f1_score: {round(weighted_f1/total_support,2)}')
-    print(f'Macro entity-level f1_score: {round(macro_f1/total_entities,2)}')
-    return f1_dict
-
-
-
-
-
-
-
-
-
-
-def entity_f1_score(y_true, y_pred, entities):
-    entities_support = {}
-    pred_support = {}
-    prec_dict = {}
-    recall_dict = {}
-    f1_dict = {}
     for entity in entities:
-        entities_support[entity] = 0
-        pred_support[entity] = 0
-        prec_dict[entity] = 0
-        recall_dict[entity] = 0
-        f1_dict[entity] = 0
-
-    real_entities, entities_mean = get_all_entities(y_true, entities)
-    pred_entities, pred_mean = get_all_entities(y_pred, entities, debug=True)
-
-    
-
-
-    for k, _ in recall_dict.items():
-        cnt = 0
-
-        for elem in real_entities[k]:
-            if elem in pred_entities[k]:
-                cnt+=1
-                
-                
-        entities_support[k]+=len(real_entities[k])
-        recall_dict[k]=cnt/len(real_entities[k]) if len(real_entities[k])!=0 else 1
-     
-    
-    for k, _ in prec_dict.items():
-        cnt = 0
-        for elem in pred_entities[k]:
-            if elem in real_entities[k]:
-                cnt+=1
-        pred_support[k]+=len(pred_entities[k])
-        prec_dict[k]=cnt/len(pred_entities[k]) if len(pred_entities[k])!=0 else 1
-    
-    
-    for k,v in prec_dict.items():
-        f1_dict[k]=(round(2*prec_dict[k]*recall_dict[k]/(prec_dict[k]+recall_dict[k]),2), entities_support[k], entities_mean[k]) if (prec_dict[k]+recall_dict[k])!=0 else (0,entities_support[k])
-
-    weighted_f1 = 0
-    macro_f1 = 0
-    total_entities = 0
-    for k,v in f1_dict.items():
-        if v[1]!=0:
-            total_entities+=1
-        weighted_f1+=v[0]*v[1]
-        macro_f1+=v[0]
-
-    total_support = 0
-    for k,v in entities_support.items():
-        total_support+=v
-
-    print('\n')
-    print(f'Weighted entity-level f1_score: {round(weighted_f1/total_support,2)}')
-    #print(f'Macro entity-level f1_score: {round(macro_f1/total_entities,2)}')
-    return f1_dict, round(weighted_f1/total_support,4)
-
-
-
-def f1_score_token(y_true, y_pred, entities):
-    real_support = {'O': 0}
-    pred_support = {'O': 0}
-    prec_dict = {'O': 0}
-    recall_dict = {'O': 0}
-    f1_dict = {'O': 0}
-
-    for entity in entities:
-        real_support[f'B-{entity}'] = 0
-        pred_support[f'B-{entity}'] = 0
-        prec_dict[f'B-{entity}'] = 0
-        recall_dict[f'B-{entity}'] = 0
-        f1_dict[f'B-{entity}'] = 0
-        real_support[f'I-{entity}'] = 0
-        pred_support[f'I-{entity}'] = 0
-        prec_dict[f'I-{entity}'] = 0
-        recall_dict[f'I-{entity}'] = 0
-        f1_dict[f'I-{entity}'] = 0
-    
-    for real, pred in zip(y_true, y_pred):
-        for entity in pred:
-            pred_support[entity]+=1
-            if entity in real:
-                prec_dict[entity]+=1
+        true[entity].sort(key=lambda x: x[1])
+        pred[entity].sort(key=lambda x: x[1])
+        tp = 0
+        fn = 0
+        fp = 0
         
-        for entity in real:
-            real_support[entity]+=1
-            if entity in pred:
-                recall_dict[entity]+=1
+        for elem in true[entity]:
+            if elem not in pred[entity]:
+                fn += 1
+
+        for elem in pred[entity]:
+            if elem not in true[entity]:
+                fp += 1    
+          
+        for elem in true[entity]:
+            if elem in pred[entity]:
+                tp += 1    
+        
+        recall = tp/(tp+fn) if (tp+fn)!=0 else 0
+        recall_dict[entity] = recall
+
+        precision = tp/(tp+fp) if (tp+fp)!=0 else 0
+        prec_dict[entity] = precision
+        f1_dict[entity] = ((2*precision*recall)/(precision+recall), len(true[entity])) if (precision+recall)!=0 else (0, len(true[entity]))
     
-    for k,v in prec_dict.items():
-        prec = v/pred_support[k] if pred_support[k]!=0 else 1
-        recall = recall_dict[k]/real_support[k] if real_support[k]!=0 else 1
-        f1_dict[k]= (round(2*(prec)*(recall)/((prec)+(recall)), 2), real_support[k]) if ((prec)+(recall))!=0 else (0,real_support[k]) 
-    
-    total_support = 0
-    for k,v in real_support.items():
-        total_support+=v
+    return prec_dict, recall_dict, f1_dict
 
-    weighted_f1 = 0
-    macro_f1 = 0
-    total_entities = 0
-    for k,v in f1_dict.items():
-        if v[1]!=0:
-            total_entities+=1
-        weighted_f1+=v[0]*v[1]
-        macro_f1+=v[0]
-
-    print('\n')
-    print(f'Weighted token-level f1_score: {round(weighted_f1/total_support,2)}')
-    print(f'Macro token-level f1_score: {round(macro_f1/total_entities,2)}')
-    
-    return f1_dict
-
-
-
-
-
-
-
-
-
-
-def tabulate_dict(metric_dict):
-    f1_dict = {k: v for k, v in sorted(metric_dict.items(), key=lambda item: item[1], reverse=True)}
+def tabulate_f1_score(prec, recall, f1, include_mean=False):
     f1_tokens = []
-    for k,v in f1_dict.items():
+    for k,v in f1.items():
         if v[0]!=0:
-            f1_tokens.append([k, v[0], v[1]]) 
-    return tabulate(f1_tokens, headers=['Entity type', 'F1-Score', 'Support'])
+            f1_tokens.append([k, format(round(prec[k]*100,1), '.1f'), float(format(round(recall[k]*100,1), '.1f')), format(round(v[0]*100,1), '.1f'), v[1]]) 
+    return tabulate(f1_tokens, headers=['Entity type', 'Precision', 'Recall', 'F1-Score', 'Support', 'Tokens mean'])
 
-def tabulate_f1_score(metric_dict, include_mean=False):
-    f1_dict = {k: v for k, v in sorted(metric_dict.items(), key=lambda item: item[1], reverse=True)}
-    f1_tokens = []
-    for k,v in f1_dict.items():
-        if v[0]!=0:
-            f1_tokens.append([k, v[0], v[1]]) if not include_mean else f1_tokens.append([k, v[0], v[1], v[2]])
-    return tabulate(f1_tokens, headers=['Entity type', 'F1-Score', 'Support', 'Tokens mean'])
+def micro_f1_score(true, pred, entities):
+    tp = 0
+    fn = 0
+    fp = 0
 
-def token_accuracy_strict(y_true, y_pred, entities): 
-    entity_support = {'O': 0}
-    acc_dict = {'O': 0}
     for entity in entities:
-        entity_support[f'B-{entity}'] = 0
-        acc_dict[f'B-{entity}'] = 0
-        entity_support[f'I-{entity}'] = 0
-        acc_dict[f'I-{entity}'] = 0
-
-    for real, pred in zip(y_true, y_pred):
-        for entity in real:
-            entity_support[entity]+=1
-            if entity in pred:
-                acc_dict[entity]+=1
-    
-    for k, v in acc_dict.items():
-        acc_dict[k]=(round(v/entity_support[k],2), entity_support[k]) if entity_support[k]!=0 else (0, 0)
-    
-  
-    return acc_dict
+        for elem in true[entity]:
+            if elem not in pred[entity]:
+                fn += 1
+        for elem in pred[entity]:
+            if elem not in true[entity]:
+                fp += 1     
+        for elem in true[entity]:
+            if elem in pred[entity]:
+                tp += 1    
+    precision = tp/(tp+fp) if (tp+fp)!=0 else 0
+    recall = tp/(tp+fn) if (tp+fn)!=0 else 0
+    f1_score = (2*precision*recall)/(precision+recall) if (precision+recall)!=0 else 0
+    return precision, recall, f1_score
 
 
-
-
-def accuracy_score(y_true, y_pred, ignore=None, multiple=False):
-    """Accuracy classification score.
-    In multilabel classification, this function computes subset accuracy:
-    the set of labels predicted for a sample must *exactly* match the
-    corresponding set of labels in y_true.
-    Args:
-        y_true : 2d array. Ground truth (correct) target values.
-        y_pred : 2d array. Estimated targets as returned by a tagger.
-    Returns:
-        score : float.
-    Example:
-        >>> from seqeval.metrics import accuracy_score
-        >>> y_true = [['O', 'O', 'O', 'B-MISC', 'I-MISC', 'I-MISC', 'O'], ['B-PER', 'I-PER', 'O']]
-        >>> y_pred = [['O', 'O', 'B-MISC', 'I-MISC', 'I-MISC', 'I-MISC', 'O'], ['B-PER', 'I-PER', 'O']]
-        >>> accuracy_score(y_true, y_pred)
-        0.80
-    """
-    if multiple:
-        total_samples = 0
-        correct_samples = 0
-        for y_t, y_p in zip(y_true, y_pred):
-            if len(y_t)>1:
-                total_samples+=1
-                if y_t == y_p:
-                    correct_samples+=1
-        return correct_samples/total_samples
-
-    if ignore is not None:
-        total_samples = 0
-        correct_samples = 0
-        for y_t, y_p in zip(y_true, y_pred):
-            if ignore in y_t or ignore in y_p:
-                continue 
-            else:
-                total_samples+=1
-                if y_t == y_p:
-                    correct_samples+=1
-        return correct_samples/total_samples
-
-    nb_correct = sum(y_t == y_p for y_t, y_p in zip(y_true, y_pred))
-    nb_true = len(y_true)
-    score = nb_correct / nb_true
-    return score
-
-
-
-def get_labels_from_conll(conll):
+def real_multi_label_format(filepath):
+    f = codecs.open(filepath, 'r', 'utf-8').read()
+    annotations = f.split('\n\n')
     labels = []
-    for line in conll.splitlines():
-        line_info = line.split()
-        if len(line_info)==1 or line_info[1]=='PAD': 
-            labels.append(['O'])
-        else:
-            labels.append(line_info[1:])
-    return labels
-
-
-
-
-
-    
-
-
-    
-    
-
-  
+    for anno in annotations: 
+      for line in anno.splitlines():
+          line_info = line.split()
+          if len(line_info)==1 or 'PAD' in line_info: 
+              labels.append(['O'])
+          else:
+              labels.append(line_info[1:])
+    return labels 

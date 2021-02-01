@@ -1,13 +1,7 @@
 import torch
 import torch.nn as nn
-from torch.autograd import Variable
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
-import random 
-import numpy as np 
-
-random.seed(0)
 torch.manual_seed(0)
-np.random.seed(0)
 
 class BiLSTM(nn.Module):
   def __init__(self, vocab_size, n_tags, embedding_dim, lstm_dim, embedding_dropout, lstm_dropout, output_layer_dropout, lstm_layers, embedding_weights, use_bilstm, static_embeddings):

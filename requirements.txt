@@ -1,13 +1,10 @@
 # Pytorch: pip install torch===1.7.1 torchvision===0.8.2 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 # Numpy: pip install numpy==1.19.3, The last version has some problems
-# Es core news: python -m spacy download es_core_news_sm (After installing spacy)
 
 gensim==3.8.3
 matplotlib==3.3.3
 tabulate==0.8.7
 argparse==1.4.0
-es-core-news-lg==2.3.1
-flair==0.7
 pip-chill==1.0.0
 torchaudio==0.7.2
 torchvision==0.8.2

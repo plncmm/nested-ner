@@ -35,7 +35,7 @@ PZAS B-Abbreviation B-Body_Part I-Finding
 Y I-Body_Part I-Finding
 9 I-Body_Part I-Finding
 , I-Finding
-ERUPCIONADO I-Finding
+ERUPCIONADO O
 . O
 
 SOLICITO O
@@ -64,16 +64,16 @@ presenta O
 . I-Body_Part I-Finding
 8 I-Body_Part I-Finding
 semierupcionado I-Finding
-, O
-en O
-posición B-Finding
+, I-Finding
+en I-Finding
+posición I-Finding
 horizonta I-Finding
 l O
 , O
 asintomático B-Finding
-( I-Finding
-hallazgo I-Finding
-radiográfico I-Finding
+( O
+hallazgo O
+radiográfico O
 ) O
 Solicito O
 extracción B-Procedure
@@ -102,8 +102,8 @@ APS B-Abbreviation
 SIN O
 ANTECEDENTES B-Finding
 MORBIDOS I-Finding
-APARENTES I-Finding
-MENOR I-Finding
+APARENTES O
+MENOR O
 ACUDE O
 A O
 CONSULTA O
@@ -127,7 +127,7 @@ POCO B-Finding
 APETITO I-Finding
 . O
 
-DIFICIL B-Finding
+DIFICIL O
 COMUNICACION I-Finding
 CON O
 PACIENTE O
@@ -163,9 +163,9 @@ DIARIAMENTE O
 ACUSA O
 MALESTAR B-Finding
 ESTOMACAL I-Finding
-CON I-Finding
-EL I-Finding
-FIN B-Medication I-Finding
+CON O
+EL O
+FIN O
 DE O
 SALTARSE O
 LAS O
@@ -198,7 +198,7 @@ P B-Abbreviation
 : O
 39 O
 KG B-Abbreviation
-T B-Abbreviation
+T O
 : O
 1 O
 . O
@@ -248,10 +248,10 @@ Clínico O
 APS B-Abbreviation
 : O
 - O
-G4P4A0 B-Abbreviation
+G4P4A0 O
 - O
 1 O
-CCA B-Abbreviation B-Procedure
+CCA B-Abbreviation
 - O
 OBESIDAD B-Disease
 MORBIDA I-Disease
@@ -285,15 +285,15 @@ IZQUIERDA I-Finding
 - O
 APIÑAMIENTO B-Finding
 DENTARIO I-Finding
-grupo I-Finding
+grupo B-Body_Part I-Finding
 II I-Body_Part I-Finding
-Y I-Finding
+Y I-Body_Part I-Finding
 V I-Body_Part I-Finding
-- O
-LINEAS B-Finding
-MEDIAS I-Finding
-NO O
-COINCIDENTES O
+- I-Finding
+LINEAS O
+MEDIAS O
+NO I-Finding O
+COINCIDENTES I-Finding
 
 - O
 MACROCEFALIA B-Disease
@@ -308,8 +308,8 @@ DESAROLLO I-Disease
 PSICOMOTOR I-Disease
 PACIENTE O
 SIN O
-ANTECEDENTES B-Finding
-MORBIDOS I-Finding
+ANTECEDENTES O
+MORBIDOS O
 DE O
 MACROCEFALIA B-Disease
 DIAGNOSTIVCADO O
@@ -341,7 +341,7 @@ NIÑO O
 SANO O
 DE O
 1AÑO O
-+ B-Abbreviation
++ O
 9 O
 MESES O
 MESES O
@@ -385,8 +385,8 @@ EUTROFICO O
 , O
 PRESENTA O
 EEDP B-Finding
-: O
-RETRASO B-Finding I-Finding
+: I-Finding
+RETRASO I-Finding
 . O
 
 FAVOR O
@@ -417,8 +417,8 @@ PULPAR I-Disease
 COMPRESION B-Finding
 MANDIBULAR I-Finding
 MAS I-Finding
-MASCADAEN I-Finding
-ANTERIOR I-Finding
+MASCADAEN O
+ANTERIOR O
 , O
 CON O
 MORDIDA B-Finding
@@ -444,8 +444,8 @@ BILATERAL I-Finding
 PACIENTE O
 CON O
 DEFECTOS B-Disease B-Finding
-DE I-Finding
-ESMALTE I-Disease I-Finding
+DE I-Disease I-Finding
+ESMALTE I-Disease
 . O
 
 1 B-Body_Part B-Finding
@@ -455,9 +455,9 @@ ESMALTE I-Disease I-Finding
 SEMIERUPCIONADA I-Finding
 MESIOVERSION I-Finding
 , O
-IMPACTADA B-Disease B-Finding
-N I-Finding
-PIEZA B-Body_Part B-Finding I-Finding
+IMPACTADA B-Finding
+N B-Abbreviation I-Finding
+PIEZA B-Body_Part B-Finding
 1 I-Body_Part I-Finding
 , I-Body_Part I-Finding
 7 I-Body_Part I-Finding
@@ -467,21 +467,21 @@ PIEZA B-Body_Part B-Finding I-Finding
 : I-Finding
 SEMIERUPCIONADA I-Finding
 , I-Finding
-VERTICAL I-Finding
+VERTICAL B-Finding
 , O
 DISLACERACION B-Finding
 RADICULAR I-Finding
 A I-Finding
-DISTAL B-Body_Part I-Finding
-3 I-Body_Part I-Finding
-, I-Body_Part I-Finding
-8 I-Body_Part I-Finding
+DISTAL I-Finding
+3 B-Body_Part I-Finding
+, I-Finding
+8 I-Finding
 SEMIINCLUIDA I-Finding
-IMPACTADA I-Finding
+IMPACTADA B-Disease I-Finding
 3 B-Body_Part I-Finding
 . I-Body_Part I-Finding
 7 I-Body_Part I-Finding
-MESIOVERSION B-Finding
+MESIOVERSION I-Finding
 , O
 CLASE B-Finding
 IIC I-Finding
@@ -506,7 +506,7 @@ B I-Finding
 DISTOVERSION I-Finding
 
 PACIENTE O
-POSTRADO B-Disease
+POSTRADO O
 DESDENTADO B-Disease
 PARCIAL I-Disease
 SUPEIOR I-Disease
@@ -519,12 +519,12 @@ GENERALIZADA I-Disease
 MODERADA I-Disease
 SEVERA I-Disease
 , O
-PORADOR O
-DE O
-PROTESIS B-Finding
-PARCIAL I-Finding I-Procedure
-REMOBIBLE I-Finding I-Procedure
-MAXILAR I-Procedure
+PORADOR B-Finding
+DE I-Finding
+PROTESIS I-Finding
+PARCIAL I-Finding
+REMOBIBLE I-Finding
+MAXILAR I-Finding
 
 - O
 CATARATA B-Disease
@@ -539,7 +539,7 @@ paciente O
 sin O
 anatcedentes B-Finding
 morbidos I-Finding
-conocidos O
+conocidos I-Finding
 , O
 consulta O
 por O
@@ -559,11 +559,11 @@ con I-Finding
 vision I-Finding
 borrosa I-Finding
 generalizada I-Finding
-y O
+y I-Finding
 que O
 emperora B-Finding
-con O
-mucha B-Finding
+con I-Finding
+mucha I-Finding
 luz I-Finding
 o I-Finding
 con I-Finding
@@ -611,7 +611,7 @@ ERUPCIÓN I-Disease
 DE I-Disease
 LOS I-Disease
 DIENTES B-Body_Part I-Disease
-apiñamiento B-Disease B-Finding
+apiñamiento O
 / O
 - O
 Fundamento O
@@ -623,7 +623,7 @@ de O
 7 O
 años O
 con O
-apiñamiento B-Finding
+apiñamiento B-Disease B-Finding
 antero I-Finding
 superior I-Finding
 e I-Finding
@@ -659,14 +659,14 @@ MODERADA I-Disease
 GENERALIZADA I-Disease
 SEVERA I-Disease
 EN O
-1 B-Body_Part
-. I-Body_Part
-1 I-Body_Part
+1 O
+. O
+1 O
 - O
-2 B-Body_Part
+2 I-Body_Part
 . I-Body_Part
 1 I-Body_Part
-- I-Body_Part O
+- I-Body_Part
 4 I-Body_Part
 . I-Body_Part
 1 I-Body_Part
@@ -687,11 +687,11 @@ Y O
 SANGRAMIENTO B-Finding
 . O
 
-PD B-Abbreviation B-Body_Part
-1 I-Body_Part
-. I-Body_Part
-1 I-Body_Part
-MOVILIDAD B-Finding
+PD B-Abbreviation B-Body_Part B-Finding
+1 I-Body_Part I-Finding
+. I-Body_Part I-Finding
+1 I-Body_Part I-Finding
+MOVILIDAD I-Finding
 GRADO I-Finding
 II I-Finding
 PD B-Abbreviation B-Body_Part B-Finding
@@ -720,16 +720,16 @@ Diente B-Body_Part B-Finding
 . I-Body_Part I-Finding
 8 I-Body_Part I-Finding
 semierupcionado I-Finding
-y O
-con O
-falta B-Finding
+y I-Finding
+con I-Finding
+falta I-Finding
 de I-Finding
 espacio I-Finding
 para I-Finding
 la I-Finding
 higiene I-Finding
-y O
-acceso O
+y I-Finding
+acceso I-Finding
 , O
 diente B-Body_Part B-Finding
 2 I-Body_Part I-Finding
@@ -753,9 +753,9 @@ diente B-Body_Part B-Finding
 8 I-Body_Part I-Finding
 incluido I-Finding
 e I-Finding
-impactado B-Disease I-Finding
+impactado I-Finding
 a I-Finding
-diente B-Body_Part B-Finding I-Finding
+diente B-Body_Part B-Finding
 3 I-Body_Part I-Finding
 . I-Body_Part I-Finding
 7 I-Body_Part I-Finding
@@ -771,7 +771,7 @@ diente B-Body_Part B-Finding
 8 I-Body_Part I-Finding
 incluido I-Finding
 e I-Finding
-impactado B-Disease I-Finding
+impactado I-Finding
 en I-Finding
 posicion I-Finding
 completamente I-Finding
@@ -790,8 +790,8 @@ tratamiento O
 en O
 especialidad O
 de O
-cirugia B-Procedure
-maxilofacial I-Procedure
+cirugia O
+maxilofacial O
 . O
 
 Paciente O
@@ -801,7 +801,7 @@ hace O
 3 O
 años O
 úlceras O
-orales O
+orales B-Medication
 con O
 frecuencia O
 aprox B-Abbreviation
@@ -815,8 +815,8 @@ con O
 p B-Abbreviation
 . O
 
-inmunológico B-Finding
-negativo I-Finding
+inmunológico O
+negativo B-Finding
 ( O
 ANA B-Abbreviation B-Procedure
 , O
@@ -824,11 +824,11 @@ ENA B-Abbreviation B-Procedure
 , O
 AntiCCP B-Finding
 , O
-FR B-Abbreviation
+FR B-Abbreviation B-Procedure
 , O
 VHS B-Abbreviation B-Procedure
 y O
-PCR B-Abbreviation B-Procedure
+PCR B-Abbreviation
 negativos B-Finding
 ) O
 . O
@@ -854,7 +854,7 @@ Behcet I-Disease
 
 Actualmente O
 con O
-úlceras B-Medication
+úlceras O
 orales I-Medication
 . O
 
@@ -872,8 +872,8 @@ para O
 toma O
 de O
 biopsia B-Procedure
-de O
-úlceras I-Procedure
+de I-Procedure O
+úlceras B-Disease I-Procedure
 orales O
 SOSPECHA O
 DE O
@@ -904,9 +904,9 @@ irriga O
 con O
 CHX B-Abbreviation B-Medication
 y O
-se B-Procedure O
-deja I-Procedure
-AB B-Medication I-Procedure
+se O
+deja O
+AB B-Medication
 y O
 orden O
 de O
@@ -920,11 +920,11 @@ exodoncia B-Procedure
 de O
 la O
 pza B-Abbreviation B-Body_Part
-semierupcionada I-Finding
+semierupcionada O
 . O
 
 SINDROME B-Disease
-VERTIGINOSO I-Disease
+VERTIGINOSO I-Disease I-Finding
 PACIENTE O
 HTA B-Abbreviation B-Disease
 + B-Abbreviation
@@ -932,8 +932,8 @@ DM B-Abbreviation B-Disease
 + B-Abbreviation
 INSULINO O
 REQUIRIENTE O
-MAREO B-Disease
-VERTIGO B-Finding
+MAREO O
+VERTIGO B-Disease
 TINNITUS B-Finding
 TERMINO O
 TRATAMIENTO O
@@ -991,9 +991,9 @@ pieza B-Body_Part
 instrumentación B-Finding
 , I-Finding
 paramonoclorofeno I-Finding
-, I-Finding
-provisorio I-Finding
-O I-Finding
+, O
+provisorio O
+O O
 . O
 
 PACIENTE O
@@ -1001,11 +1001,11 @@ ASA B-Abbreviation B-Finding
 II I-Finding
 , O
 COOPERADORA B-Finding
-ANOMALIA B-Finding
+ANOMALIA I-Finding
 DE I-Finding
 FUNCION I-Finding
-Y I-Finding O
-TAMANO I-Finding
+Y O
+TAMANO O
 , O
 SE O
 SOLICITA O
@@ -1064,16 +1064,16 @@ quirurgica I-Procedure
 . O
 
 - O
-CARIES B-Disease B-Finding
-DENTAL I-Disease I-Finding
-CARIES B-Disease B-Finding
-DENTAL I-Finding
+CARIES B-Disease
+DENTAL O
+CARIES O
+DENTAL O
 PACIENTE O
 DE O
 6 O
 AÑOS O
 SIN O
-ANTECEDENTES B-Disease B-Finding
+ANTECEDENTES B-Finding
 SISTEMICO I-Finding
 , O
 CON O
@@ -1105,7 +1105,7 @@ PIEZA B-Body_Part
 3 I-Body_Part
 , I-Body_Part
 2 I-Body_Part
-CARIES B-Disease B-Finding
+CARIES B-Disease
 PENETRANTE I-Finding
 CON I-Finding
 LESION I-Finding
@@ -1184,12 +1184,12 @@ IZQUIERDA I-Body_Part I-Finding
 , O
 SIN O
 EXPULSION B-Finding
-DE I-Finding
-PIEDRAS I-Finding
-OBSERVABLES I-Finding
-EN I-Finding
-LA I-Finding
-ORINA I-Finding
+DE O
+PIEDRAS O
+OBSERVABLES O
+EN O
+LA O
+ORINA O
 . O
 
 SE O
@@ -1214,10 +1214,10 @@ NOSRMALES O
 SEDIMENTO B-Procedure
 URINARIO I-Procedure
 CON O
-OX B-Abbreviation B-Finding
-DE I-Finding
-CALCIO I-Finding I-Medication
-REGULAR B-Finding I-Finding
+OX B-Finding B-Medication
+DE I-Medication
+CALCIO I-Medication
+REGULAR O
 CANTIDAD I-Finding
 . O
 . O
@@ -1245,7 +1245,7 @@ el O
 resto O
 de O
 los O
-dtes B-Abbreviation B-Body_Part
+dtes B-Abbreviation
 con O
 rx B-Abbreviation B-Procedure
 retroalv I-Procedure
@@ -1260,21 +1260,21 @@ pieza B-Body_Part
 21 I-Body_Part
 indicacion O
 de O
-extracion B-Procedure
+extracion O
 por O
-ortodoncia O
-retenida O
-raices B-Body_Part B-Finding
+ortodoncia I-Finding
+retenida B-Finding
+raices B-Body_Part I-Finding
 curvas I-Finding
 . O
 
 abultamiento B-Finding
 de I-Finding
 1 B-Body_Part I-Finding
-a I-Body_Part I-Finding
-3 I-Body_Part I-Finding
-medio I-Finding
-radicular I-Finding
+a I-Finding
+3 I-Finding
+medio I-Body_Part I-Finding
+radicular I-Body_Part I-Finding
 
 ANOMALIAS B-Disease
 DENTOFACIALES I-Disease
@@ -1282,7 +1282,7 @@ DENTOFACIALES I-Disease
 INCLUSO I-Disease
 MALOCLUSION I-Disease
 ) I-Disease
-MALOCLUSION B-Disease B-Finding
+MALOCLUSION B-Finding
 CLASE I-Finding
 I I-Finding
 CON I-Finding
@@ -1307,8 +1307,8 @@ DM2 B-Abbreviation B-Disease
 , O
 HTA B-Abbreviation B-Disease
 , O
-EVE B-Disease B-Finding
-SECUELADO I-Disease I-Finding
+EVE B-Disease
+SECUELADO I-Disease
 , O
 CONTROL O
 MEDICO O
@@ -1353,13 +1353,13 @@ EXAMEN B-Procedure
 DE I-Procedure
 ORINA I-Procedure
 
-N92 O
-MENSTRUACION B-Finding
-EXCESIVA I-Finding
-, O
-FRECUENTE O
-E O
-IRREGULAR O
+N92 B-Disease
+MENSTRUACION B-Disease
+EXCESIVA I-Disease
+, I-Disease
+FRECUENTE I-Disease
+E I-Disease
+IRREGULAR I-Disease
 HIPERMENORREA B-Finding
 ESTUDIO B-Procedure
 DE I-Procedure
@@ -1381,7 +1381,7 @@ ADULTO I-Disease
 AVANZADA I-Disease
 PIEZAS B-Body_Part
 ANTERIOSUPERIORES I-Body_Part
-Y I-Body_Part
+Y O
 ANTEROINFERIORES O
 , O
 MODERADA O
@@ -1523,11 +1523,11 @@ VHS B-Abbreviation B-Procedure
 CELULAS B-Finding
 NORMALES I-Finding
 AL I-Finding
-FROTIS B-Procedure I-Finding
+FROTIS O
 , O
 GRUPO B-Body_Part B-Finding
-O I-Finding
-IV I-Finding
+O I-Body_Part I-Finding
+IV I-Body_Part I-Finding
 POSITIVO I-Finding
 , O
 GLICEMIA B-Procedure
@@ -1565,7 +1565,7 @@ PIEZA B-Body_Part I-Finding
 19 I-Body_Part I-Finding
 - I-Body_Part I-Finding
 30 I-Body_Part I-Finding
-COMPATIBLE O
+COMPATIBLE I-Finding
 CON O
 LESIONES B-Finding
 DCP B-Abbreviation I-Finding
@@ -1605,13 +1605,13 @@ PRINCIPALMENTE O
 . O
 
 - O
-PFP B-Abbreviation B-Disease B-Procedure
-ADHESIVA I-Disease
+PFP B-Abbreviation B-Procedure
+ADHESIVA I-Procedure
 CON O
 PILA O
-1 B-Body_Part O
-. I-Body_Part O
-5 I-Body_Part O
+1 O
+. O
+5 O
 PERIODENTITIS B-Disease
 CRONICA I-Disease
 SEVERA I-Disease
@@ -1638,7 +1638,7 @@ y I-Disease
 mandibular I-Disease
 , O
 sin O
-PR B-Finding
+PR O
 , O
 con O
 dificultad B-Finding
@@ -1678,7 +1678,7 @@ AÑOS O
 ANTECEDENTE O
 DE O
 RM B-Abbreviation B-Disease
-SEVERO I-Disease
+SEVERO O
 , O
 DLP B-Abbreviation B-Disease
 , O
@@ -1726,8 +1726,8 @@ LENTA O
 RECUPERACION O
 A O
 ESTANO O
-MENTAL O
-HABITUAL I-Disease
+MENTAL B-Disease
+HABITUAL O
 , O
 Y O
 DOS O
@@ -1737,14 +1737,14 @@ TEMBLORES B-Finding
 DE I-Finding
 LAS I-Finding
 4 B-Body_Part I-Finding
-EXTREMIDADES I-Body_Part I-Finding
+EXTREMIDADES B-Body_Part I-Body_Part I-Finding
 CON O
 COMPROMISO B-Finding
 DE I-Finding
 CONCINECIA I-Finding
 Y O
-RECUPERACION O
-PAULATINA O
+RECUPERACION B-Finding
+PAULATINA I-Finding
 . O
 
 NINGUNO O
@@ -1771,7 +1771,7 @@ Hipotiroidismo B-Disease
 PZA B-Abbreviation B-Body_Part
 . I-Body_Part
 31 I-Body_Part
-CARIES B-Disease
+CARIES O
 CON O
 GRAN B-Finding
 DESTRUCCINN I-Finding
@@ -1783,8 +1783,8 @@ PERIAPICAL I-Finding
 PRESENTA O
 DOLOR B-Finding
 ESPONTANEO I-Finding
-. I-Finding
-SE I-Finding
+. O
+SE O
 ENCUENTRA O
 EN O
 TRATAMIENTO O
@@ -1811,8 +1811,8 @@ PRESENTA O
 ATRICION B-Finding
 PZAS B-Abbreviation B-Body_Part I-Finding
 8 I-Body_Part I-Finding
-- I-Body_Part
-9 I-Body_Part
+- I-Body_Part I-Finding
+9 I-Body_Part I-Finding
 , O
 DOLOR B-Finding
 CON I-Finding
@@ -1852,19 +1852,19 @@ APS B-Abbreviation
 . I-Body_Part
 4 I-Body_Part
 caries B-Disease
-penetrante I-Disease
+penetrante I-Disease I-Finding
 Se O
 realiza O
 la O
 trepanación B-Procedure
 se O
-irriga B-Procedure
+irriga O
 con I-Procedure
 hipoclorito I-Procedure
 ( O
 con O
 activación O
-mecanica O
+mecanica I-Finding
 ) O
 y O
 se O
@@ -1886,15 +1886,15 @@ superior I-Disease
 , O
 Se O
 solicita O
-rehabilitaciNn B-Procedure
+rehabilitaciNn O
 de O
 pieza B-Body_Part
 8 I-Body_Part
 con O
 PFU B-Abbreviation B-Procedure
-sobre I-Procedure
-implante I-Procedure
-oseointegrado I-Procedure
+sobre I-Finding I-Procedure
+implante I-Finding I-Procedure
+oseointegrado I-Finding I-Procedure
 . O
 
 - O
@@ -1936,10 +1936,10 @@ MORDIDA B-Finding
 INVERTID I-Finding
 ERUPCION I-Finding
 ECTOPICA I-Finding
-PIEZA B-Body_Part B-Finding
-1 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-2 I-Body_Part I-Finding
+PIEZA B-Body_Part
+1 I-Body_Part
+. I-Body_Part
+2 I-Body_Part
 LINEA B-Finding
 MEDIA I-Finding
 DESVIADA I-Finding
@@ -1972,7 +1972,7 @@ dentinaria I-Disease
 profunda I-Disease
 OM B-Abbreviation
 y O
-pulpitis B-Disease B-Finding
+pulpitis B-Disease
 en O
 pieza B-Body_Part
 4 I-Body_Part
@@ -1986,7 +1986,7 @@ y O
 se O
 deriva O
 a O
-endodoncia O
+endodoncia B-Procedure O
 . O
 
 Pulpitis B-Disease
@@ -2012,20 +2012,20 @@ TRAPANADA B-Procedure
 pcte B-Abbreviation
 con O
 reseccion B-Procedure
-tumor I-Procedure
-de I-Procedure
-la I-Procedure
-silla I-Procedure
-turca I-Procedure
+tumor B-Disease I-Procedure
+de I-Disease
+la I-Disease
+silla I-Disease
+turca I-Disease
 conocido O
 , O
 reseccion B-Procedure
 y O
-tto B-Abbreviation B-Procedure
+tto B-Abbreviation
 local I-Procedure
 con O
-c B-Abbreviation B-Procedure
-obalto I-Procedure
+c B-Abbreviation
+obalto O
 desde O
 los O
 11 O
@@ -2033,8 +2033,8 @@ alos O
 de O
 edad O
 epilepsia B-Disease
-hernia B-Finding
-hiatal I-Finding
+hernia O
+hiatal O
 ERGE B-Disease
 esofagitis B-Finding
 
@@ -2050,15 +2050,15 @@ años O
 de O
 edad O
 Déficit O
-múltiple B-Finding
+múltiple O
 Obs B-Abbreviation
 higado B-Body_Part B-Disease
-graso I-Disease I-Finding
+graso I-Disease
 
 TENDINOSIS B-Disease
 SUPRAESPINOSO B-Body_Part I-Disease
-- O
-Tendinitis B-Disease
+- I-Disease
+Tendinitis I-Disease
 o I-Disease
 tendinosis I-Disease
 del I-Disease
@@ -2069,15 +2069,15 @@ Síndrome B-Disease
 de I-Disease
 pinzamiento I-Disease
 / O
-Bursitis B-Disease B-Finding
-subacromial I-Disease I-Finding
-TENDINOSIS I-Disease I-Finding
-SUPRAESPINOSO B-Body_Part I-Disease I-Finding
-- I-Disease I-Finding
-LEVE I-Disease I-Finding
-, I-Disease I-Finding
-SUB B-Abbreviation I-Disease I-Finding
-AGUDA I-Disease I-Finding
+Bursitis B-Disease
+subacromial I-Disease
+TENDINOSIS I-Disease
+SUPRAESPINOSO I-Disease
+- I-Disease
+LEVE I-Disease
+, I-Disease
+SUB B-Abbreviation I-Disease
+AGUDA I-Disease
 ( O
 MAS O
 DE O
@@ -2096,8 +2096,8 @@ Síndrome B-Disease
 de I-Disease
 pinzamiento I-Disease
 / O
-Bursitis B-Disease B-Finding
-subacromial I-Finding
+Bursitis B-Disease
+subacromial I-Disease I-Finding
 
 PACIENTE O
 DE O
@@ -2106,7 +2106,7 @@ AÑOS O
 CON O
 TX B-Abbreviation B-Disease
 OCULAR I-Disease
-OD B-Abbreviation B-Body_Part
+OD B-Abbreviation B-Body_Part I-Disease
 HACE O
 25 O
 AÑOS O
@@ -2117,7 +2117,7 @@ SE O
 LE O
 ADAPTO O
 UNA O
-PROTESIS B-Finding B-Procedure
+PROTESIS B-Procedure
 OCULAR I-Procedure
 Y O
 NUNCA O
@@ -2130,7 +2130,7 @@ HACE O
 1 O
 AÑO O
 LA O
-PROTESIS B-Finding
+PROTESIS O
 ESTABA O
 MUY O
 MOVIL O
@@ -2168,7 +2168,7 @@ destacar O
 refiere O
 dolor B-Finding
 en I-Finding
-dorso B-Body_Part I-Finding
+dorso I-Finding
 , I-Finding
 intermitente I-Finding
 , I-Finding
@@ -2182,14 +2182,14 @@ examen O
 fisico O
 test B-Procedure
 de I-Procedure
-adams I-Procedure
+adams I-Finding I-Procedure
 alterado B-Finding
 , O
 destaca O
 abombamiento B-Finding
 de I-Finding
 hemidorso B-Body_Part I-Finding
-derecho I-Finding
+derecho I-Body_Part I-Finding
 , O
 dolor B-Finding
 a I-Finding
@@ -2198,7 +2198,7 @@ palpacion I-Finding
 de I-Finding
 musculatura B-Body_Part I-Finding
 para I-Finding
-vertebral I-Body_Part I-Finding
+vertebral I-Finding
 . O
 
 especialista O
@@ -2251,17 +2251,17 @@ overjet B-Finding
 aumentado I-Finding
 . O
 
-Desgaste B-Finding
-de I-Finding
-5 B-Body_Part I-Finding
-. I-Body_Part I-Finding
-1 I-Body_Part I-Finding
-y I-Body_Part
-6 I-Body_Part
-. I-Body_Part I-Finding
+Desgaste O
+de O
+5 B-Body_Part
+. I-Body_Part
 1 I-Body_Part
+y I-Body_Part
+6 I-Body_Part O
+. I-Body_Part
+1 I-Body_Part O
 por O
-maloclusión O
+maloclusión B-Disease
 
 NULIPARA B-Finding
 ANTECED B-Abbreviation B-Finding
@@ -2276,7 +2276,7 @@ AÑOS O
 CON O
 LA O
 MISMA O
-PAREJA B-Family_Member
+PAREJA B-Family_Member O
 NO O
 TIENEN O
 HIJOS B-Family_Member
@@ -2284,24 +2284,24 @@ SU O
 CONYUGE O
 SE O
 TOMO O
-ESPERMIOGRAMA B-Procedure O
+ESPERMIOGRAMA B-Procedure
 + B-Abbreviation
 - I-Abbreviation
 EL O
 2010 O
 Y O
 EL O
-RERSULTADO B-Finding
-FUE I-Finding
-ALTERADO I-Finding
+RERSULTADO O
+FUE O
+ALTERADO B-Finding
 . O
 
 USUARIA O
 NO O
 TRAE O
 DOCUMENTOS B-Procedure
-DE O
-CONTROL O
+DE I-Procedure
+CONTROL I-Procedure
 . O
 
 USUARIO O
@@ -2330,13 +2330,13 @@ OPERATORIA O
 , O
 EXTRACCIONES B-Procedure
 Y O
-DES B-Abbreviation
-T I-Abbreviation I-Procedure
+DES B-Abbreviation B-Medication I-Procedure
+T I-Procedure
 ARTRAJE O
 
-D45 O
+D45 B-Disease
 POLICITEMIA B-Abbreviation B-Disease
-VERA I-Disease O
+VERA O
 PACIENTE O
 CON O
 ANTECEDENTES O
@@ -2351,7 +2351,7 @@ HTA B-Abbreviation B-Disease
 , O
 ¿ O
 POLICITEMIA B-Disease
-VERA I-Disease O
+VERA O
 ¿ O
 ( O
 ¿ O
@@ -2359,7 +2359,7 @@ NO O
 QUEDA O
 CLARO O
 , O
-REACTIVA B-Disease
+REACTIVA O
 ? O
 ? O
 ¿ O
@@ -2368,7 +2368,7 @@ REACTIVA B-Disease
 Y O
 SECUELA B-Disease
 DE I-Disease
-POLIOMIELITIS B-Disease I-Disease
+POLIOMIELITIS I-Disease
 ¿ O
 CON O
 EVENTO O
@@ -2432,8 +2432,8 @@ DOLOR B-Finding
 EN I-Finding
 ZONA B-Body_Part I-Finding
 RETROMOLAR I-Body_Part I-Finding
-A I-Body_Part I-Finding
-NIVEL I-Body_Part I-Finding
+A I-Finding
+NIVEL I-Finding
 DEL I-Body_Part I-Finding
 4 I-Body_Part I-Finding
 . I-Body_Part I-Finding
@@ -2458,7 +2458,7 @@ DXTICO O
 REGRESA O
 CON O
 RESULTADOS O
-RADIOGRAFICO B-Procedure
+RADIOGRAFICO O
 , O
 SE O
 OBSERVAN O
@@ -2470,19 +2470,19 @@ DIENTES B-Body_Part B-Finding
 4 I-Body_Part I-Finding
 . I-Body_Part I-Finding
 8 I-Body_Part I-Finding
-, O
-SEMINCLUIDOS B-Finding
+, I-Finding
+SEMINCLUIDOS I-Finding
 EN I-Finding
 POSICION I-Finding
 VERTICAL I-Finding
 , O
-PEGADOS B-Disease B-Finding
-A I-Disease I-Finding
-LA I-Disease
-RAMA I-Disease
-DEL I-Disease
-MAXILAR B-Body_Part I-Disease
-INFERIOR I-Body_Part I-Disease
+PEGADOS O
+A O
+LA O
+RAMA B-Body_Part
+DEL I-Body_Part
+MAXILAR I-Body_Part
+INFERIOR I-Body_Part
 SIN O
 POSIBILIDAD O
 DE O
@@ -2539,7 +2539,7 @@ caninos B-Body_Part B-Finding
 rotados I-Finding
 , O
 requiere O
-ortodoncia B-Procedure
+ortodoncia O
 . O
 
 Anomalias B-Disease
@@ -2555,7 +2555,7 @@ PERIODONTITIS B-Disease
 APICAL I-Disease
 CRONICA I-Disease
 SEMIINCLUIDOS O
-17 B-Body_Part
+17 O
 Y O
 32 O
 SE O
@@ -2594,10 +2594,10 @@ espera O
 trasplante B-Procedure
 renal I-Procedure
 descartando O
-focos B-Finding
+focos B-Disease B-Finding
 sépticos I-Finding
 o I-Finding
-infecciosos I-Finding
+infecciosos I-Disease I-Finding
 - O
 
 - O
@@ -2618,7 +2618,7 @@ precordalgia B-Finding
 ocasional I-Finding
 y O
 soplo B-Finding
-cardíaco O
+cardíaco B-Abbreviation
 sistóli B-Finding
 3 I-Finding
 - I-Finding
@@ -2656,11 +2656,11 @@ OBS B-Abbreviation
 MACROSOMIA B-Disease
 FETAL I-Disease
 , O
-EMBARAZO B-Disease
-EN I-Disease
-VIAS B-Body_Part I-Disease
-DE I-Body_Part I-Disease
-PROLONGACION I-Disease
+EMBARAZO B-Finding
+EN I-Finding
+VIAS I-Finding
+DE I-Finding
+PROLONGACION I-Finding
 A O
 LAS O
 41 O
@@ -2712,7 +2712,7 @@ ABOMINAL O
 ENR O
 ELACIONA O
 COMIDAS O
-GRASAS B-Procedure
+GRASAS O
 . O
 SIN O
 COLURIA B-Finding
@@ -2730,9 +2730,9 @@ CON O
 ECOGRAFIA B-Procedure
 ABDOMINAL I-Procedure
 QUE O
-MUETSRA B-Finding
+MUETSRA O
 VESICULA B-Body_Part B-Finding
-BILIAR I-Body_Part I-Finding
+BILIAR I-Finding
 DE I-Finding
 PARED I-Finding
 FINA I-Finding
@@ -2741,27 +2741,27 @@ SIN O
 IMAGEES B-Finding
 DE I-Finding
 CALCULOS I-Finding
-EN I-Finding
-SU I-Finding
-INTERIO I-Finding
+EN O
+SU O
+INTERIO O
 R O
 , O
 PERO O
 SI O
 CON O
 2 O
-SOLEVANTAMIENTOS O
-MUCOSOS O
-DE O
-4 O
-, O
-2 O
-Y O
-2 O
+SOLEVANTAMIENTOS B-Finding
+MUCOSOS I-Finding
+DE I-Finding
+4 B-Body_Part I-Finding
+, I-Finding
+2 I-Finding
+Y I-Finding O
+2 I-Finding O
 , O
 2 O
 MM B-Abbreviation
-VIA B-Body_Part I-Finding
+VIA B-Body_Part B-Finding
 BILIAR I-Body_Part I-Finding
 INTRA I-Finding
 Y I-Finding
@@ -2782,7 +2782,7 @@ gpt B-Abbreviation B-Procedure
 fa B-Abbreviation
 98 O
 m B-Abbreviation
-bilt B-Abbreviation
+bilt O
 0 O
 . O
 12 O
@@ -2815,7 +2815,7 @@ LARINGE B-Body_Part I-Disease
 , O
 QUIEN O
 REQUIERE O
-DESOLUCION O
+DESOLUCION B-Procedure O
 ( O
 POCO B-Finding
 DIFERENCIADO I-Finding
@@ -2840,9 +2840,9 @@ a I-Finding
 a I-Finding
 percucion I-Finding
 Caries B-Disease
-de I-Disease I-Finding
-la I-Disease I-Finding
-dentina B-Body_Part I-Disease I-Finding
+de I-Disease
+la I-Disease
+dentina B-Body_Part I-Disease
 
 - O
 NECROSIS B-Disease
@@ -2890,7 +2890,7 @@ pieza B-Body_Part B-Finding
 a I-Finding
 la I-Finding
 presion I-Finding
-sin I-Finding
+sin O
 caries B-Disease I-Finding
 al O
 examen O
@@ -2912,7 +2912,7 @@ SECUNDARIA I-Disease
 - O
 POLICONSUO O
 OH B-Abbreviation
-COCAINA O
+COCAINA I-Disease
 ETC B-Abbreviation
 . O
 . O
@@ -2940,7 +2940,7 @@ EUTIROX B-Medication
 
 PASE O
 PARA O
-CIRUGIA O
+CIRUGIA I-Procedure
 
 - O
 TRASTORNO B-Disease
@@ -2963,27 +2963,27 @@ en O
 control O
 con O
 psiquitra B-Disease
-doc B-Abbreviation B-Disease
+doc B-Disease
 kong O
 ( O
 particular O
 ) O
 menor O
 es O
-agresivo B-Finding
-en I-Finding O
-general I-Finding
-con I-Finding
-niños I-Finding O
-y I-Finding O
-adultos I-Finding
+agresivo O
+en O
+general O
+con O
+niños O
+y O
+adultos O
 , O
 amenaza O
 a O
 otros O
 , O
 cuando O
-ve O
+ve B-Finding O
 noticias O
 ( O
 homicidios O
@@ -3007,10 +3007,10 @@ y O
 tiene O
 problema B-Finding
 para I-Finding
-relacionarse I-Finding
-con I-Finding
-sus I-Finding
-pares I-Finding
+relacionarse I-Finding O
+con O
+sus O
+pares O
 . O
 
 Trastorno B-Disease
@@ -3061,8 +3061,8 @@ espacio I-Finding
 en I-Finding
 la I-Finding
 arcada B-Body_Part I-Finding
-moderado I-Body_Part I-Finding
-Menor I-Body_Part I-Finding
+moderado I-Finding
+Menor I-Finding
 a O
 5 O
 mm B-Abbreviation
@@ -3094,18 +3094,18 @@ masas B-Finding
 redondeadas I-Finding
 de I-Finding
 aprox B-Abbreviation I-Finding
-3 O
-mm B-Abbreviation
+3 I-Finding
+mm B-Abbreviation I-Finding
 de I-Finding
 diametro I-Finding
 en I-Finding
 relacion O
 a I-Finding
-epìcanto I-Finding
+epìcanto O
 , O
-asociadas O
-a O
-dolor B-Finding
+asociadas B-Finding
+a I-Finding
+dolor I-Finding
 
 paciente O
 con O
@@ -3117,10 +3117,10 @@ agrandamiento B-Finding
 gingival I-Finding
 . O
 
-mal B-Finding O
+mal O
 pronóstico O
 incisivos B-Body_Part
-inferiores I-Body_Part I-Finding
+inferiores I-Body_Part
 . O
 
 PACIENTE O
@@ -3134,11 +3134,11 @@ ALTERACIONES B-Disease
 EN I-Disease
 ATM B-Abbreviation B-Body_Part I-Disease
 POR O
-LA I-Disease
-PERDIDA O
-DE I-Disease
-MASA I-Disease I-Finding
-POSTERIOR I-Disease
+LA O
+PERDIDA B-Finding
+DE I-Finding
+MASA I-Finding
+POSTERIOR I-Finding
 . O
 
 - O
@@ -3179,8 +3179,8 @@ INDICA O
 EKG B-Abbreviation B-Procedure
 QUE O
 MUESTRA O
-ARRITMIA B-Finding
-SINUSAL I-Finding
+ARRITMIA B-Disease B-Finding
+SINUSAL I-Disease I-Finding
 CON O
 INFRADESNIVEL B-Finding
 DE I-Finding
@@ -3189,7 +3189,7 @@ EN I-Finding
 DI B-Abbreviation I-Finding
 Y I-Finding
 II I-Finding
-, O
+, I-Finding
 aVL B-Abbreviation B-Finding
 , O
 T B-Finding
@@ -3254,12 +3254,12 @@ PIEZAS B-Body_Part
 . I-Body_Part
 1 I-Body_Part
 - I-Body_Part
-4 I-Body_Part I-Disease
-. I-Body_Part I-Disease
-2 I-Body_Part I-Disease
+4 I-Body_Part
+. I-Body_Part
+2 I-Body_Part
 - I-Body_Part
-4 I-Body_Part I-Disease
-. I-Body_Part I-Disease
+4 I-Body_Part
+. I-Body_Part
 5 I-Body_Part
 PACIENTE O
 CON O
@@ -3285,7 +3285,7 @@ YODOTERAPIA I-Finding
 EL O
 30 O
 - O
-11 B-Body_Part O
+11 O
 - O
 12 O
 . O
@@ -3308,14 +3308,14 @@ Pieza B-Body_Part
 . I-Body_Part
 4 I-Body_Part
 caries B-Disease
-penetrante I-Disease I-Finding
+penetrante I-Disease
 y O
 periodontitis B-Disease
 apical I-Disease
 crónica I-Disease
 , O
 se O
-trepana B-Procedure
+trepana O
 , O
 requiere O
 tratamiento B-Procedure
@@ -3353,7 +3353,7 @@ momento O
 con O
 sangrado B-Finding
 abundante I-Finding
-app B-Abbreviation I-Finding
+app B-Abbreviation
 : O
 hta B-Abbreviation B-Disease
 Hemorroides B-Disease
@@ -3372,33 +3372,33 @@ AUMENTO I-Finding
 DE I-Finding
 VOLUMEN I-Finding
 ASOC I-Finding
-. O
-A O
-TRAUMA B-Finding
-SE I-Finding
-MUERDE I-Finding
+. I-Finding
+A I-Finding
+TRAUMA I-Finding
+SE O
+MUERDE O
 EL O
 LABIO B-Body_Part
 TRES O
 VECES O
-SEGUIDAS B-Finding
-OBSTRUCCION I-Finding
+SEGUIDAS O
+OBSTRUCCION B-Finding
 DE I-Finding
 CONDUCTO B-Body_Part I-Finding
-GLANDULA I-Body_Part I-Finding
+GLANDULA B-Body_Part I-Body_Part I-Finding
 SALIVAL I-Body_Part I-Finding
-MENOR I-Finding O
+MENOR I-Finding
 , O
 HIP B-Abbreviation
 . O
 
 DX B-Abbreviation
 MUCOCELE B-Disease
-ASOC O
+ASOC I-Disease
 . O
 
 A O
-TRAUMA B-Disease O
+TRAUMA B-Disease
 FAVOR O
 SOLICITO O
 EVALUACION O
@@ -3411,10 +3411,10 @@ pieza B-Body_Part
 1 I-Body_Part
 . I-Body_Part
 1 I-Body_Part
-fractura B-Disease B-Finding
+fractura B-Finding
 radicular I-Disease I-Finding
-tercio B-Body_Part I-Disease
-medio I-Body_Part I-Disease
+tercio I-Finding
+medio I-Finding
 en O
 tto B-Abbreviation
 por O
@@ -3422,7 +3422,7 @@ eda B-Abbreviation B-Procedure
 fistula B-Finding
 por I-Finding
 vestibular I-Finding
-pieza B-Body_Part B-Finding I-Finding
+pieza B-Body_Part B-Finding
 d I-Body_Part I-Finding
 . I-Finding
 con I-Finding
@@ -3432,20 +3432,20 @@ incompleto I-Finding
 
 destruccion B-Finding
 permanente I-Finding
-mesioclusion B-Finding I-Finding
+mesioclusion I-Finding
 molar I-Finding
 Pza B-Abbreviation B-Body_Part B-Finding
 . I-Body_Part I-Finding
 17 I-Body_Part I-Finding
 izquierda I-Body_Part I-Finding
 y I-Body_Part I-Finding
-derecha I-Finding
+derecha I-Body_Part I-Finding
 , O
 compresion B-Finding
 bimaxilar I-Finding
-y O
-y O
-mordida B-Finding
+y I-Finding
+y I-Finding
+mordida O
 invertida I-Finding
 en O
 pieza B-Body_Part
@@ -3462,26 +3462,26 @@ y I-Body_Part
 2 I-Body_Part
 mordida B-Finding
 vis I-Finding
-a I-Finding
+a O
 vis I-Finding
-1 B-Body_Part I-Finding
-. I-Body_Part I-Finding
-1 I-Body_Part I-Finding
-y I-Body_Part I-Finding
-2 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-1 I-Body_Part I-Finding
+1 B-Body_Part
+. I-Body_Part
+1 I-Body_Part
+y I-Body_Part
+2 I-Body_Part
+. I-Body_Part
+1 I-Body_Part
 . O
 
 Paciente O
 con O
-endotropia B-Finding
+endotropia B-Disease B-Finding
 congénita I-Finding
 y O
 nistagmus B-Finding
 . O
 
-Será O
+Será B-Disease
 operada B-Procedure
 en I-Procedure
 H B-Abbreviation I-Procedure
@@ -3533,7 +3533,7 @@ refiere O
 episodios O
 de O
 epistaxis B-Disease
-recurrentes I-Disease
+recurrentes O
 desde O
 hace O
 5 O
@@ -3549,10 +3549,10 @@ durantes O
 el O
 ultimo O
 tiempo O
-alterando O
-la O
-calidad O
-d B-Abbreviation
+alterando B-Finding
+la I-Finding
+calidad I-Finding
+d I-Finding
 vida O
 del O
 paciente O
@@ -3637,8 +3637,8 @@ TTO B-Abbreviation
 QUEDA O
 CON O
 PLAQ B-Abbreviation B-Procedure
-DE I-Procedure
-600000 I-Procedure
+DE O
+600000 O
 , O
 PERO O
 PERSISTE O
@@ -3683,7 +3683,7 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-apiñamiento B-Finding
+apiñamiento B-Disease B-Finding
 dentario I-Finding
 anterosuperior I-Finding
 Anomalias B-Disease
@@ -3717,8 +3717,8 @@ EN I-Finding
 VAGINA B-Body_Part I-Finding
 EN O
 QMT B-Abbreviation B-Procedure
-LOE B-Finding
-HEPATICO I-Procedure
+LOE B-Disease B-Finding
+HEPATICO I-Finding
 RECIENTE O
 APARICION B-Finding
 DE I-Finding
@@ -3735,10 +3735,10 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-PTERIGION B-Disease
-NASAL I-Disease
+PTERIGION B-Disease B-Finding
+NASAL I-Finding
 OJO B-Body_Part
-IZQ B-Abbreviation I-Body_Part
+IZQ B-Abbreviation I-Body_Part I-Finding
 . O
 
 NO O
@@ -3756,8 +3756,8 @@ INTENSO B-Finding
 PRURITO I-Finding
 , O
 CON O
-FRECUENCIA B-Finding
-OJO B-Body_Part I-Finding
+FRECUENCIA O
+OJO B-Body_Part B-Finding
 ROJO I-Finding
 . O
 
@@ -3784,15 +3784,15 @@ operarse O
 en O
 HLF O
 con O
-salida B-Finding
-a I-Finding
-intermedio B-Abbreviation I-Finding
+salida O
+a O
+intermedio O
 o O
 UCI B-Abbreviation
 , O
-contando B-Medication
+contando O
 con O
-monitorizacion O
+monitorizacion B-Medication
 invasiva O
 
 DESDENTADA B-Disease
@@ -3803,7 +3803,7 @@ inferior I-Disease
 , O
 requiere O
 rehabilitación B-Procedure
-protesis B-Procedure I-Procedure
+protesis I-Procedure
 total I-Procedure
 removible I-Procedure
 superior I-Procedure
@@ -3816,9 +3816,9 @@ OTRAS B-Disease
 ARRITMIAS I-Disease
 CARDÍACAS I-Disease
 ESPECIFICADAS I-Disease
-Extrasistolia B-Disease
-supraventricular I-Disease
-Sintomatica I-Disease
+Extrasistolia B-Finding
+supraventricular I-Finding
+Sintomatica I-Finding
 / O
 - O
 Fundamento O
@@ -3868,12 +3868,12 @@ hta B-Abbreviation B-Disease
 , O
 antencedente O
 de O
-IAM B-Abbreviation B-Disease
-sdst B-Abbreviation B-Finding
-anterior I-Finding
-- O
-apical O
-y O
+IAM B-Abbreviation B-Disease B-Finding
+sdst B-Abbreviation
+anterior I-Disease I-Finding
+- I-Finding
+apical I-Finding
+y I-Finding
 pared I-Finding
 lateralen O
 abril O
@@ -3891,7 +3891,7 @@ esta O
 en O
 tto B-Abbreviation
 con O
-digoxina B-Abbreviation B-Medication
+digoxina B-Medication
 0 O
 , O
 25 O
@@ -3913,7 +3913,7 @@ omeprazol B-Medication
 mg B-Abbreviation
 dia O
 , O
-fusrosemida O
+fusrosemida B-Medication O
 20 O
 mg B-Abbreviation
 dia O
@@ -3928,11 +3928,11 @@ atv B-Abbreviation B-Medication
 mg B-Abbreviation
 dia O
 , O
-espironolacttona B-Medication O
+espironolacttona B-Medication
 25 O
 mg B-Abbreviation
 dia O
-entresto O
+entresto B-Medication
 ( O
 valsartan B-Medication
 ) O
@@ -3942,7 +3942,7 @@ valsartan B-Medication
 dia O
 , O
 insulina B-Medication
-nph B-Abbreviation I-Medication
+nph I-Medication
 22 O
 u O
 . O
@@ -4043,8 +4043,8 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-resto B-Disease B-Finding
-radicular I-Disease I-Finding
+resto B-Disease
+radicular I-Disease
 en I-Finding
 estado I-Finding
 submucos I-Finding
@@ -4094,15 +4094,15 @@ dolor B-Finding
 en I-Finding
 escala I-Finding
 EVA B-Abbreviation I-Finding
-de O
-7 O
-a O
-5 O
-en O
-músculos B-Finding
-maseteros I-Finding
-y I-Finding
-temporal I-Finding
+de I-Finding
+7 B-Body_Part I-Finding
+a I-Finding
+5 I-Finding
+en I-Finding
+músculos I-Finding
+maseteros O
+y I-Finding O
+temporal O
 . O
 
 click B-Finding
@@ -4112,11 +4112,11 @@ reproducible I-Finding
 . O
 
 Con O
-relatos B-Finding
-de I-Finding
-rechinamiento I-Finding
-dentario I-Finding
-nocturno I-Finding
+relatos O
+de O
+rechinamiento B-Disease
+dentario O
+nocturno O
 
 C189 B-Disease
 TUMOR B-Disease
@@ -4129,7 +4129,7 @@ NO I-Disease
 ESPECIFICADA I-Disease
 CA B-Abbreviation B-Disease
 COLON B-Body_Part I-Disease
-IV I-Disease
+IV I-Body_Part I-Disease
 NO O
 CANDIDATA O
 A O
@@ -4137,7 +4137,7 @@ MÁS O
 TRATAMIENTO B-Procedure
 SISTÉMICO I-Procedure
 
-QUISTES B-Disease B-Finding
+QUISTES B-Disease
 MAMARIOS I-Disease I-Finding
 MAMA B-Body_Part I-Disease
 IZQUIERDA I-Body_Part I-Disease
@@ -4153,8 +4153,8 @@ DE I-Finding
 ALTA I-Finding
 ECOPERICIDAD I-Finding
 , O
-QUISTE B-Finding
-MAMARIO I-Disease I-Finding
+QUISTE B-Disease B-Finding
+MAMARIO I-Finding
 IZQUIERDO I-Finding
 , O
 BIRADS B-Abbreviation B-Finding
@@ -4167,9 +4167,9 @@ DE I-Disease
 DISCO B-Body_Part I-Disease
 CERVICAL I-Body_Part I-Disease
 CON I-Disease
-RADICULOPATÍA B-Disease
+RADICULOPATÍA B-Disease I-Disease
 cervicalgia B-Disease
-en I-Disease O
+en O
 estudio O
 / O
 - O
@@ -4220,7 +4220,7 @@ en O
 control O
 medico O
 debido O
-exámenes B-Finding B-Procedure
+exámenes B-Procedure
 alterados B-Finding
 ( O
 hto B-Abbreviation B-Procedure
@@ -4237,16 +4237,16 @@ Hb B-Abbreviation B-Procedure
 se O
 pesquisa O
 Soplo B-Finding
-protomesositolico I-Finding
+protomesositolico B-Body_Part I-Finding
 5 I-Finding
-/ I-Finding
+/ I-Body_Part I-Finding
 6 I-Finding
 2 I-Finding
 - I-Finding
 3er I-Finding
-espacio B-Body_Part I-Finding
-intercostal I-Finding
-i I-Finding
+espacio O
+intercostal I-Body_Part I-Finding
+i O
 
 - O
 DESAJUSTE B-Finding
@@ -4310,12 +4310,12 @@ PACIENTE O
 CON O
 ANTECEDENTES O
 DE O
-ULCERA B-Finding
-VARICOSA I-Finding
-EN I-Finding
-EXTREMIDAD B-Body_Part I-Finding
-INFERIOR I-Body_Part I-Finding
-DERECHA I-Body_Part I-Finding
+ULCERA B-Disease
+VARICOSA I-Disease
+EN I-Disease
+EXTREMIDAD B-Body_Part I-Disease
+INFERIOR I-Body_Part I-Disease
+DERECHA I-Body_Part I-Disease
 . O
 
 SOLICITA O
@@ -4376,7 +4376,7 @@ TTO B-Abbreviation
 CON O
 APARATO B-Procedure
 ORTODÓNCICO I-Procedure
-INTRAORAL O
+INTRAORAL I-Procedure
 . O
 
 Mordida B-Finding
@@ -4417,7 +4417,7 @@ con O
 H B-Abbreviation B-Procedure
 . I-Procedure
 pilory I-Procedure
-positiva O
+positiva B-Finding
 y O
 con O
 indicación O
@@ -4464,7 +4464,7 @@ paciente O
 con O
 rinitis B-Disease
 alergica B-Finding
-estacional B-Finding I-Finding
+estacional I-Finding
 mas I-Finding
 acentuada I-Finding
 en I-Finding
@@ -4491,12 +4491,12 @@ nocturna I-Finding
 ronca B-Finding
 durante O
 el O
-sueno I-Finding
+sueno O
 . O
 
 sin O
-hipertrofia B-Disease
-amigdalina I-Disease
+hipertrofia B-Disease B-Finding
+amigdalina I-Disease I-Finding
 . O
 
 se O
@@ -4516,14 +4516,14 @@ de I-Procedure
 cavum B-Body_Part I-Procedure
 nasofaringeo I-Body_Part I-Procedure
 y O
-senos B-Body_Part B-Finding
+senos B-Body_Part
 paranasales I-Body_Part
 . O
 
 Rinitis B-Disease
 alergica I-Disease
-y I-Disease
-vasomotora I-Disease
+y O
+vasomotora I-Finding
 
 TU B-Abbreviation B-Disease
 CABEZA B-Body_Part I-Disease
@@ -4567,12 +4567,12 @@ VALVULAR I-Procedure
 AORTICO I-Procedure
 Y O
 DISFUNCION B-Disease B-Finding
-VENTRICULAR I-Disease I-Finding
+VENTRICULAR I-Disease
 PORTADOR O
 DE O
 MARCAPASOS B-Finding
 RESINCRONIZADOR B-Abbreviation I-Finding
-D O
+D I-Finding
 
 - O
 RESTO B-Disease
@@ -4586,8 +4586,8 @@ APS B-Abbreviation
 RESTO B-Disease
 RADICULAR I-Disease
 PZA B-Abbreviation B-Body_Part
-4 I-Body_Part I-Finding
-. I-Body_Part I-Finding
+4 I-Body_Part
+. I-Body_Part
 8 I-Body_Part
 , O
 NO O
@@ -4643,7 +4643,7 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-ALITZA B-Disease
+ALITZA O
 ASISTE O
 A O
 SALA O
@@ -4657,7 +4657,7 @@ QUE O
 : O
 ANTECEDENTES O
 NACE O
-D B-Abbreviation
+D O
 E38 O
 SEMANAS O
 PARTO O
@@ -4671,7 +4671,7 @@ DE O
 MESES O
 ) O
 APGAR B-Finding
-9 O
+9 I-Finding
 : O
 9 O
 PESO O
@@ -4706,10 +4706,10 @@ HEPATICA I-Disease
 , O
 AC B-Abbreviation B-Medication
 X B-Abbreviation
-FA B-Abbreviation B-Disease
+FA B-Abbreviation B-Disease B-Finding
 DE O
-RESPUESTA O
-VENTRICULAR O
+RESPUESTA I-Finding
+VENTRICULAR I-Finding
 ADECUADA O
 DE O
 DG B-Abbreviation
@@ -4762,7 +4762,7 @@ LA I-Disease
 MALOCLUSIÓN I-Disease
 ) I-Disease
 3ros B-Abbreviation B-Body_Part B-Finding
-molares I-Body_Part I-Finding
+molares I-Body_Part
 en I-Finding
 evolución I-Finding
 intrósea I-Finding
@@ -4774,10 +4774,10 @@ en I-Finding
 la I-Finding
 arcada B-Body_Part I-Finding
 dentaria I-Body_Part I-Finding
-, I-Finding
-distoversión I-Finding
-los I-Finding
-superiores I-Body_Part I-Finding
+, O
+distoversión O
+los O
+superiores O
 . O
 
 - O
@@ -4798,7 +4798,7 @@ CRÓNICAS I-Disease
 OTRAS B-Disease
 ENFERMEDADES I-Disease
 DEL I-Disease
-BAZO B-Body_Part I-Disease
+BAZO I-Disease
 / O
 - O
 Fundamento O
@@ -4813,12 +4813,12 @@ hospitalizacion O
 por O
 Peudoaneurisma B-Disease
 arterial I-Disease
-pancreatoduodenal O
+pancreatoduodenal I-Disease
 , O
 hipertaratiroidismo O
 operado B-Procedure
-( O
-adenoma B-Disease
+( I-Procedure
+adenoma B-Disease I-Procedure
 ) O
 , O
 Hemorrafia B-Disease
@@ -4828,7 +4828,7 @@ recurrente I-Disease
 Pancreatitis B-Disease
 cronica I-Disease
 por O
-hipercalemia B-Abbreviation B-Disease
+hipercalemia B-Disease
 , O
 esplenectomizada O
 por O
@@ -4876,7 +4876,7 @@ policlinico O
 . O
 
 Paciente O
-sintomatica O
+sintomatica B-Finding
 , O
 calambres B-Finding
 , O
@@ -4926,7 +4926,7 @@ MODERADA I-Disease
 - O
 TRASTORNO B-Disease
 VINCULAR I-Disease
-- I-Disease
+- O
 CONDUCTA I-Disease
 DESAFIANTE I-Disease
 - O
@@ -5011,7 +5011,7 @@ MALIGNO I-Disease
 DE I-Disease
 LA I-Disease
 MAMA B-Body_Part I-Disease
-) I-Disease
+) O
 / O
 - O
 Fundamento O
@@ -5027,7 +5027,7 @@ maligno I-Disease
 de I-Disease
 la I-Disease
 mama B-Body_Part I-Disease
-) I-Disease O
+) O
 
 ROTURA B-Disease
 TENDON B-Body_Part I-Disease
@@ -5048,10 +5048,10 @@ DERECHO I-Body_Part I-Finding
 , O
 LUEGO O
 DE O
-GOLPE B-Finding
-DIRECTO I-Finding
-EN I-Finding
-HOMBRO B-Body_Part I-Finding
+GOLPE O
+DIRECTO O
+EN O
+HOMBRO B-Body_Part
 SE O
 REALIZA O
 EXAMEN O
@@ -5069,7 +5069,7 @@ con O
 antecedentes O
 de O
 intestino B-Body_Part B-Disease
-irritable I-Disease
+irritable O
 fue O
 evaluada O
 por O
@@ -5079,7 +5079,7 @@ hemorroides B-Disease
 tipo I-Disease
 iii I-Disease
 - I-Disease
-iv I-Disease
+iv I-Abbreviation I-Disease
 . O
 
 se O
@@ -5134,10 +5134,10 @@ solicita O
 ser O
 derivada O
 para O
-confección B-Procedure
-de I-Procedure
-juego I-Procedure
-prótesis I-Procedure
+confección O
+de O
+juego O
+prótesis B-Procedure
 parciales I-Procedure
 . I-Procedure
 - O
@@ -5157,14 +5157,14 @@ sosten I-Disease
 pieza B-Body_Part
 32 I-Body_Part
 caries B-Disease
-penetrantes I-Disease I-Finding
+penetrantes I-Disease
 raiz B-Body_Part
 musial I-Body_Part
-curvado B-Finding
-hora I-Finding
+curvado O
+hora B-Finding
 distal I-Finding
 y O
-apicalsobre B-Finding
+apicalsobre B-Body_Part B-Finding
 proyescatdo I-Finding
 en I-Finding
 canal B-Body_Part I-Finding
@@ -5210,11 +5210,11 @@ amnos B-Body_Part I-Finding
 hombros I-Body_Part I-Finding
 , I-Finding
 mayor I-Finding
-a I-Finding
-izquierdo I-Finding
-en I-Finding
-un I-Finding
-inicio I-Finding
+a I-Body_Part I-Finding
+izquierdo I-Body_Part I-Finding
+en O
+un O
+inicio O
 , O
 se O
 estudio O
@@ -5230,9 +5230,9 @@ concluye O
 : O
 junio O
 / O
-2014 B-Finding
-de I-Finding
-hombro B-Body_Part I-Finding
+2014 O
+de O
+hombro B-Body_Part
 izquierdo I-Body_Part I-Finding
 que O
 concluye O
@@ -5251,18 +5251,18 @@ subcondrales I-Finding
 labrakles I-Finding
 . O
 
-engrosamiento B-Finding
-capsular I-Finding
-anaterior I-Finding
+engrosamiento O
+capsular O
+anaterior B-Body_Part I-Finding
 y I-Finding
-posterior I-Finding
+posterior O
 . O
 
 tendinosis B-Finding
 del I-Finding
 supraespinoso B-Body_Part I-Finding
-con I-Finding O
-rotura B-Finding I-Finding
+con I-Finding
+rotura I-Finding
 de I-Finding
 espesor I-Finding
 completo I-Finding
@@ -5273,15 +5273,15 @@ parcial I-Finding
 
 tendoentesopatia B-Disease B-Finding
 del I-Disease I-Finding
-infraespinoso I-Disease I-Finding
+infraespinoso B-Body_Part I-Disease I-Finding
 y I-Disease I-Finding
 subescapular I-Disease I-Finding
 . O
 
 sindrome B-Disease
 de I-Disease
-pizamiento I-Disease
-subacromial I-Disease
+pizamiento B-Body_Part I-Disease
+subacromial I-Body_Part I-Disease
 . O
 
 leve B-Finding
@@ -5290,10 +5290,10 @@ articular I-Finding
 genohumeral I-Finding
 . O
 
-cambios O
-degeneratitviso O
-de O
-articulacion B-Body_Part I-Disease
+cambios B-Finding
+degeneratitviso I-Finding
+de I-Finding
+articulacion B-Body_Part I-Finding
 acromicioclavicualr O
 en O
 rango O
@@ -5306,7 +5306,7 @@ con O
 cronus B-Medication
 sos B-Abbreviation
 y O
-KTM B-Abbreviation
+KTM B-Abbreviation B-Procedure
 , O
 con O
 respuesta O
@@ -5317,9 +5317,9 @@ en O
 los O
 ultimos O
 meses O
-ha O
+ha B-Finding
 aumentado I-Finding
-el O
+el I-Finding
 dolor B-Finding
 , O
 se O
@@ -5349,7 +5349,7 @@ manejo O
 G2 B-Finding
 P B-Abbreviation B-Finding
 0 O
-A B-Abbreviation B-Finding
+A B-Abbreviation
 1 O
 Embarazo B-Finding
 10 O
@@ -5360,7 +5360,7 @@ Insuf B-Disease
 . I-Disease
 renal I-Disease
 en O
-diálisis B-Procedure
+diálisis O
 HTA B-Abbreviation B-Disease
 cr B-Abbreviation
 en O
@@ -5370,7 +5370,7 @@ hoy O
 a O
 control O
 de O
-emb B-Abbreviation B-Finding
+emb B-Abbreviation
 . O
 
 c B-Abbreviation
@@ -5386,7 +5386,7 @@ diálisis B-Procedure
 por O
 insf B-Abbreviation B-Disease
 . I-Disease
-renal I-Disease I-Procedure
+renal I-Disease
 , O
 actualmente O
 con O
@@ -5414,13 +5414,13 @@ examen O
 de O
 control O
 impresiona O
-mdr O
+mdr B-Finding
 : O
 40 O
 ml B-Abbreviation
 / O
 mm B-Abbreviation
-/ I-Abbreviation O
+/ O
 173 O
 paciente O
 con O
@@ -5438,13 +5438,13 @@ evaluacion O
 creatinina B-Procedure
 anterior O
 tbn B-Abbreviation
-alterado B-Finding O
-crea B-Abbreviation B-Procedure
+alterado B-Finding
+crea B-Procedure
 : O
 1 O
 . O
 3 O
-bun B-Abbreviation B-Procedure
+bun B-Procedure
 : O
 25 O
 Enfermedad B-Disease
@@ -5487,8 +5487,8 @@ izquierda I-Finding
 Clase B-Finding
 I I-Finding
 canina I-Finding
-, O
-der B-Abbreviation B-Finding
+, I-Finding
+der B-Abbreviation I-Finding
 . I-Finding
 e I-Finding
 izq B-Abbreviation I-Finding
@@ -5496,25 +5496,25 @@ izq B-Abbreviation I-Finding
 
 Mordida B-Finding
 invertida I-Finding
-pieza B-Body_Part I-Finding
+pieza B-Body_Part
 2 I-Body_Part I-Finding
 . I-Body_Part I-Finding
 1 I-Body_Part I-Finding
-con I-Finding O
+con I-Finding
 3 B-Body_Part I-Finding
 . I-Body_Part I-Finding
 1 I-Body_Part I-Finding
-Linea I-Finding
+Linea B-Finding
 dentaria I-Finding
-1 B-Body_Part I-Finding
-/ I-Body_Part I-Finding
-2 I-Body_Part I-Finding
+1 I-Finding
+/ I-Finding
+2 I-Finding
 no I-Finding
 coincidente I-Finding
 . O
 
 ( O
-1 O
+1 B-Finding
 mm B-Abbreviation I-Finding
 desviada I-Finding
 hacia I-Finding
@@ -5522,9 +5522,9 @@ la I-Finding
 izquierda I-Finding
 lénea I-Finding
 mandibular I-Finding
-) O
-( O
-1 B-Finding
+) I-Finding
+( I-Finding
+1 I-Finding
 / I-Finding
 2 I-Finding
 mm B-Abbreviation I-Finding
@@ -5544,7 +5544,7 @@ CARIES B-Disease
 PROFUNDA I-Disease
 CON O
 CAMPROMISO O
-PULPAR I-Finding
+PULPAR O
 , O
 SINTOMATOLOGIA B-Finding
 SENSIBLIDAD I-Finding
@@ -5554,16 +5554,16 @@ Y I-Finding
 CALOR I-Finding
 . O
 
-Hallazgos B-Finding
-anormales I-Finding
-en I-Finding
-muestras I-Finding
-tomadas I-Finding
-de I-Finding
-organos B-Body_Part I-Finding
-genitales I-Body_Part I-Finding
-femeninos I-Finding
-, I-Finding
+Hallazgos B-Disease
+anormales I-Disease
+en I-Disease
+muestras I-Disease
+tomadas I-Disease
+de I-Disease
+organos B-Body_Part I-Disease
+genitales I-Body_Part I-Disease
+femeninos I-Disease
+, I-Disease I-Finding
 hallazgos I-Finding
 histologicos I-Finding
 anormales I-Finding
@@ -5656,24 +5656,24 @@ Distrofia B-Disease
 miotonica I-Disease
 , O
 con O
-duagnóstico B-Finding
+duagnóstico O
 genético O
 . O
 
 Con O
 psicometria B-Procedure
 en O
-1º B-Body_Part O
-bàsico O
+1º B-Body_Part
+bàsico I-Body_Part
 con O
-DI B-Abbreviation
+DI B-Abbreviation B-Finding
 leve I-Finding
 . O
 
-Profesores O
+Profesores B-Finding
 ahora O
 quieren O
-cambiarlo I-Finding
+cambiarlo O
 a O
 colegio O
 normal O
@@ -5692,18 +5692,18 @@ CARA B-Body_Part I-Finding
 anterior I-Body_Part I-Finding
 BASE I-Body_Part I-Finding
 TOS B-Finding
-ISMA I-Finding O
+ISMA I-Finding
 - O
 SINDROME B-Disease
 DE I-Disease
 HIPERPRESION I-Disease
 ROTULIANA I-Disease
-CONDROMALACIA I-Disease
+CONDROMALACIA B-Disease
 - O
-SUBLUXACIÓN B-Disease B-Finding
-BILATERAL I-Finding
-DE I-Finding
-ROTULA B-Body_Part I-Finding
+SUBLUXACIÓN O
+BILATERAL O
+DE O
+ROTULA B-Body_Part
 
 - O
 PERIODONTITIS B-Disease
@@ -5756,15 +5756,15 @@ INFERIORES I-Body_Part
 AUSENTES O
 17 O
 - O
-19 B-Body_Part O
+19 O
 - O
 20 O
 - O
 28 O
 - O
-30 B-Body_Part O
+30 O
 - O
-31 B-Body_Part
+31 O
 - O
 32 O
 
@@ -5916,7 +5916,7 @@ pieza B-Body_Part
 . O
 Se O
 realiza O
-biopulpectomía B-Procedure
+biopulpectomía O
 y O
 se O
 deriva O
@@ -5929,7 +5929,7 @@ con O
 diagnóstico O
 de O
 Obesidad B-Disease
-morbidad B-Abbreviation I-Disease
+morbidad I-Disease
 , O
 amerita O
 apoyo O
@@ -5941,11 +5941,11 @@ tto B-Abbreviation
 . O
 
 y O
-lograr O
-reducción O
-de O
-10 O
-Kg O
+lograr B-Finding
+reducción I-Finding
+de I-Finding
+10 I-Finding
+Kg I-Finding
 . O
 
 en O
@@ -5962,7 +5962,7 @@ CON O
 ENDODONCIA B-Procedure
 Y O
 CARIES B-Disease B-Finding
-RADICULAR I-Disease
+RADICULAR I-Disease I-Finding
 EXTENSA I-Disease I-Finding
 . O
 
@@ -5972,7 +5972,7 @@ PZA B-Abbreviation B-Body_Part
 RESTO B-Disease
 RADICULAR I-Disease
 CON O
-ENDODONCIA O
+ENDODONCIA I-Finding
 . O
 
 - O
@@ -6014,7 +6014,7 @@ izquierdo O
 al O
 examen O
 fisico O
-no B-Finding
+no B-Finding O
 detecto I-Finding
 anormalidad I-Finding
 . O
@@ -6062,7 +6062,7 @@ rutilante I-Finding
 que O
 ha O
 ido O
-aumentando O
+aumentando B-Finding
 en O
 intnsidad O
 y O
@@ -6079,14 +6079,14 @@ realiza O
 examen O
 fisico O
 del O
-esfinter B-Body_Part
+esfinter B-Body_Part B-Finding
 anal I-Body_Part I-Finding
-apreciandose O
+apreciandose I-Finding
 al O
-taco B-Abbreviation B-Finding
-induracion B-Finding
-en O
-esfnter O
+taco I-Finding
+induracion O
+en I-Finding
+esfnter I-Finding
 sin O
 evidencia O
 de O
@@ -6117,7 +6117,7 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-LActante O
+LActante B-Finding
 menor O
 eutrofica O
 de O
@@ -6129,8 +6129,8 @@ dias O
 con O
 antecedente O
 antenatal B-Disease
-de O
-riñon B-Body_Part B-Disease
+de I-Disease
+riñon B-Body_Part I-Disease
 poliquistico I-Disease
 , O
 sin O
@@ -6142,16 +6142,16 @@ parto B-Procedure
 
 Actualmente O
 P B-Abbreviation B-Finding
-/ I-Abbreviation
+/ I-Abbreviation I-Finding
 E I-Abbreviation I-Finding
 : I-Finding
-N B-Abbreviation B-Finding
-, O
+N B-Abbreviation I-Finding
+, I-Finding
 T I-Abbreviation
-/ I-Abbreviation
-e O
-: O
-N B-Abbreviation
+/ I-Abbreviation I-Finding
+e I-Abbreviation I-Finding
+: I-Finding
+N I-Finding
 y O
 CC B-Abbreviation
 N B-Abbreviation
@@ -6170,8 +6170,8 @@ especialista O
 Riñon B-Body_Part B-Disease
 poliquistico I-Disease
 , I-Disease
-tipo I-Disease
-infantil I-Disease
+tipo I-Disease O
+infantil O
 
 - O
 SÍNDROMES B-Disease
@@ -6194,7 +6194,7 @@ CONTROLES O
 POR O
 SD B-Abbreviation B-Disease
 VERTIGINOSO I-Disease
-PERIFERICO I-Disease
+PERIFERICO O
 CON O
 DRA B-Abbreviation
 NEWMANN O
@@ -6205,29 +6205,29 @@ EXTRASISTEMA O
 CON O
 HIPOEXITABILIDAD B-Finding
 VEST I-Finding
-OD B-Abbreviation B-Body_Part I-Finding
-8 I-Body_Part
+OD B-Abbreviation B-Body_Part
+8 O
 . I-Body_Part
 3 I-Body_Part
 , O
 SE O
 DERIVA O
 PARA O
-EJECICIOS O
+EJECICIOS B-Procedure O
 DE O
 HABITUACION O
 
 - O
-SUPERVISIÓN B-Disease
-DE I-Disease
-EMBARAZO I-Disease
+SUPERVISIÓN O
+DE O
+EMBARAZO B-Disease
 DE I-Disease
 ALTO I-Disease
 RIESGO I-Disease
-, I-Disease
-SIN I-Disease
-OTRA I-Disease
-ESPECIFICACIÓN I-Disease
+, O
+SIN O
+OTRA O
+ESPECIFICACIÓN O
 / O
 - O
 Fundamento O
@@ -6237,10 +6237,10 @@ APS B-Abbreviation
 GESTANTE B-Finding
 SE O
 REALIZA O
-2º B-Procedure O
-SET O
+2º O
+SET B-Procedure
 DE O
-EXAMENES O
+EXAMENES B-Procedure O
 11 O
 / O
 7 O
@@ -6257,7 +6257,7 @@ dl B-Abbreviation
 
 CA B-Abbreviation B-Disease
 COLORECTAL I-Disease
-OP B-Abbreviation B-Procedure
+OP B-Abbreviation
 + B-Abbreviation
 QMT B-Abbreviation B-Procedure
 COLOSTOMIA B-Procedure
@@ -6267,8 +6267,8 @@ LOCAL O
 OBSTRUCTIVA B-Disease
 URINARIA I-Disease
 ( O
-HUN B-Disease B-Finding
-BILATERAL I-Disease I-Finding
+HUN B-Finding
+BILATERAL I-Finding
 ) O
 NEFROSTOMIA B-Procedure
 BILATERAL I-Procedure
@@ -6319,10 +6319,10 @@ evolucion O
 , O
 asociado O
 a O
-cambio B-Finding
-de I-Finding
-habito I-Finding
-intestinal I-Finding
+cambio O
+de O
+habito B-Finding
+intestinal O
 de O
 1 O
 mes O
@@ -6333,9 +6333,9 @@ evolucion O
 OTRAS O
 CONSULTAS O
 ESPECIFICADAS O
-Adenopatia B-Disease B-Finding
-cervical I-Disease I-Finding
-bilateral I-Disease
+Adenopatia O
+cervical O
+bilateral O
 / O
 - O
 Fundamento O
@@ -6349,7 +6349,7 @@ de O
 multiples O
 cuadros O
 virales B-Disease
-respiratorios I-Disease
+respiratorios O
 . O
 
 Durante O
@@ -6394,23 +6394,23 @@ tiempo O
 presenta O
 estudio O
 con O
-examenes O
+examenes B-Procedure
 en O
 busqueda O
 de O
-agente O
-causal O
-con O
-histograma O
+agente B-Finding
+causal I-Finding
+con I-Finding
+histograma I-Finding
 , O
 ex B-Abbreviation B-Procedure
 de I-Procedure
 orina I-Procedure
 y O
-estudio O
-de O
+estudio B-Procedure
+de I-Procedure
 deposiciones B-Finding
-sin I-Finding
+sin O
 hallazgos I-Finding
 patologicos I-Finding
 . O
@@ -6427,18 +6427,18 @@ contexto O
 de O
 un O
 paciente O
-asintomatico O
+asintomatico B-Finding
 con O
 examen O
 fisico O
 y O
 de O
-laboratorio B-Finding
-normal I-Finding
+laboratorio O
+normal B-Finding
 y O
 sin O
-claro B-Finding O
-agente B-Finding I-Finding
+claro B-Finding
+agente I-Finding
 causal I-Finding
 solicito O
 evaluacion O
@@ -6461,7 +6461,7 @@ cuadros O
 respiratorios O
 recurrentes O
 con O
-rinitis B-Disease B-Finding
+rinitis B-Finding
 purulenta I-Finding
 . O
 
@@ -6471,8 +6471,8 @@ cavum B-Body_Part I-Procedure
 tomada O
 SOSPECHA O
 DE O
-HIPERTROFIA B-Disease
-ADENOIDEA I-Disease
+HIPERTROFIA B-Disease B-Finding
+ADENOIDEA I-Disease I-Finding
 
 - O
 CARIES B-Disease
@@ -6492,7 +6492,7 @@ DIENTE B-Body_Part
 7 I-Body_Part
 CON O
 CARIES B-Disease B-Finding
-PROFUNDA I-Disease I-Finding
+PROFUNDA I-Finding
 SOBREPROYECTADA I-Finding
 EN I-Finding
 CAMARA B-Body_Part I-Finding
@@ -6553,7 +6553,7 @@ inferior I-Procedure
 3 B-Body_Part
 . I-Body_Part
 1 I-Body_Part
-y I-Body_Part
+y O
 4 I-Body_Part
 . I-Body_Part
 1 I-Body_Part
@@ -6622,9 +6622,9 @@ NO I-Disease
 ESPECIFICADA I-Disease
 , O
 EXAMEN O
-DE I-Disease
-PESQUISA I-Disease I-Procedure
-ESPECIAL I-Procedure
+DE O
+PESQUISA I-Disease
+ESPECIAL O
 PARA O
 TUMOR B-Disease
 DE I-Disease
@@ -6644,10 +6644,10 @@ DE O
 TRATAMIENTO B-Procedure
 DE I-Procedure
 ENDODONCIA I-Procedure
-P B-Body_Part I-Procedure
-. I-Body_Part I-Procedure
-3 I-Body_Part I-Procedure
-TREPANADA B-Finding
+P B-Body_Part
+. I-Body_Part
+3 I-Body_Part
+TREPANADA O
 . O
 
 DG B-Abbreviation
@@ -6685,10 +6685,10 @@ a I-Finding
 niver I-Finding
 de I-Finding
 union B-Body_Part I-Finding
-de I-Finding
-2 I-Finding
-y I-Finding
-3 B-Body_Part I-Finding
+de I-Body_Part I-Finding
+2 I-Body_Part I-Finding
+y I-Body_Part I-Finding
+3 I-Body_Part I-Finding
 falange I-Body_Part I-Finding
 . O
 
@@ -6726,8 +6726,8 @@ SE O
 DESCARTAN O
 INFECCIONES B-Disease
 DEL I-Disease
-TRACTO I-Disease
-URINARIO I-Disease
+TRACTO B-Finding I-Disease
+URINARIO I-Disease I-Finding
 A O
 REPETICIÒN O
 , O
@@ -6740,7 +6740,7 @@ TOPICOS I-Medication
 A O
 NIVEL O
 DEL O
-PREPUCIO B-Body_Part
+PREPUCIO B-Body_Part I-Procedure
 . O
 
 Prepucio B-Body_Part B-Disease
@@ -6783,7 +6783,7 @@ diarrea B-Disease
 
 eco B-Abbreviation B-Procedure
 muestra O
-vb B-Finding B-Procedure
+vb B-Finding
 distendia I-Finding
 con I-Finding
 calculos I-Finding
@@ -6822,27 +6822,27 @@ CRONICO I-Disease
 EN O
 ESTUDIO O
 - O
-Lumbago B-Disease
-no I-Disease
+Lumbago B-Disease B-Finding
+no I-Disease I-Finding
 especificado I-Disease
 LUMBOARTROSIS B-Finding
-- I-Disease I-Finding
-SEVERA I-Disease I-Finding
-MULTISEGMENTARIA I-Disease I-Finding
+- I-Finding
+SEVERA I-Finding
+MULTISEGMENTARIA I-Finding
 - O
 Otras B-Disease
 espondilosis I-Disease
 ARTROSIS B-Disease
 LUMBAR I-Disease
 - I-Disease
-SEVERA I-Disease
-MULTISEGMENTARIA I-Disease
+SEVERA I-Disease I-Finding
+MULTISEGMENTARIA I-Disease I-Finding
 - O
 Espondilosis B-Disease
 , I-Disease
 no I-Disease
 especificada I-Disease
-DISCO B-Body_Part
+DISCO B-Body_Part I-Disease
 - I-Disease
 LUMBOARTROSIS I-Disease
 - O
@@ -6852,7 +6852,7 @@ espondilosis I-Disease
 PACTE B-Abbreviation
 QUE O
 FUE O
-OPERADA O
+OPERADA B-Procedure
 EL O
 16 O
 / O
@@ -6865,8 +6865,8 @@ PRIMERO O
 ORTEGO B-Body_Part
 IZQ B-Abbreviation I-Body_Part
 ACTUALMENTE O
-EVOLUCIONA O
-ESCORIACIONES B-Finding
+EVOLUCIONA B-Finding
+ESCORIACIONES B-Finding I-Finding
 LEVE I-Finding
 DEL I-Finding
 PIE B-Body_Part I-Finding
@@ -6875,7 +6875,7 @@ APARICION O
 DE O
 NUEVAS O
 LESIONES B-Finding
-ORTEOLITICAS O
+ORTEOLITICAS I-Finding
 MOTIVO O
 POR O
 EL O
@@ -6893,14 +6893,14 @@ CA B-Abbreviation B-Disease
 ESPINOCELULAR I-Disease
 V B-Abbreviation
 / I-Abbreviation
-S B-Disease I-Abbreviation
+S B-Disease
 BASOCELULAR I-Disease
 , O
 LESION B-Finding
 EN I-Finding
-LABUM B-Body_Part I-Finding
+LABUM I-Finding
 A I-Finding
-DERECHA I-Body_Part I-Finding
+DERECHA I-Finding
 , I-Finding
 SOBRE I-Finding
 LABIO B-Body_Part I-Finding
@@ -6918,9 +6918,9 @@ ETAPA I-Disease
 V I-Disease
 , O
 ACIDOSIS B-Disease
-METABOLICA I-Disease I-Finding
+METABOLICA I-Disease
 , O
-HIPERFOSFEMIA B-Disease
+HIPERFOSFEMIA O
 , O
 HTA B-Abbreviation B-Disease
 CRONICA I-Disease
@@ -6953,9 +6953,9 @@ MAXILAR I-Finding
 , O
 APIÑAMIENTO B-Disease B-Finding
 EN I-Finding
-SECTOR B-Body_Part I-Finding
-ANTERIOR I-Body_Part I-Finding
-MANDIBULA B-Body_Part I-Finding
+SECTOR I-Finding
+ANTERIOR I-Finding
+MANDIBULA B-Body_Part B-Finding I-Finding
 CRUZADA I-Finding
 LADO I-Finding
 DERECHO I-Finding
@@ -7000,8 +7000,8 @@ FAVOR O
 EVALUAR O
 POR O
 ESPECIALIDAD O
-PATOLOGIA O
-BUCAL O
+PATOLOGIA B-Disease
+BUCAL I-Disease
 
 - O
 DESDENTADO B-Disease
@@ -7034,7 +7034,7 @@ inferior I-Finding
 se I-Finding
 cae B-Abbreviation I-Finding
 y I-Finding
-fractura B-Disease I-Finding
+fractura I-Finding
 , O
 pcte B-Abbreviation
 la O
@@ -7079,7 +7079,7 @@ Y I-Body_Part I-Finding
 32 I-Body_Part I-Finding
 SEMIINCLUIDA I-Finding
 E I-Finding
-IMPACTADAS B-Disease I-Finding
+IMPACTADAS I-Finding
 PIEZA B-Body_Part B-Finding
 17 I-Body_Part I-Finding
 EN I-Finding
@@ -7095,7 +7095,7 @@ DE O
 8 O
 AÑOS O
 , O
-DENTICION B-Body_Part B-Finding
+DENTICION B-Finding
 MIXTA I-Finding
 . I-Finding
 1º B-Body_Part I-Finding
@@ -7103,14 +7103,14 @@ FASE I-Finding
 MORDIDA B-Finding
 INVERTIDA I-Finding
 ANTERIOR I-Finding
-NEUTRO O
+NEUTRO I-Finding
 OCLUSION B-Finding
 MOLAR I-Finding
 BILATERAL I-Finding
 
-T44 B-Disease
-. I-Disease
-8 I-Disease
+T44 B-Body_Part B-Disease
+. I-Body_Part I-Disease
+8 I-Body_Part I-Disease
 - O
 AGENTES B-Disease
 DE I-Disease
@@ -7118,22 +7118,22 @@ ACCION I-Disease
 CENTRAL I-Disease
 Y I-Disease
 BLOQUEADORES I-Disease
-NEURONALES I-Disease
+NEURONALES B-Disease
 ADRENERGICOS I-Disease
 , I-Disease
 NO I-Disease
 CLASIFICADOS I-Disease
 EN I-Disease
 OTRA I-Disease
-PARTE I-Disease
-- I-Disease O
+PARTE I-Disease O
+- O
 AGENTES B-Disease
 DE I-Disease
 ACCION I-Disease
 CENTRAL I-Disease
 Y I-Disease
 BLOQUEADORES I-Disease
-NEURONALES I-Disease
+NEURONALES B-Disease
 ADRENERGICOS I-Disease
 , I-Disease
 NO I-Disease
@@ -7152,7 +7152,7 @@ pzas B-Abbreviation B-Body_Part
 14 I-Body_Part
 y I-Body_Part
 30 I-Body_Part
-trepanadas B-Finding
+trepanadas O
 por O
 caries B-Disease B-Finding
 penetrante I-Disease I-Finding
@@ -7171,11 +7171,11 @@ atte B-Abbreviation
 PACIENTE O
 CON O
 CARIES B-Disease B-Finding
-PENETRANTE I-Disease I-Finding
-EN O
-P B-Abbreviation B-Body_Part
-# I-Body_Part
-30 I-Body_Part
+PENETRANTE I-Finding
+EN I-Finding
+P B-Body_Part I-Finding
+# I-Body_Part I-Finding
+30 I-Body_Part I-Finding
 , O
 SINTOMATICA B-Finding
 SE O
@@ -7211,7 +7211,7 @@ CRÓNICA I-Disease
 ) I-Disease
 ( I-Disease
 PERIFÉRICA I-Disease
-) I-Disease O
+) I-Disease
 - O
 TUMOR B-Disease
 BENIGNO I-Disease
@@ -7239,8 +7239,8 @@ superficiales I-Finding
 solicito O
 evaluacion O
 para O
-resolucion B-Procedure
-quirurgica I-Procedure
+resolucion O
+quirurgica O
 . O
 
 Presenta O
@@ -7263,14 +7263,14 @@ por O
 eco B-Abbreviation B-Procedure
 partes I-Procedure
 blandas I-Procedure
-impresiona I-Procedure
-lipoma B-Finding
+impresiona B-Finding
+lipoma I-Finding
 , O
 solciito O
 evaluacion O
 para O
 resulucion O
-quirurgica O
+quirurgica I-Procedure
 . O
 
 - O
@@ -7350,13 +7350,13 @@ presenta O
 retención B-Finding
 de I-Finding
 pd B-Abbreviation B-Body_Part I-Finding
-1 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-2 I-Body_Part I-Finding
-- I-Body_Part I-Finding
-2 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-2 I-Body_Part I-Finding
+1 I-Body_Part
+. I-Body_Part
+2 I-Body_Part
+- I-Body_Part
+2 I-Body_Part
+. I-Body_Part
+2 I-Body_Part
 y I-Body_Part
 de I-Body_Part
 3 I-Body_Part
@@ -7368,7 +7368,7 @@ de I-Body_Part
 2 I-Body_Part
 . O
 
-N390 B-Disease
+N390 O
 INFECCION B-Disease
 DE I-Disease
 VÍAS B-Body_Part I-Disease
@@ -7381,9 +7381,9 @@ ITU B-Abbreviation B-Disease
 UROCULTIVO B-Procedure
 POSITIVO B-Finding
 A O
-KLEBSIELLA B-Abbreviation B-Procedure
-PNEUMONIAE B-Disease B-Procedure
-BLEE I-Procedure
+KLEBSIELLA O
+PNEUMONIAE B-Disease
+BLEE O
 + B-Abbreviation
 
 - O
@@ -7404,7 +7404,7 @@ mordida B-Finding
 invertida I-Finding
 , O
 overjet B-Finding
-- B-Abbreviation I-Finding
+- I-Finding
 1 I-Finding
 mm B-Abbreviation I-Finding
 , O
@@ -7469,15 +7469,15 @@ Periodontitis B-Disease
 marginal I-Disease
 generalizada I-Disease
 con O
-historia O
-de O
-proceso O
-infeccioso O
+historia B-Finding
+de I-Finding
+proceso I-Finding
+infeccioso I-Finding
 palatino O
 bilateral O
 tratado O
 ( O
-Amoxi B-Abbreviation B-Medication
+Amoxi B-Medication
 + B-Abbreviation
 Clavulámico O
 ) O
@@ -7500,8 +7500,8 @@ DIENTES B-Body_Part B-Finding
 17 I-Body_Part I-Finding
 Y I-Body_Part I-Finding
 32 I-Body_Part I-Finding
-EN O
-EVOLUCINN B-Finding
+EN I-Finding O
+EVOLUCINN O
 EXTRANSEA O
 CON O
 MESIOANGULACINN B-Finding
@@ -7547,11 +7547,11 @@ ROTACION I-Finding
 INT B-Abbreviation I-Finding
 Y O
 EXT B-Abbreviation B-Body_Part
-CADERA I-Body_Part I-Finding
+CADERA I-Body_Part
 
 - O
-DOLOR B-Disease
-, I-Disease
+DOLOR B-Finding
+, O
 NO O
 ESPECIFICADO O
 Dolor B-Finding
@@ -7574,10 +7574,10 @@ lesiones B-Finding
 
 RX B-Abbreviation B-Procedure
 : O
-No B-Finding
-se I-Finding
-observan I-Finding
-alteraciones I-Finding
+No O
+se O
+observan O
+alteraciones O
 . O
 
 TRASTORNO B-Disease
@@ -7589,27 +7589,27 @@ HIPERACTIVIDAD B-Disease
 TTO B-Abbreviation
 . O
 
-EMOCIONAL B-Disease
-Y I-Disease
+EMOCIONAL O
+Y O
 DEL I-Disease
 COMPORTAMIENTO I-Disease
 DE I-Disease
 LA I-Disease
 INFANCIA I-Disease
 ENURESIS B-Disease
-SECUNDARIA I-Disease O
+SECUNDARIA I-Disease
 . O
 
 - O
 PACIENTE O
 PRESENTA O
-COMPRESIÓN B-Disease
-MAXILAR I-Disease
+COMPRESIÓN B-Finding
+MAXILAR I-Finding
 , O
-FALTA O
-ESPACIO O
-PARA O
-ERUPCION O
+FALTA B-Finding
+ESPACIO I-Finding
+PARA I-Finding
+ERUPCION I-Finding
 DE O
 PD B-Abbreviation B-Body_Part
 . I-Body_Part
@@ -7637,24 +7637,24 @@ GRUPO B-Body_Part I-Finding
 AUTERO I-Body_Part I-Finding
 INFERIOR I-Body_Part I-Finding
 
-ESOFAGITIS B-Finding
+ESOFAGITIS B-Disease B-Finding
 EROSIVA I-Finding
 G B-Abbreviation I-Finding
-° I-Finding
+° I-Abbreviation I-Finding
 B I-Finding
-SEGUN I-Finding
-CLASIFICACION I-Finding
+SEGUN O
+CLASIFICACION I-Finding O
 DE O
 LOS O
 ANGELES O
 - O
-GASTROPATIA B-Disease B-Finding
-CONGENITA I-Disease I-Finding
-EN I-Finding
-CUERPO B-Body_Part I-Finding
-Y I-Finding
-EROSIVA I-Finding
-ANTRAL I-Finding
+GASTROPATIA B-Disease
+CONGENITA I-Disease
+EN I-Disease
+CUERPO I-Disease
+Y I-Disease
+EROSIVA B-Body_Part I-Disease
+ANTRAL I-Body_Part I-Disease
 
 PRIMIGESTA B-Finding
 TARDIA I-Finding
@@ -7705,8 +7705,8 @@ irradiado I-Finding
 al I-Finding
 torax B-Body_Part I-Finding
 urente I-Finding
-, I-Finding
-persistente I-Finding
+, O
+persistente O
 , O
 episodios B-Finding
 nocturnos I-Finding
@@ -7792,10 +7792,10 @@ BEG B-Abbreviation B-Finding
 ASINTOMATICA B-Finding
 . O
 
-MAC B-Abbreviation B-Finding
+MAC B-Abbreviation
 : O
 SIN O
-MAC B-Abbreviation B-Finding B-Procedure
+MAC B-Abbreviation B-Procedure
 FUR B-Abbreviation
 : O
 18 O
@@ -7807,8 +7807,8 @@ DURACION O
 : O
 CON O
 REGLA B-Finding
-, O
-REGULAR B-Finding
+, I-Finding
+REGULAR I-Finding
 CANTIDAD I-Finding
 AMP B-Abbreviation B-Finding
 : O
@@ -7828,15 +7828,15 @@ TV B-Abbreviation I-Procedure
 - O
 2017 O
 : O
-IMAGEN B-Finding
-QUISTICA I-Finding
+IMAGEN O
+QUISTICA B-Disease I-Finding
 BILOBULADA I-Finding
-ANEXIAL I-Finding
-IZQUIERDA I-Finding
-PROBABLEMENTE B-Finding
+ANEXIAL I-Disease I-Finding
+IZQUIERDA I-Disease I-Finding
+PROBABLEMENTE I-Finding
 DE I-Finding
-ORIGEN I-Finding
-OVARICO I-Finding
+ORIGEN B-Disease I-Finding
+OVARICO I-Disease I-Finding
 . O
 
 SOLICITO O
@@ -7866,11 +7866,11 @@ incisiva I-Finding
 y I-Finding
 canina I-Finding
 superiores I-Finding
-por O
-VIF B-Abbreviation
+por I-Finding
+VIF B-Abbreviation I-Finding
 , O
-solicita O
-reemplazo B-Procedure
+solicita B-Procedure O
+reemplazo O
 Otras B-Disease
 afecciones I-Disease
 especificadas I-Disease
@@ -7920,7 +7920,7 @@ PERIAPICAL I-Disease
 
 - O
 DOLOR B-Finding
-AGUDO I-Finding
+AGUDO O
 / O
 - O
 INSUFICIENCIA B-Disease
@@ -7946,19 +7946,19 @@ venosa I-Disease
 profunda I-Disease
 pierna B-Body_Part I-Disease
 izquerda I-Body_Part I-Disease
-antigua I-Disease
+antigua O
 , O
 presenta O
-cuadro O
+cuadro B-Finding
 de O
-tromboflebitis B-Disease B-Finding I-Finding
-superficial I-Disease I-Finding
+tromboflebitis B-Disease I-Finding
+superficial I-Disease
 y O
 ulcera B-Disease
-venosa I-Disease I-Finding
-en I-Disease I-Finding
-esta I-Finding
-pierna B-Body_Part I-Finding
+venosa I-Disease
+en I-Disease
+esta I-Disease
+pierna B-Body_Part I-Disease
 , O
 que O
 responde O
@@ -7971,15 +7971,15 @@ medico O
 mantiene O
 intenso B-Finding
 dolor I-Finding
-claudicacion B-Finding
+claudicacion I-Finding
 a I-Finding
 la I-Finding
 marcha I-Finding
-, O
+, I-Finding
 que O
 no O
-ceden I-Finding O
-a I-Finding
+ceden O
+a O
 analgesicos B-Medication
 ( O
 tramadol B-Medication
@@ -7991,7 +7991,7 @@ cronica I-Disease
 ) I-Disease
 ( I-Disease
 periferica I-Disease
-) O
+) I-Disease
 
 DESDENTADA B-Disease
 PARCIAL I-Disease
@@ -7999,7 +7999,7 @@ SUPERIOR I-Disease
 E I-Disease
 INFERIOR I-Disease
 PORTADORA O
-PROTESIS B-Finding
+PROTESIS I-Finding
 MANDIBULAR I-Finding
 EN I-Finding
 MAL I-Finding
@@ -8019,12 +8019,12 @@ QUELOIDE I-Disease
 DEFORMIDAD B-Disease
 DE I-Disease
 DEDO B-Body_Part I-Disease
-( I-Disease
+( I-Body_Part I-Disease
 S I-Body_Part I-Disease
-) I-Body_Part I-Disease
-DE I-Body_Part I-Disease
-LA I-Body_Part I-Disease
-MANO I-Body_Part I-Disease
+) I-Disease
+DE I-Disease
+LA I-Disease
+MANO I-Disease
 / O
 - O
 Fundamento O
@@ -8051,11 +8051,11 @@ MESES O
 , O
 PRESENTA O
 CICATRIZ B-Disease
-QUELOIDEA I-Disease I-Finding
+QUELOIDEA I-Disease
 CON O
 LEVE B-Finding
 RETRACCION I-Finding
-PALMAR B-Body_Part I-Finding
+PALMAR I-Finding
 DEL I-Finding
 DEDO B-Body_Part I-Finding
 , O
@@ -8079,15 +8079,15 @@ NO O
 PRESENTA O
 ALTERACION B-Finding
 ALGUNA I-Finding
-DE O
-FUNCIONALIDAD O
+DE I-Finding
+FUNCIONALIDAD I-Finding
 REFIERE O
 QUE O
 SE O
 REALIZO O
 CIRUGIA B-Procedure
 EN O
-PABELLON O
+PABELLON B-Body_Part
 , O
 Y O
 QUE O
@@ -8097,25 +8097,25 @@ DE I-Procedure
 MANO B-Body_Part I-Procedure
 NO O
 PRESENTO O
-ALTERACION B-Finding
-TENDINEA I-Finding
-Deformidad B-Disease B-Finding
-de I-Disease I-Finding
-dedo B-Body_Part I-Disease I-Finding
-( I-Body_Part I-Disease I-Finding
-s I-Body_Part I-Disease I-Finding
-) I-Body_Part I-Disease I-Finding
-de I-Body_Part I-Disease
-la I-Body_Part I-Disease
+ALTERACION B-Disease
+TENDINEA I-Disease
+Deformidad B-Disease
+de I-Disease
+dedo B-Body_Part I-Disease
+( I-Body_Part I-Disease
+s I-Body_Part I-Disease
+) I-Disease
+de I-Disease
+la I-Disease
 mano I-Body_Part I-Disease
 
 Paciente O
 presenta O
 apiñamiento B-Finding
-grupo I-Finding
-II I-Finding
-y I-Finding
-V I-Finding
+grupo B-Body_Part I-Finding
+II I-Body_Part I-Finding
+y I-Body_Part I-Finding
+V I-Body_Part I-Finding
 mordida B-Finding
 invertida I-Finding
 simple I-Finding
@@ -8142,8 +8142,8 @@ muy O
 poco B-Finding
 reborde I-Finding
 diabetica I-Finding
-e O
-hipertemsa O
+e I-Finding
+hipertemsa I-Finding
 
 PACIENTE O
 DE O
@@ -8171,8 +8171,8 @@ TRAVES O
 DE O
 CLINICA O
 Y O
-ESTUDIO O
-TOMOGRAFICO O
+ESTUDIO B-Procedure O
+TOMOGRAFICO I-Procedure O
 . O
 
 dte B-Abbreviation B-Body_Part
@@ -8200,11 +8200,11 @@ dte B-Abbreviation B-Body_Part
 24 I-Body_Part
 . O
 
-Con O
-talla O
-en O
-p B-Abbreviation B-Body_Part
-5 I-Body_Part
+Con B-Finding
+talla I-Finding
+en I-Finding
+p B-Abbreviation B-Body_Part I-Finding
+5 I-Body_Part I-Finding
 , O
 desarrollo B-Finding
 puberal I-Finding
@@ -8230,12 +8230,12 @@ cm B-Abbreviation
 TSH B-Abbreviation B-Procedure
 N B-Abbreviation
 , O
-previa B-Procedure
+previa O
 5 O
 . O
 01 O
-Ac B-Abbreviation B-Medication B-Procedure
-antitiroídeos I-Procedure
+Ac B-Abbreviation
+antitiroídeos O
 ( O
 - B-Abbreviation
 ) O
@@ -8252,18 +8252,18 @@ meses O
 
 Talla B-Finding
 actual I-Finding
-1 I-Finding
+1 O
 , O
 44 O
 , O
-pesa B-Finding
-56 I-Finding
+pesa O
+56 O
 , O
 8 O
 Kg O
 TALLA B-Disease
-BAJA I-Disease I-Finding
-LEVE I-Disease I-Finding
+BAJA I-Disease
+LEVE I-Disease
 
 desdentada B-Disease
 parcial I-Disease
@@ -8280,7 +8280,7 @@ modificacion I-Finding
 4 I-Finding
 aracada I-Finding
 inferior I-Finding
-clase I-Finding
+clase B-Finding
 ii I-Finding
 de I-Finding
 kennedy I-Finding
@@ -8308,7 +8308,7 @@ VASCULAR I-Procedure O
 PREVIO O
 A O
 ARTROPLASTIA B-Procedure
-. O
+. I-Procedure
 SOLICITO O
 EVALUACION O
 Y O
@@ -8331,11 +8331,11 @@ P B-Body_Part
 , O
 PACIENTE O
 CON O
-SINTOMATOLOGIA B-Finding
+SINTOMATOLOGIA O
 SE O
 DEJA O
 CON O
-MEDICAMENTOS O
+MEDICAMENTOS B-Finding O
 INTRACONDUCTOS O
 MAS O
 DOBLE B-Finding
@@ -8355,26 +8355,26 @@ PRIMARIO I-Disease
 . O
 
 CON O
-HALLUX B-Body_Part B-Disease
+HALLUX B-Disease
 VALGUS I-Disease
 BILATERAL I-Disease
-DOLOROSO I-Disease
+DOLOROSO B-Finding
 . O
 
 Q279 B-Disease
 MALFORMACION B-Disease
 CONGENITA I-Disease
 DEL I-Disease
-SISTEMA I-Disease
-VASCULAR I-Disease
-PERIFERICO I-Disease
+SISTEMA B-Body_Part I-Disease
+VASCULAR I-Body_Part I-Disease
+PERIFERICO I-Body_Part I-Disease
 , I-Disease
 NO I-Disease
 ESPECIFICADA I-Disease
 MALFORMACION B-Disease
 PIERNA B-Body_Part I-Disease
 DERECHA I-Body_Part I-Disease
-VARICES I-Disease
+VARICES O
 
 - O
 MICROCEFALIA B-Disease
@@ -8386,7 +8386,7 @@ APS B-Abbreviation
 : O
 paciente O
 con O
-cc B-Abbreviation B-Disease
+cc B-Abbreviation
 33 O
 cm B-Abbreviation
 al O
@@ -8403,7 +8403,7 @@ sin O
 controles O
 . O
 
-cc B-Abbreviation
+cc B-Abbreviation B-Body_Part
 a O
 los O
 4 O
@@ -8412,8 +8412,8 @@ meses O
 , O
 5 O
 ( O
-p B-Abbreviation
-25 O
+p B-Body_Part
+25 I-Body_Part
 ) O
 , O
 sin O
@@ -8446,7 +8446,7 @@ DIAS O
 HASTA O
 SEMANAS O
 SIN O
-DIARREA B-Disease B-Finding
+DIARREA B-Finding
 PERO O
 VUELVE O
 Y O
@@ -8502,12 +8502,12 @@ PAP B-Abbreviation B-Procedure
 ATIPICO B-Finding
 Celulas B-Finding
 Atipicas I-Finding
-de I-Disease I-Finding
-Significado I-Disease I-Finding
-Indeterminado I-Disease I-Finding
-del I-Disease I-Finding
-Cuello B-Body_Part I-Disease I-Finding
-Uterino I-Body_Part I-Disease
+de I-Finding
+Significado I-Finding
+Indeterminado I-Finding
+del I-Finding
+Cuello B-Body_Part I-Finding
+Uterino I-Body_Part I-Disease I-Finding
 
 PACIENTE O
 DESDENTADA B-Disease
@@ -8599,16 +8599,16 @@ DEFINIDO I-Finding
 NO O
 HAY O
 EVIDENCIAS B-Finding
-DE I-Finding
-DERRAME B-Disease I-Finding
+DE O
+DERRAME B-Finding
 PLEURAL I-Finding
 - O
 EN O
 LOS O
 CAMPOS B-Finding
 PULMONARES I-Finding
-NO I-Finding
-SE I-Finding
+NO O
+SE B-Finding
 OBSERVAN I-Finding
 SOMBRAS I-Finding
 DE I-Finding
@@ -8622,7 +8622,7 @@ NI I-Finding
 OTRASD I-Finding
 E I-Finding
 SIGNIFICACION I-Finding
-PATOLOGICA O
+PATOLOGICA I-Finding
 ACTUAL O
 - O
 IMAGEN O
@@ -8630,13 +8630,13 @@ CARDIOVASCULAR O
 Y O
 PATRON B-Finding
 DE I-Finding
-CIRCULACION B-Body_Part I-Finding
-PULMONAR I-Body_Part I-Finding
-DENTRO I-Finding
-DE I-Finding
-LIMITES I-Finding
-RADIOLOGICOS I-Finding
-NORMALES I-Finding
+CIRCULACION I-Finding
+PULMONAR I-Finding
+DENTRO O
+DE O
+LIMITES O
+RADIOLOGICOS O
+NORMALES B-Finding
 - O
 ESQUELETO B-Finding
 TORACICO I-Finding
@@ -8673,12 +8673,12 @@ lesiones B-Finding
 de I-Finding
 apariencia I-Finding
 de I-Finding
-verruga I-Finding
+verruga B-Disease I-Finding
 en I-Finding
 region B-Body_Part I-Finding
 glutea I-Body_Part I-Finding
 , O
-pruriginosa B-Finding
+pruriginosa O
 , O
 3 O
 años O
@@ -8698,13 +8698,13 @@ viricas I-Disease
 
 ULCERA B-Disease
 DUODENAL I-Disease
-, I-Disease
+, O
 CRNNICA I-Disease
 SIN O
-HEMORRAGIA O
+HEMORRAGIA B-Disease
 NI O
-PERFORACINN B-Finding
-ULCERA B-Finding
+PERFORACINN O
+ULCERA B-Disease B-Finding
 DUODENAL I-Disease I-Finding
 CON I-Finding
 DEFORMACINN I-Finding
@@ -8719,16 +8719,16 @@ CRNNICA I-Finding
 ACTIVA I-Finding
 ANTRAL I-Finding
 CON O
-METAPLASIA B-Disease B-Finding
-INTESTINAL I-Disease I-Finding
-FOCAL I-Disease I-Finding
-Y I-Finding
-ABUNDANTE I-Finding
+METAPLASIA B-Finding
+INTESTINAL I-Finding
+FOCAL I-Finding
+Y O
+ABUNDANTE B-Finding
 . O
 
-COLONIAS B-Disease B-Finding
-DE I-Disease I-Finding
-HELICOBACTER I-Disease
+COLONIAS O
+DE O
+HELICOBACTER B-Disease
 PYLORI I-Disease
 . O
 
@@ -8762,9 +8762,9 @@ EXAMEN O
 FISICO O
 DE O
 OBSERVA O
-ESTRABISMO B-Disease B-Finding
-CONVERGENTE I-Disease I-Finding
-BILATERAL I-Disease I-Finding
+ESTRABISMO B-Disease
+CONVERGENTE I-Disease
+BILATERAL I-Disease
 EL O
 CUAL O
 SE O
@@ -8814,8 +8814,8 @@ progresivo I-Finding
 de I-Finding
 la I-Finding
 intesidad I-Finding
-del O
-cuadro O
+del I-Finding
+cuadro I-Finding
 , O
 caracterizado O
 por O
@@ -8825,7 +8825,7 @@ dolor B-Finding
 urente I-Finding
 asenecedente I-Finding
 , O
-esto B-Finding
+esto O
 aumenta I-Finding
 con I-Finding
 los I-Finding
@@ -8848,7 +8848,7 @@ que O
 se O
 detectan O
 polipos B-Disease B-Finding
-duodenales I-Finding
+duodenales I-Disease I-Finding
 . O
 
 se O
@@ -8875,12 +8875,12 @@ bocio B-Disease
 difuso I-Disease
 hta B-Abbreviation B-Disease
 compensada O
-Int B-Abbreviation B-Disease
-. I-Disease
-a I-Disease
-glucosa B-Disease I-Disease
+Int B-Abbreviation
+. I-Abbreviation
+a I-Abbreviation
+glucosa B-Disease
 en O
-ayunas I-Procedure
+ayunas O
 , O
 Nodulos B-Disease
 pulmonares I-Disease
@@ -8888,12 +8888,12 @@ en O
 estudio O
 x B-Abbreviation
 broncopulmonar O
-esofagectomia B-Procedure
+esofagectomia O
 antiaua O
-x B-Abbreviation
-ingestion B-Disease
-de I-Disease
-causticos I-Disease
+x O
+ingestion O
+de O
+causticos O
 
 paciente O
 sexo O
@@ -8902,7 +8902,7 @@ femenino O
 29 O
 aNos O
 , O
-sana B-Finding O
+sana O
 , O
 de O
 alta O
@@ -8929,18 +8929,18 @@ desdentada B-Disease
 parcial I-Disease
 inferior I-Disease
 , O
-ausencia B-Finding O
-de I-Finding O
+ausencia B-Finding
+de I-Finding
 piezas B-Body_Part I-Finding
-18 I-Body_Part
-- I-Body_Part
-19 I-Body_Part
-- I-Body_Part
-20 I-Body_Part
-- I-Body_Part
-30 I-Body_Part
-- I-Body_Part
-31 I-Body_Part
+18 I-Body_Part I-Finding
+- I-Body_Part I-Finding
+19 I-Body_Part I-Finding
+- I-Body_Part I-Finding
+20 I-Body_Part I-Finding
+- I-Body_Part I-Finding
+30 I-Body_Part I-Finding
+- I-Body_Part I-Finding
+31 I-Body_Part I-Finding
 . O
 
 G629 B-Disease
@@ -9024,21 +9024,21 @@ superficie I-Finding
 no I-Finding
 ulcerada I-Finding
 , I-Finding
-lengua B-Body_Part I-Finding
+lengua B-Body_Part
 saburral I-Finding
 . O
 
 Lengua B-Body_Part
-plegada O
+plegada I-Disease
 
-M089 O
+M089 B-Disease O
 ARTRITIS B-Disease
 JUVENIL I-Disease
 , I-Disease
 NO I-Disease
 ESPECIFICADA I-Disease
-POLICONSULTANTE B-Finding
-POR I-Finding
+POLICONSULTANTE O
+POR O
 ARTRALGIA B-Finding
 , O
 ACTUALMENTE O
@@ -9046,8 +9046,8 @@ CADERA B-Body_Part B-Finding
 DERECHA I-Body_Part I-Finding
 , O
 SIN O
-CAUSA B-Finding O
-TRAUMATOLOGICA I-Finding O
+CAUSA B-Finding
+TRAUMATOLOGICA I-Finding
 
 - O
 DEMENCIA B-Disease
@@ -9091,7 +9091,7 @@ MEMORIA I-Finding
 A I-Finding
 CORTO I-Finding
 Y O
-LARGO B-Finding
+LARGO I-Finding
 PLAZO I-Finding
 , O
 DETERIOR B-Finding
@@ -9169,10 +9169,10 @@ PRESENTA O
 AUSENCIA B-Finding
 PIEZA B-Body_Part I-Finding
 8 I-Body_Part I-Finding
-( I-Body_Part I-Finding
-1 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-1 I-Body_Part I-Finding
+( I-Body_Part
+1 I-Body_Part
+. I-Body_Part
+1 I-Body_Part
 ) O
 PROTESIS B-Procedure
 FIJA I-Procedure
@@ -9280,39 +9280,39 @@ profunda I-Disease
 diente B-Body_Part
 10 I-Body_Part
 , O
-se O
-trepana B-Procedure
+se B-Procedure
+trepana O
 y O
-se O
-deja O
-con O
-PMCLF B-Abbreviation B-Medication
+se B-Procedure
+deja I-Procedure
+con I-Procedure
+PMCLF B-Abbreviation B-Medication I-Procedure
 y O
-cemento B-Finding
-provisorio I-Procedure
+cemento O
+provisorio O
 . O
 
 No O
 se B-Finding
 logra I-Finding
 depulpar I-Finding
-completamente I-Finding
+completamente O
 , O
 ya O
 que O
 los O
-tiranervios B-Finding
-sólo I-Finding
-lograron I-Finding
-ingresar I-Finding O
+tiranervios O
+sólo O
+lograron O
+ingresar O
 al O
-tercio B-Body_Part
-cervical I-Body_Part
-- I-Body_Part
-medio I-Body_Part
-del I-Body_Part
+tercio B-Body_Part O
+cervical O
+- O
+medio O
+del O
 dient I-Body_Part
-e I-Body_Part
+e O
 . O
 
 ANEMIA B-Disease
@@ -9340,8 +9340,8 @@ FALECIDOS O
 REFIERE O
 ALTERACION B-Finding
 CRONICA I-Finding
-RITMO I-Finding
-INTESTINAL I-Disease I-Finding
+RITMO B-Finding
+INTESTINAL I-Finding
 SOLICITO O
 EVALUACION O
 POR O
@@ -9390,16 +9390,16 @@ ABDOMINAL I-Finding
 CON O
 HERNIA B-Disease B-Finding
 EPIGASTRICA I-Disease I-Finding
-+ B-Abbreviation
-- I-Abbreviation
-3 O
-CM B-Abbreviation B-Finding
++ B-Abbreviation I-Finding
+- I-Finding
+3 I-Finding
+CM B-Abbreviation I-Finding
 DIAMETRO I-Finding
 DE I-Finding
-ANILLO I-Finding
-, O
-SIN O
-SIGNOS B-Finding
+ANILLO B-Body_Part I-Finding
+, I-Finding
+SIN I-Finding
+SIGNOS I-Finding
 DE I-Finding
 COMPLICACION I-Finding
 AGUDA I-Finding
@@ -9439,34 +9439,34 @@ HACE O
 AÑOS O
 , O
 SIN O
-SINTOMAS O
-DE I-Finding O
+SINTOMAS B-Finding
+DE I-Finding
 INSUFICIENCIA B-Disease
 CARDIACA I-Disease
 , O
-ASINTOMATICO B-Finding
+ASINTOMATICO O
 DESE O
 PUNTO O
 VISTA O
-CARDIOVASCUAlr O
+CARDIOVASCUAlr I-Procedure
 , O
 ecg B-Abbreviation B-Procedure
 con O
 bloqueo B-Finding
 de I-Finding
 primer I-Finding
-grado I-Finding
+grado I-Disease I-Finding
 av B-Abbreviation I-Finding
 se O
 pesquiza O
 en O
 exmaen B-Finding
 fisico I-Finding
-soplo B-Disease B-Finding
-mitral I-Disease I-Finding
+soplo B-Disease I-Finding
+mitral I-Finding
 ii I-Finding
-/ I-Abbreviation I-Finding
-vi B-Abbreviation I-Finding
+/ I-Finding
+vi I-Finding
 , I-Finding
 sisitolico I-Finding
 , I-Finding
@@ -9490,9 +9490,9 @@ especificado I-Disease
 
 ENFERMEDAD B-Disease
 DEL I-Disease
-COLAGENO I-Disease
-- I-Disease O
-ACIETNE O
+COLAGENO B-Body_Part I-Disease
+- I-Disease
+ACIETNE I-Disease
 CON O
 DX B-Abbreviation
 DE O
@@ -9514,7 +9514,7 @@ NEGATIVOS O
 , O
 ANTECEDETNES B-Finding
 FAMILIARES I-Finding
-DE O
+DE I-Finding
 ROSACEA B-Disease
 , O
 A O
@@ -9574,7 +9574,7 @@ P B-Body_Part
 Con O
 Antecedentes O
 De O
-Tda B-Finding
+Tda B-Disease
 De O
 3 O
 Meses O
@@ -9598,8 +9598,8 @@ Y I-Disease
 DEL I-Disease
 CONDUCTO B-Body_Part I-Disease
 BILIAR I-Body_Part I-Disease
-( I-Disease O
-D37 B-Body_Part I-Disease
+( I-Disease
+D37 I-Disease
 . I-Body_Part I-Disease
 6 I-Body_Part I-Disease
 ) O
@@ -9646,7 +9646,7 @@ acné B-Disease
 juvenil I-Disease
 , O
 ansiedad B-Finding
-generalizada I-Disease
+generalizada I-Finding
 , O
 asociado O
 a O
@@ -9711,7 +9711,7 @@ INICIARÁ O
 TTO B-Abbreviation
 CON O
 EFUDIX B-Medication
-TOPICO I-Medication
+TOPICO I-Medication I-Procedure
 SOLICITO O
 EVALAUCION O
 Y O
@@ -9737,12 +9737,12 @@ DE O
 4 O
 AÑOS O
 EN O
-BCG B-Abbreviation
+BCG B-Abbreviation B-Finding
 , O
 QUE O
 PRESENTA O
-HERNIA B-Disease
-UMBILICAL I-Disease I-Finding
+HERNIA B-Disease B-Finding
+UMBILICAL I-Disease
 NO I-Disease
 COMPLICADA I-Disease I-Finding
 . O
@@ -9759,9 +9759,9 @@ AFEBREIL B-Finding
 EUPNEICO B-Finding
 HIDRATADO I-Finding
 , O
-ABDOMEN B-Body_Part B-Finding
+ABDOMEN B-Body_Part
 : O
-BDI B-Abbreviation B-Finding
+BDI B-Abbreviation
 , O
 DEFECTO B-Finding
 DE I-Finding
@@ -9769,9 +9769,9 @@ PARED B-Body_Part I-Finding
 ABDOMINAL I-Body_Part I-Finding
 EN I-Finding
 REGIÒN I-Finding
-UMBILICAL I-Body_Part I-Finding
-DE I-Finding
-1 I-Finding
+UMBILICAL I-Finding
+DE O
+1 O
 CM B-Abbreviation I-Finding
 DE I-Finding
 DIÀMETRO I-Finding
@@ -9794,12 +9794,12 @@ umbilical I-Disease
 
 FONTANELA B-Body_Part B-Finding
 ANTERIOR I-Body_Part I-Finding
-CERRADA I-Finding
+CERRADA I-Body_Part I-Finding
 , O
-FALTA B-Finding
-DEL I-Finding
-DESARROLLO I-Finding
-FISIOLOGICO I-Finding
+FALTA O
+DEL O
+DESARROLLO O
+FISIOLOGICO B-Finding
 NORMAL I-Finding
 ESPERADO B-Disease
 , I-Disease
@@ -9819,19 +9819,19 @@ APS B-Abbreviation
 F B-Abbreviation
 . O
 O O
-EVALUADO O
-POR O
-TELEMEDICINA O
+EVALUADO B-Procedure
+POR I-Procedure
+TELEMEDICINA I-Procedure
 , O
 QUE O
 INFORMA O
 : O
 " O
-RDNP B-Abbreviation
+RDNP B-Abbreviation B-Disease B-Finding
 SEVERA I-Finding
-AO B-Procedure
-DERIVAR I-Finding
-AFG B-Abbreviation I-Procedure
+AO B-Abbreviation I-Finding
+DERIVAR O
+AFG B-Abbreviation B-Procedure
 Y O
 TTO B-Abbreviation
 " O
@@ -9872,7 +9872,7 @@ eritematosas I-Finding
 , I-Finding
 maculares I-Finding
 , I-Finding
-papulares O
+papulares I-Finding
 , O
 se O
 solicita O
@@ -9883,7 +9883,7 @@ valoracion O
 OTROS B-Disease
 TIPOS I-Disease
 DE I-Disease
-HIPERPIGMENTACIÓN B-Body_Part I-Disease
+HIPERPIGMENTACIÓN I-Disease
 MELANODÉRMICA I-Disease
 / O
 - O
@@ -9900,7 +9900,7 @@ color I-Finding
 cafe I-Finding
 en I-Finding
 mejillas I-Finding
-, I-Finding
+, O
 de O
 mas O
 o O
@@ -9912,22 +9912,22 @@ de O
 evolucion O
 . O
 
-L84X B-Finding
-CALLOS B-Body_Part I-Finding
-Y I-Finding
+L84X O
+CALLOS O
+Y O
 CALLOSIDADES I-Finding
-PRESENTA O
-UNA O
-PROLONGASION B-Finding
+PRESENTA I-Finding
+UNA I-Finding
+PROLONGASION I-Finding
 EN I-Finding
 REGION B-Body_Part I-Finding
 DE I-Body_Part I-Finding
-PIE I-Body_Part I-Finding
+PIE B-Body_Part I-Body_Part I-Finding
 IZQUIERDO I-Body_Part I-Finding
 Y I-Body_Part I-Finding
 DERECHO I-Body_Part I-Finding
 1 I-Body_Part I-Finding
-METATARSIANO I-Body_Part I-Finding
+METATARSIANO I-Finding
 DESDE O
 HACE O
 MESES O
@@ -9958,12 +9958,12 @@ EQUIPO O
 , O
 YA O
 TIENE O
-PASE B-Procedure O
+PASE O
 OPERATORIO O
 POR O
-CARDIOLOGÍA B-Procedure
+CARDIOLOGÍA O
 Y O
-HEMATOLOGÍA B-Procedure
+HEMATOLOGÍA O
 PARA O
 CIRUGÍA O
 
@@ -9978,11 +9978,11 @@ CLASIFICADAS I-Disease
 EN I-Disease
 OTRA I-Disease
 PARTE I-Disease
-DISMINUCIÓN B-Disease
-DE I-Disease
-LA I-Disease
-AGUDEZA I-Disease
-VISUAL I-Disease
+DISMINUCIÓN B-Disease B-Finding
+DE I-Finding
+LA I-Disease I-Finding
+AGUDEZA I-Finding
+VISUAL I-Finding
 
 paciente O
 4 O
@@ -10010,16 +10010,16 @@ dientes B-Body_Part
 6 I-Body_Part
 . I-Body_Part
 4 I-Body_Part
-, O
-7 B-Body_Part
+, I-Body_Part
+7 I-Body_Part
 . I-Body_Part
 5 I-Body_Part
-, I-Body_Part O
-8 B-Body_Part
+, I-Body_Part
+8 I-Body_Part
 . I-Body_Part
 5 I-Body_Part
-, O
-7 B-Body_Part
+, I-Body_Part
+7 I-Body_Part
 . I-Body_Part
 4 I-Body_Part
 , I-Body_Part
@@ -10060,8 +10060,8 @@ de I-Finding
 masa I-Finding
 en I-Finding
 zona B-Body_Part I-Finding
-para I-Finding
-vertebral B-Body_Part I-Finding
+para I-Body_Part I-Finding
+vertebral I-Body_Part I-Finding
 lumbar I-Body_Part I-Finding
 derecha I-Body_Part I-Finding
 de O
@@ -10070,12 +10070,12 @@ meses O
 de O
 evolucion O
 , O
-progresiva B-Finding O
+progresiva B-Finding
 que O
 actualmente O
 le O
-produce I-Finding
-dolor I-Finding
+produce O
+dolor B-Finding
 . O
 
 se O
@@ -10094,8 +10094,8 @@ ERUPCIÓN I-Disease
 DENTARIA I-Disease
 / O
 - O
-CARIES B-Disease
-DENTAL I-Disease
+CARIES O
+DENTAL O
 / O
 - O
 Fundamento O
@@ -10108,7 +10108,7 @@ Pieza B-Body_Part B-Finding
 8 I-Body_Part I-Finding
 erupcionada I-Finding
 , O
-mesioinclinda B-Finding
+mesioinclinda O
 , O
 presenta O
 destruccion B-Finding
@@ -10116,10 +10116,10 @@ coronaria I-Finding
 . O
 
 1 O
-raiz B-Body_Part B-Finding
-con I-Finding
-leve I-Finding
-curvatura I-Finding
+raiz B-Body_Part B-Disease B-Finding
+con I-Disease I-Finding
+leve I-Disease I-Finding
+curvatura I-Disease I-Finding
 . O
 
 Alteraciones B-Disease
@@ -10137,8 +10137,8 @@ tx B-Abbreviation B-Procedure
 con O
 subluxación B-Finding
 anterior I-Finding
-de I-Finding
-cabeza B-Body_Part I-Finding
+de O
+cabeza B-Body_Part B-Finding
 humeral I-Body_Part I-Finding
 izquierda I-Body_Part I-Finding
 
@@ -10155,17 +10155,17 @@ debe O
 Traer O
 Resumen O
 De O
-Transladoinformede B-Procedure
+Transladoinformede O
 Dialisis O
 
 PZA B-Abbreviation B-Body_Part
 6 I-Body_Part
 TREPANADA B-Procedure
 , O
-PLPITI B-Procedure
+PLPITI O
 , O
 IRREVERSIBLE B-Disease
-SINTOMATIA I-Procedure
+SINTOMATIA I-Finding
 , O
 SE O
 REALIZA O
@@ -10203,7 +10203,7 @@ APS B-Abbreviation
 PACIENTE O
 EN O
 ESTUDIO B-Procedure
-DE I-Procedure O
+DE I-Procedure
 ERGE B-Disease I-Procedure
 , O
 SE O
@@ -10228,13 +10228,13 @@ ANGELES I-Finding
 HERNIA B-Disease
 HIATAL I-Disease
 , O
-GASTROPATIA B-Disease B-Finding
-EROSIVA I-Finding
-ANTRAL I-Finding
+GASTROPATIA B-Disease
+EROSIVA I-Disease
+ANTRAL I-Disease
 , O
 DUODNITIS B-Finding
 EROSIVA I-Finding
-BULBAR I-Finding
+BULBAR I-Body_Part I-Finding
 SEVERA I-Finding
 SE O
 SOLICITA O
@@ -10266,13 +10266,13 @@ periodontitis B-Disease
 crónica I-Disease
 localizada I-Disease
 , O
-acentuada O
-principalmente O
-a O
-nivel O
-de O
-primeros O
-molares B-Body_Part
+acentuada B-Finding
+principalmente I-Finding
+a I-Finding
+nivel I-Finding
+de I-Finding
+primeros I-Finding
+molares B-Body_Part I-Finding
 . O
 - O
 
@@ -10294,11 +10294,11 @@ CIRUGIA B-Procedure
 EVOLUCIONÓ I-Procedure
 CON O
 HIPOACUSIA B-Disease
-SECUNDARIA I-Disease O
+SECUNDARIA I-Disease
 A O
-OTOTOXICIDAD B-Medication
+OTOTOXICIDAD O
 POR O
-CISPLATINO B-Medication O
+CISPLATINO B-Medication
 . O
 
 SE O
@@ -10371,7 +10371,7 @@ EVC B-Disease
 ACTUALMENTE O
 EN O
 TTO B-Abbreviation
-NEUROLOGICO O
+NEUROLOGICO I-Procedure
 SE O
 SOLICTA O
 EV B-Abbreviation
@@ -10382,7 +10382,7 @@ CIRUGIA B-Procedure
 COLECISTECTOMIA B-Procedure
 
 R13X B-Finding
-DISFAGIA B-Disease B-Finding
+DISFAGIA O
 PACIENTE O
 CON O
 CONDUCTAS B-Finding
@@ -10397,8 +10397,8 @@ LOS O
 AÑOS O
 , O
 ONICOFAGIA B-Finding
-Y O
-SUCCIÓN B-Finding I-Finding
+Y I-Finding
+SUCCIÓN B-Finding
 DE I-Finding
 DEDO B-Body_Part I-Finding
 
@@ -10433,13 +10433,13 @@ TRATAMIENTO O
 EN O
 LA O
 ESPECIALIDAD O
-DE I-Procedure O
-CIRUGÍA I-Procedure
+DE O
+CIRUGÍA B-Procedure
 PARA O
 EXODONCIA B-Procedure
-DIENTE B-Body_Part I-Procedure
+DIENTE B-Body_Part
 16 I-Body_Part
-CLÍNICAMENTE O
+CLÍNICAMENTE I-Body_Part
 CON O
 CARIES B-Disease B-Finding
 PENETRANTE I-Disease I-Finding
@@ -10448,19 +10448,19 @@ PENETRANTE I-Disease I-Finding
 SE O
 ADJUNTA O
 RX B-Abbreviation B-Procedure
-DE I-Procedure O
-LA O
-PIEZA B-Body_Part
+DE I-Procedure
+LA I-Procedure
+PIEZA B-Body_Part I-Procedure
 . O
 
-PZA B-Abbreviation B-Body_Part B-Finding
-4 I-Body_Part I-Finding
-AL I-Finding
-ESTADO I-Finding
-DE I-Disease I-Finding
-RAIZ B-Body_Part I-Disease I-Finding
-FRACT I-Body_Part I-Finding
-CORONARIA I-Disease I-Finding
+PZA B-Abbreviation B-Body_Part
+4 I-Body_Part
+AL O
+ESTADO B-Disease
+DE I-Disease
+RAIZ B-Body_Part I-Disease
+FRACT I-Body_Part I-Disease
+CORONARIA I-Disease
 - O
 PACIENTE O
 RELATA O
@@ -10539,7 +10539,7 @@ intensa B-Finding
 dificultat I-Finding
 para I-Finding
 agarrar I-Finding
-objetos I-Finding
+objetos O
 . O
 
 se O
@@ -10554,10 +10554,10 @@ tunel B-Body_Part I-Disease
 carpiano I-Body_Part I-Disease
 
 AR B-Abbreviation B-Disease
-CON I-Disease
+CON O
 CIRUGIA B-Procedure
-DE I-Disease I-Procedure
-COLUMNA B-Body_Part I-Disease I-Procedure
+DE I-Procedure
+COLUMNA B-Body_Part I-Procedure
 Y O
 VEJIGA B-Body_Part B-Disease
 NEUROGENICA I-Disease
@@ -10588,26 +10588,26 @@ PACIENTE O
 2 O
 AÑOS O
 PRESENTA O
-CARIES B-Disease B-Finding
+CARIES B-Finding
 MULTIPLES I-Finding
 , O
 EN O
-ESTADO B-Disease B-Finding
-RADICULAR I-Finding
+ESTADO B-Disease
+RADICULAR I-Disease I-Finding
 PZAS B-Abbreviation B-Body_Part
-D I-Abbreviation I-Body_Part
-- I-Abbreviation
-E I-Abbreviation
-- I-Abbreviation I-Finding
-F I-Abbreviation
+D B-Abbreviation I-Body_Part
+- I-Abbreviation I-Body_Part
+E I-Abbreviation I-Body_Part
+- I-Abbreviation I-Body_Part
+F I-Abbreviation I-Body_Part
 - I-Abbreviation
 G I-Abbreviation
 Y O
 GRAN B-Finding
-DESTRUCCION I-Finding
+DESTRUCCION O
 CORONARIA I-Finding
 1º B-Body_Part
-MOLARES I-Body_Part
+MOLARES O
 TEMPORALES I-Body_Part
 . O
 
@@ -10667,7 +10667,7 @@ IC B-Abbreviation
 para O
 nuevos O
 lentes B-Finding
-opticos I-Finding
+opticos O
 Presneta O
 disminucion B-Finding
 de I-Finding
@@ -10677,15 +10677,15 @@ visual I-Finding
 sin O
 antecdentes B-Finding
 morbidos I-Finding
-previos O
-rojo B-Finding
+previos B-Finding
+rojo O
 pupilar I-Finding
-+ B-Abbreviation I-Finding
-fondo B-Procedure I-Finding
-de I-Finding
-ojo B-Body_Part I-Finding
-, I-Finding
-no I-Finding
++ B-Abbreviation
+fondo O
+de O
+ojo B-Body_Part I-Procedure
+, O
+no B-Finding
 observo I-Finding
 elementos I-Finding
 patologicos I-Finding
@@ -10701,7 +10701,7 @@ CLASIFICADAS I-Disease
 EN I-Disease
 OTRA I-Disease
 PARTE I-Disease
-lesiones B-Disease
+lesiones I-Disease
 sopechosas I-Disease
 vulva B-Body_Part I-Disease
 
@@ -10718,15 +10718,15 @@ X B-Abbreviation
 TAC B-Abbreviation B-Procedure
 - O
 SINOVITIS B-Disease B-Finding
-ACROMIO I-Disease I-Finding I-Procedure
-- O
-CLAVICULAR B-Body_Part
+ACROMIO I-Disease I-Finding
+- I-Finding
+CLAVICULAR B-Body_Part I-Finding
 IZQ B-Abbreviation I-Body_Part I-Finding
-X B-Abbreviation
+X B-Abbreviation I-Finding
 TAC B-Abbreviation B-Procedure
 - O
-OSTEOPENIA B-Finding
-DIFUSA I-Finding
+OSTEOPENIA B-Disease B-Finding
+DIFUSA I-Disease I-Finding
 X B-Abbreviation I-Finding
 TAC B-Abbreviation B-Procedure
 
@@ -10734,17 +10734,17 @@ TAC B-Abbreviation B-Procedure
 
 AGENESIA B-Disease
 PIEZA B-Body_Part
-22 O
+22 I-Body_Part
 PARESTESIA B-Finding
 6 B-Body_Part I-Finding
 . I-Body_Part I-Finding
 3 I-Body_Part I-Finding
 , O
-PIEZA B-Body_Part B-Finding
-2 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-3 I-Body_Part I-Finding
-POLITINIGIZADA I-Finding
+PIEZA B-Body_Part
+2 I-Body_Part
+. I-Body_Part
+3 I-Body_Part
+POLITINIGIZADA I-Body_Part
 . O
 
 . O
@@ -10761,8 +10761,8 @@ ENTRE O
 5 B-Body_Part
 . I-Body_Part
 2 I-Body_Part
-Y O
-1 B-Body_Part
+Y I-Body_Part
+1 I-Body_Part
 . I-Body_Part
 3 I-Body_Part
 
@@ -10784,7 +10784,7 @@ diente B-Body_Part
 12 I-Body_Part I-Finding
 , O
 con O
-reabsorción B-Finding
+reabsorción O
 asimetrica I-Finding
 
 M769 B-Disease
@@ -10795,44 +10795,44 @@ INFERIOR I-Body_Part I-Disease
 , I-Disease
 NO I-Disease
 ESPECIFICADA I-Disease
-ENTESOPATIA B-Finding
-DEGENERATIVA I-Disease I-Finding
-EN I-Finding
-LA I-Finding
-INSERCION I-Finding
-DEL I-Finding
-TENDON B-Body_Part I-Finding
-DE I-Body_Part I-Finding
-AQUILES I-Body_Part I-Finding
-IZQ B-Abbreviation I-Body_Part I-Finding
+ENTESOPATIA B-Disease B-Finding
+DEGENERATIVA I-Disease
+EN I-Disease
+LA I-Disease
+INSERCION I-Disease
+DEL I-Body_Part I-Disease
+TENDON I-Body_Part I-Disease
+DE I-Body_Part I-Disease
+AQUILES I-Body_Part I-Disease
+IZQ B-Abbreviation I-Body_Part I-Disease
 , O
 DOLOR B-Finding
 + B-Abbreviation
-+ B-Abbreviation I-Abbreviation
-A O
++ I-Abbreviation
+A I-Abbreviation
 PESAR O
 DE O
 ANALGESIA O
 , O
 CAMBIOS B-Finding
 DEGENRATIVOS I-Finding
-, I-Finding
-AHOPRA I-Finding
+, O
+AHOPRA O
 REQUIERE O
-BASTON I-Procedure
+BASTON O
 . O
 
 ADEMAS O
 RADICULOPATIA B-Disease
 L5 B-Body_Part I-Disease
-- I-Body_Part I-Disease O
-S1 I-Disease
-BILATERAL I-Disease
+- I-Body_Part I-Disease
+S1 I-Body_Part I-Disease
+BILATERAL O
 , O
 RM B-Abbreviation B-Procedure
 CLUMNA B-Finding
 DORSOLUMBAR I-Finding I-Procedure
-PENDIENTEFAVOR O
+PENDIENTEFAVOR I-Finding
 EVALUAR O
 
 - O
@@ -10884,7 +10884,7 @@ DE O
 MES O
 . O
 
-MAC B-Abbreviation B-Procedure
+MAC B-Abbreviation
 : O
 NOVAFEM B-Medication
 FUR B-Abbreviation
@@ -10903,7 +10903,7 @@ REGULAR B-Finding
 CANTIDAD I-Finding
 . O
 
-AMP B-Abbreviation
+AMP B-Abbreviation B-Finding
 : O
 N B-Abbreviation
 / I-Abbreviation
@@ -10930,14 +10930,14 @@ CUTANEAS I-Finding
 REDONDEADAS I-Finding
 APARENTES I-Finding
 A I-Finding
-HERPE B-Disease I-Finding
-GENITAL I-Finding
-EN I-Finding
-ZONA B-Body_Part I-Finding
-VULVAR I-Body_Part I-Finding
-Y I-Finding
-ANO B-Body_Part I-Finding
-PERINEAL I-Body_Part I-Finding
+HERPE B-Disease
+GENITAL I-Disease
+EN I-Disease
+ZONA B-Body_Part I-Disease
+VULVAR I-Body_Part I-Disease
+Y I-Disease
+ANO I-Disease
+PERINEAL I-Disease
 . O
 
 SE O
@@ -11030,7 +11030,7 @@ generalizado I-Finding
 en I-Finding
 miembros B-Body_Part I-Finding
 superiores I-Body_Part I-Finding
-de I-Finding
+de I-Body_Part I-Finding
 mayor I-Finding
 predominio I-Finding
 , I-Finding
@@ -11046,8 +11046,8 @@ Sd B-Abbreviation B-Disease
 . I-Disease
 tunel B-Body_Part I-Disease
 carpiano I-Body_Part I-Disease
-izqiuierdo I-Disease
-leve I-Disease
+izqiuierdo O
+leve O
 . O
 
 Paciente O
@@ -11058,7 +11058,7 @@ Amitriptilina B-Medication
 , O
 pero O
 seguimiento O
-irregular O
+irregular B-Finding
 por O
 no O
 adherencia O
@@ -11072,10 +11072,10 @@ VHS B-Abbreviation B-Procedure
 16 O
 , O
 F B-Abbreviation
-. O
-Reumatoideo B-Procedure
+. I-Abbreviation
+Reumatoideo O
 POSITIVO B-Finding
-128 B-Finding
+128 I-Finding
 . O
 
 solicito O
@@ -11125,9 +11125,9 @@ de I-Finding
 EESS B-Abbreviation B-Body_Part I-Finding
 y I-Finding
 EEII B-Abbreviation B-Body_Part I-Finding
-de O
-larga O
-data O
+de I-Finding
+larga I-Finding
+data I-Finding O
 ( O
 mas O
 de O
@@ -11148,7 +11148,7 @@ controles O
 en O
 HRC B-Abbreviation
 segun O
-registro B-Finding
+registro O
 disponible O
 en O
 rayen O
@@ -11220,7 +11220,7 @@ DENTOFACIALES I-Disease
 INCLUSO I-Disease
 LA I-Disease
 MALOCLUSIÓN I-Disease
-) I-Disease
+) O
 / O
 - O
 Fundamento O
@@ -11302,7 +11302,7 @@ NODULO B-Finding
 IRREGULARDE I-Finding
 11 I-Finding
 mm B-Abbreviation I-Finding
-, I-Finding
+, O
 HIPOECOGENICO B-Finding
 VASCULARIZADO I-Finding
 EN I-Finding
@@ -11348,7 +11348,7 @@ LA I-Finding
 BOCA B-Body_Part I-Finding
 , O
 SE O
-" B-Finding
+" O
 AHOGA I-Finding
 " I-Finding
 AL I-Finding
@@ -11356,9 +11356,9 @@ AGITARSE I-Finding
 Y O
 RONCA B-Finding
 FUERTE I-Finding
-EN I-Finding
-LAS I-Finding
-NOCHES I-Finding
+EN O
+LAS O
+NOCHES O
 . O
 
 NO O
@@ -11412,14 +11412,14 @@ FOSA B-Body_Part I-Finding
 NASAL I-Body_Part I-Finding
 IZQUIERDA I-Body_Part I-Finding
 , O
-AMIGDALA B-Body_Part B-Finding
-IZQUIERDA I-Body_Part I-Finding
+AMIGDALA B-Body_Part
+IZQUIERDA I-Body_Part
 QUE O
 LLEGA O
 A O
 LA O
-LINEA B-Finding
-MEDIA I-Finding
+LINEA O
+MEDIA O
 SIN O
 VESICULAS B-Finding
 , O
@@ -11430,8 +11430,8 @@ PURULENTAS I-Finding
 . O
 
 IMPRESIONA O
-ADENOIDES B-Body_Part B-Disease
-HIPERTROFICA I-Disease
+ADENOIDES B-Body_Part
+HIPERTROFICA O
 . O
 
 Hipertrofia B-Disease
@@ -11450,7 +11450,7 @@ antecedentes O
 de O
 cardiopatía B-Disease
 congénita I-Disease
-operada O
+operada I-Disease
 . O
 Fue O
 evaluado O
@@ -11511,7 +11511,7 @@ EN I-Finding
 BORDE B-Body_Part I-Finding
 IZQUIERDO I-Body_Part I-Finding
 EN I-Finding
-LENGUA B-Body_Part I-Finding
+LENGUA B-Body_Part I-Body_Part I-Finding
 DSDE I-Finding
 HACE O
 MAS O
@@ -11525,13 +11525,13 @@ A I-Finding
 FARINGE B-Body_Part I-Finding
 . O
 
-LA B-Finding
-ZONA I-Finding
+LA O
+ZONA O
 SE I-Finding
 APRECIA I-Finding
 ERITEMATOSA I-Finding
 SIN O
-FOCO I-Finding
+FOCO B-Finding
 PRECISO I-Finding
 
 - O
@@ -11548,7 +11548,7 @@ antecedentes B-Finding
 alergicos I-Finding
 , O
 ni O
-morbidos B-Finding O
+morbidos B-Finding
 . O
 
 Antecedentes O
@@ -11560,9 +11560,9 @@ Paciente O
 que O
 refiere O
 epigastralgia B-Finding
-de O
-larga O
-data O
+de I-Finding
+larga I-Finding
+data I-Finding
 ( O
 más O
 de O
@@ -11616,11 +11616,11 @@ anterior I-Finding
 falta B-Finding
 de I-Finding
 espacio I-Finding
-para O
-erupción O
-de O
-caninos B-Body_Part
-superiores I-Body_Part
+para I-Finding
+erupción I-Finding
+de I-Finding
+caninos B-Body_Part I-Finding
+superiores I-Body_Part I-Finding
 . O
 
 Clase B-Finding
@@ -11634,10 +11634,10 @@ envia O
 para O
 evaluacion O
 y O
-tto B-Abbreviation B-Procedure
-. I-Procedure
-de I-Procedure
-ortodoncia I-Procedure
+tto B-Abbreviation
+. O
+de O
+ortodoncia O
 
 Crisis B-Disease
 convulsiva I-Disease
@@ -11650,9 +11650,9 @@ congénito O
 hipocalemia B-Disease
 en O
 estudio O
-estenosis B-Disease
-inmuno I-Disease
-deprimida O
+estenosis B-Disease B-Finding
+inmuno I-Disease I-Finding
+deprimida I-Finding
 por O
 medicamento O
 padre B-Family_Member
@@ -11687,7 +11687,7 @@ ANT B-Abbreviation B-Finding
 . I-Finding
 MÒRBIDOS I-Finding
 DE I-Finding
-IMPORTANCIA I-Finding O
+IMPORTANCIA I-Finding
 , O
 TABAQUICO O
 DESDE O
@@ -11707,12 +11707,12 @@ ANT B-Abbreviation
 . O
 
 DE O
-TRAUMATISMO B-Finding
-ENCEFALOCRANEANO O
+TRAUMATISMO B-Disease
+ENCEFALOCRANEANO I-Disease
 HACE O
 11 O
 DIAS O
-+ B-Abbreviation O
++ O
 INTENSA B-Finding
 CONTUSIÒN I-Finding
 OCULAR I-Finding
@@ -11722,7 +11722,7 @@ REALIZÒ O
 TAC B-Abbreviation B-Procedure
 DE I-Procedure
 CEREBRO B-Body_Part I-Procedure
-Y I-Procedure
+Y O
 ORBITA B-Body_Part I-Procedure
 SIN O
 HALLAZGOS B-Finding
@@ -11734,11 +11734,11 @@ OCULAR I-Finding
 MODERADO I-Finding
 , O
 NO O
-AUMENTA B-Finding
-A I-Finding
-LOS I-Finding
-MOVIMIENTOS I-Finding
-OCULARES I-Finding
+AUMENTA O
+A O
+LOS O
+MOVIMIENTOS O
+OCULARES O
 , O
 SIN O
 PROPTOSIS B-Finding
@@ -11746,34 +11746,34 @@ PALPEBRAL I-Finding
 + B-Abbreviation
 PÈRDIDA B-Finding
 DE I-Finding
-LA I-Finding
-AGUDEZA I-Finding
-VISUAL I-Finding
-UNILATERAL I-Finding
-DERECHA I-Finding
-RECIENTE I-Finding
-POST B-Abbreviation I-Finding
+LA O
+AGUDEZA O
+VISUAL O
+UNILATERAL I-Disease
+DERECHA O
+RECIENTE O
+POST O
 - O
-TRAUMATISMO B-Finding
-ENCEFALOCRANEANO I-Finding
+TRAUMATISMO B-Disease
+ENCEFALOCRANEANO I-Disease
 HACE O
 11 O
 DIAS O
-+ B-Abbreviation
++ O
 INTENSA B-Finding
 CEFALEA B-Finding
 CRÒNICA I-Finding
-DE I-Finding
-LARGA I-Finding
-DATA I-Finding
+DE O
+LARGA O
+DATA O
 AHORA O
-AGUDIZADA B-Disease
-POST B-Abbreviation I-Disease I-Finding
+AGUDIZADA O
+POST B-Abbreviation
 - O
 TEC B-Abbreviation B-Disease
-DE I-Disease
-LOCALIZACIÒN I-Disease
-HOLOCRANEA B-Finding O
+DE O
+LOCALIZACIÒN O
+HOLOCRANEA O
 REFRACTARIA O
 A O
 TTO B-Abbreviation
@@ -11828,7 +11828,7 @@ la I-Disease
 maloclusion I-Disease
 ) I-Disease
 
-tda O
+tda B-Disease
 piezas B-Body_Part
 2 I-Body_Part
 . I-Body_Part
@@ -11837,17 +11837,17 @@ piezas B-Body_Part
 2 I-Body_Part
 . I-Body_Part
 2 I-Body_Part
-luxación O
-extrusiva B-Finding
-reducción I-Finding
-e I-Finding O
-inmovilización I-Finding
+luxación B-Disease
+extrusiva I-Disease
+reducción I-Disease
+e I-Disease
+inmovilización O
 con O
-férula B-Finding
-de I-Finding
-alambre I-Finding
-y I-Finding
-resina O
+férula O
+de O
+alambre O
+y O
+resina B-Procedure
 el O
 día O
 20 O
@@ -11871,7 +11871,7 @@ diente B-Body_Part
 5 I-Body_Part
 resto B-Disease
 radicular I-Disease
-subgingival I-Disease
+subgingival I-Finding
 , O
 con O
 2 O
@@ -11901,10 +11901,10 @@ local I-Disease
 - O
 PTERIGION B-Disease
 - O
-VARICES B-Disease B-Finding
-EN I-Finding
-OTROS I-Finding
-SITIOS I-Disease I-Finding
+VARICES B-Disease
+EN I-Disease
+OTROS I-Disease
+SITIOS I-Disease
 PCTE B-Abbreviation
 REFIERE O
 QUE O
@@ -11919,15 +11919,15 @@ VECES I-Finding
 NO I-Finding
 ESTA I-Finding
 VIENDO I-Finding
-MUY I-Finding
-BIEN I-Finding
+MUY I-Finding O
+BIEN O
 YA O
 QUE O
 SUS O
-OJOS B-Body_Part B-Finding
-PRESENTAN I-Body_Part I-Finding
-UNA I-Finding
-CARNOSIDAD I-Finding
+OJOS B-Body_Part
+PRESENTAN I-Body_Part
+UNA O
+CARNOSIDAD B-Finding
 BILATERRAL I-Finding
 PACIENTE O
 ESTA O
@@ -11964,7 +11964,7 @@ EN I-Finding
 ATM B-Abbreviation B-Body_Part I-Finding
 CIERRE I-Finding
 EN I-Finding
-S B-Abbreviation I-Finding
+S B-Body_Part I-Finding
 ITÁLICA I-Body_Part I-Finding
 SOLICITO O
 EVALUAR O
@@ -11982,9 +11982,9 @@ TTO B-Abbreviation B-Procedure
 DE I-Procedure
 ORTODONCIA I-Procedure
 POR O
-CANINOS B-Body_Part B-Disease
-SUPERIORES I-Body_Part I-Disease
-INCLUIDOS I-Disease
+CANINOS B-Body_Part B-Finding
+SUPERIORES I-Body_Part
+INCLUIDOS O
 
 Paciente O
 asintomático B-Finding
@@ -12038,10 +12038,10 @@ EN I-Disease
 OTRA I-Disease
 PARTE I-Disease
 ERITRODERMIA B-Disease
-EN I-Disease O
-ESTUDIO I-Disease
+EN O
+ESTUDIO O
 OBS B-Abbreviation
-PARANEOPLÁSICA B-Disease
+PARANEOPLÁSICA O
 
 1 O
 . O
@@ -12064,14 +12064,14 @@ alucinaciones B-Finding
 auditivas I-Finding
 y I-Finding
 visuales I-Finding
-, I-Finding
-insomnios I-Finding
+, O
+insomnios O
 , O
 problemas B-Finding
 de I-Finding
 creatividad I-Finding
-, I-Finding
-memoria I-Finding
+, O
+memoria B-Finding
 , O
 minusvalia B-Finding
 
@@ -12158,11 +12158,11 @@ Parkinson I-Disease
 PACIENTE O
 PRESENTA O
 MORDIDA B-Finding
-ABIERTA I-Finding
+ABIERTA I-Disease
 , O
-APIÑAMIETNTO B-Finding
-DENTORIO I-Finding
-INFERIOR I-Finding
+APIÑAMIETNTO O
+DENTORIO I-Body_Part
+INFERIOR I-Body_Part
 - O
 SE O
 DERIVA O
@@ -12172,10 +12172,10 @@ Y O
 TTO B-Abbreviation
 
 - O
-TRAUMATISMO B-Disease
-SEVERO I-Disease
-OJO B-Body_Part I-Disease
-IZQUIERDO I-Body_Part I-Disease
+TRAUMATISMO B-Finding
+SEVERO I-Finding
+OJO B-Body_Part I-Finding
+IZQUIERDO I-Body_Part I-Finding
 TRATADO O
 / O
 ALTA O
@@ -12254,13 +12254,13 @@ media I-Finding
 , O
 poco B-Finding
 espacio I-Finding
-para O
-erupción O
-de O
-caninos B-Body_Part
-superiores I-Body_Part
-e I-Body_Part
-inferiores I-Body_Part
+para I-Finding
+erupción I-Finding
+de I-Finding
+caninos B-Body_Part I-Finding
+superiores I-Body_Part I-Finding
+e I-Body_Part I-Finding
+inferiores I-Body_Part I-Finding
 . O
 
 Maloclusion B-Disease
@@ -12276,13 +12276,13 @@ e I-Disease
 inferior I-Disease
 con I-Disease
 alto I-Disease
-requerimiento O
+requerimiento I-Disease
 estético O
 en O
 maxilar B-Body_Part
 y O
-tonetico O
-superior O
+tonetico B-Body_Part
+superior I-Body_Part
 con O
 perdida B-Finding
 de I-Finding
@@ -12291,21 +12291,21 @@ vertical I-Finding
 . O
 
 - O
-ANOMALÍAS B-Disease B-Finding
-DE I-Finding
-LA I-Finding
-RELACIÓN I-Disease I-Finding
-ENTRE I-Finding
-LOS I-Finding
-ARCOS B-Body_Part I-Finding
-DENTARIOS I-Body_Part I-Finding
+ANOMALÍAS B-Disease
+DE I-Disease
+LA I-Disease
+RELACIÓN I-Disease
+ENTRE I-Disease
+LOS I-Disease
+ARCOS B-Body_Part I-Disease
+DENTARIOS I-Body_Part I-Disease
 / O
 - O
 Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-APIÑAMIENTO B-Finding
+APIÑAMIENTO B-Disease B-Finding
 ANTERO I-Finding
 SUPERIOR I-Finding
 E I-Finding
@@ -12313,11 +12313,11 @@ INFERIOR I-Finding
 
 Paciente O
 con O
-cancer B-Disease B-Finding
-de I-Disease I-Finding
+cancer B-Disease
+de I-Disease
 recto B-Body_Part I-Disease
-bajo I-Disease I-Finding
-st B-Abbreviation I-Finding
+bajo I-Disease
+st B-Abbreviation
 . O
 
 II O
@@ -12325,13 +12325,13 @@ recibe O
 QMT B-Abbreviation B-Procedure
 adyuvante I-Procedure
 con O
-esquema B-Procedure
-XELOX I-Procedure
+esquema O
+XELOX O
 actualmente O
 en O
-3 B-Finding
-er I-Finding
-ciclo I-Finding
+3 O
+er B-Disease
+ciclo O
 . O
 
 pero O
@@ -12340,10 +12340,10 @@ dolor B-Finding
 en I-Finding
 cadera B-Body_Part I-Finding
 izquierda I-Body_Part I-Finding
-que I-Finding
-limita I-Finding
-ca B-Abbreviation I-Finding
-marcha I-Finding
+que O
+limita O
+ca B-Abbreviation
+marcha O
 de O
 un O
 mes O
@@ -12359,37 +12359,37 @@ y O
 conducta O
 . O
 
-ENTROPION B-Body_Part B-Disease
+ENTROPION B-Disease
 Y I-Disease
-TRIQUIASIS B-Body_Part I-Disease
-PALPEBRAL I-Body_Part I-Disease
+TRIQUIASIS I-Disease
+PALPEBRAL I-Disease
 ANAMNESIS O
 : O
 hace O
 3 O
-aos B-Abbreviation B-Disease
+aos B-Disease
 presenta O
 traumatismo B-Disease
-con O
-compromiso B-Disease
-palpebral B-Body_Part I-Disease
-de O
-ojo B-Body_Part
-izquierdo I-Body_Part
+con I-Disease
+compromiso I-Disease
+palpebral I-Disease
+de I-Disease
+ojo I-Body_Part I-Disease
+izquierdo I-Body_Part I-Disease
 y O
 desde O
 netonces O
 refiere O
-triquiasis B-Finding
-que I-Finding
-le I-Finding
-produce I-Finding
-dolor I-Finding
+triquiasis O
+que O
+le O
+produce O
+dolor B-Finding
 Se O
 realiza O
 extraccion B-Procedure
-de I-Procedure
-pestanas I-Procedure
+de O
+pestanas O
 en O
 forma O
 regular O
@@ -12425,7 +12425,7 @@ PACIENTE O
 . O
 
 vertigo B-Disease
-objetivo I-Disease
+objetivo O
 desde O
 hace O
 20 O
@@ -12456,8 +12456,8 @@ sapu B-Abbreviation
 
 Nevo B-Disease B-Finding
 facial I-Finding
-supracelar B-Body_Part I-Finding
-izquierdo I-Body_Part I-Finding
+supracelar O
+izquierdo O
 con O
 crecimiento B-Finding
 en O
@@ -12503,7 +12503,7 @@ E I-Procedure
 INFERIOR I-Procedure
 , O
 REBORDE B-Body_Part B-Finding
-INFERIOR I-Finding
+INFERIOR I-Body_Part I-Finding
 DEFICIENTE I-Finding
 , O
 REABSORCION B-Finding
@@ -12520,16 +12520,16 @@ pza B-Abbreviation B-Body_Part B-Disease
 8 I-Body_Part I-Disease
 ( I-Body_Part I-Disease
 1 I-Body_Part I-Disease
-) I-Body_Part I-Disease
-, I-Body_Part I-Disease
-y I-Disease
-pza B-Abbreviation B-Body_Part I-Disease
+) I-Body_Part
+, O
+y O
+pza B-Abbreviation B-Body_Part B-Disease
 2 I-Body_Part I-Disease
 , I-Body_Part I-Disease
 8 I-Body_Part I-Disease
 ( I-Body_Part I-Disease
 16 I-Body_Part I-Disease
-) I-Body_Part I-Disease
+) I-Disease
 incluidas I-Disease
 , O
 pza B-Abbreviation B-Body_Part B-Disease
@@ -12538,7 +12538,7 @@ pza B-Abbreviation B-Body_Part B-Disease
 8 I-Body_Part I-Disease
 ( I-Body_Part I-Disease
 17 I-Body_Part I-Disease
-) I-Body_Part I-Disease
+) O
 y O
 pza B-Abbreviation B-Body_Part B-Disease
 4 I-Body_Part I-Disease
@@ -12547,8 +12547,8 @@ pza B-Abbreviation B-Body_Part B-Disease
 ( I-Body_Part I-Disease
 32 I-Body_Part I-Disease
 incluidas I-Disease
-en I-Disease
-mesiovesion I-Disease
+en O
+mesiovesion O
 , O
 examen O
 clinico O
@@ -12556,12 +12556,12 @@ clinico O
 dolor B-Finding
 a I-Finding
 nivelde I-Finding
-pza B-Abbreviation B-Body_Part I-Finding
+pza B-Abbreviation B-Body_Part
 3 I-Body_Part I-Finding
 . I-Body_Part I-Finding
-8 I-Body_Part I-Finding
-( I-Body_Part I-Finding
-32 I-Body_Part I-Finding
+8 I-Body_Part
+( I-Body_Part
+32 I-Body_Part
 ) O
 
 PACIENTE O
@@ -12576,27 +12576,27 @@ ANTERIORES I-Body_Part I-Finding
 SE O
 SOLICITA O
 LA O
-REALIZACION B-Procedure
-DE I-Procedure
-PLANO I-Procedure
+REALIZACION O
+DE O
+PLANO B-Procedure
 INTEROCLUSAL I-Procedure
 . O
 
 epistaxis B-Disease
-recurrente I-Disease
-atopico B-Disease
+recurrente O
+atopico B-Finding
 tapon B-Disease
-cerumen O
-bilateral O
+cerumen I-Finding
+bilateral I-Finding
 obs B-Abbreviation
 deficit B-Disease
-factor O
-IX O
+factor I-Disease
+IX I-Disease
 ? O
 ? O
 virosis B-Disease
-resp B-Abbreviation I-Disease
-alta O
+resp B-Abbreviation
+alta I-Finding O
 en O
 evolucion O
 
@@ -12623,10 +12623,10 @@ terceros B-Body_Part I-Finding
 molares I-Body_Part I-Finding
 impactados I-Finding
 , O
-pieza B-Body_Part B-Finding
-2 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-8 I-Body_Part I-Finding
+pieza B-Body_Part
+2 I-Body_Part
+. I-Body_Part
+8 I-Body_Part
 y I-Body_Part
 4 I-Body_Part
 . I-Body_Part
@@ -12650,7 +12650,7 @@ molares I-Body_Part
 , O
 paciente O
 con O
-apiñamiento B-Disease B-Finding
+apiñamiento B-Finding
 dentario I-Finding
 . O
 
@@ -12694,7 +12694,7 @@ HIPERTENSION B-Disease
 DIABETES B-Disease
 Y O
 OBESIDAD B-Disease
-CONTROLADAS I-Disease
+CONTROLADAS O
 . O
 
 - O
@@ -12742,21 +12742,21 @@ años O
 dolor B-Finding
 en I-Finding
 articulaciones B-Body_Part I-Finding
-de I-Finding
-las I-Finding
-manos B-Body_Part I-Finding
+de I-Body_Part I-Finding
+las I-Body_Part I-Finding
+manos B-Body_Part I-Body_Part I-Finding
 con O
 calambres B-Finding
-matutinos O
-perdida O
-de O
+matutinos I-Finding
+perdida B-Finding
+de I-Finding
 fuerza I-Finding
-murcular O
+murcular I-Finding
 y O
-exacerbado B-Finding
-por I-Finding
-el I-Finding
-frio I-Finding
+exacerbado O
+por O
+el O
+frio O
 . O
 
 REfiere O
@@ -12782,7 +12782,7 @@ indicandosele O
 realizar O
 ecotomografia B-Procedure
 de I-Procedure
-hmbro B-Body_Part I-Procedure
+hmbro I-Procedure
 y I-Procedure
 brazo B-Body_Part I-Procedure
 que O
@@ -12818,14 +12818,14 @@ mm B-Abbreviation
 
 Se O
 aprecia O
-extensa O
-coleccion B-Finding
+extensa B-Finding
+coleccion I-Finding
 hipoecogenica I-Finding
 que I-Finding
 rodea I-Finding
 al I-Finding
 tendon B-Body_Part I-Finding
-da I-Finding
+da I-Body_Part I-Finding
 la I-Finding
 porcion I-Finding
 larga I-Finding
@@ -12833,8 +12833,8 @@ del I-Finding
 buiceps I-Finding
 a I-Finding
 nivel I-Finding
-de I-Finding
-la I-Finding
+de I-Body_Part I-Finding
+la I-Body_Part I-Finding
 corredera I-Finding
 concluyendo O
 estudio O
@@ -12842,11 +12842,11 @@ con O
 dx B-Abbreviation
 de O
 desgarro B-Finding
-del I-Finding O
-SE O
+del I-Finding
+SE I-Finding
 y O
 peritendinitis B-Body_Part B-Finding
-bicipital I-Finding
+bicipital I-Body_Part I-Finding
 por O
 lo O
 que O
@@ -12882,9 +12882,9 @@ agudeza I-Finding
 Test B-Procedure
 : O
 OI B-Abbreviation B-Body_Part
-1 I-Body_Part
-/ I-Body_Part
-4 I-Body_Part
+1 O
+/ O
+4 O
 , O
 OD B-Abbreviation B-Body_Part
 : O
@@ -12910,7 +12910,7 @@ no I-Disease
 especificado I-Disease
 , I-Disease
 nivel I-Disease
-severo I-Disease O
+severo I-Disease
 Consumo B-Disease
 perjudicial I-Disease
 de I-Disease
@@ -12958,10 +12958,10 @@ leve I-Finding
 , O
 en O
 RX B-Abbreviation B-Procedure
-se O
+se B-Finding
 observa O
 en O
-furca B-Body_Part B-Finding
+furca I-Finding
 luz I-Finding
 ? O
 o O
@@ -12970,10 +12970,10 @@ de I-Finding
 furca I-Finding
 ? O
 , O
-periodontitis B-Disease B-Finding
-leve I-Finding
-al I-Finding
-sondeo I-Finding
+periodontitis B-Disease
+leve I-Disease
+al I-Disease
+sondeo I-Disease
 . O
 
 Desde O
@@ -12982,7 +12982,7 @@ muchas O
 gracias O
 
 PACIENTE O
-P B-Body_Part B-Finding
+P B-Abbreviation B-Body_Part B-Finding
 2 I-Body_Part I-Finding
 . I-Body_Part I-Finding
 5 I-Body_Part I-Finding
@@ -12999,11 +12999,11 @@ Y I-Body_Part I-Finding
 2 I-Body_Part I-Finding
 . I-Body_Part I-Finding
 6 I-Body_Part I-Finding
-DEBIDO I-Finding
-A I-Finding
-FALTA I-Finding
-DE I-Finding
-ESPACIIO I-Finding
+DEBIDO O
+A O
+FALTA O
+DE O
+ESPACIIO O
 . O
 
 K076 B-Disease
@@ -13075,19 +13075,19 @@ EXAMEN O
 : O
 PA B-Abbreviation
 : O
-153 O
+153 B-Finding
 / O
 98 O
 MMHG B-Abbreviation
 MP B-Finding
 + I-Finding
-SRA B-Abbreviation I-Finding
+SRA I-Finding
 RR2TSS B-Abbreviation B-Finding
-ABDOMEN B-Body_Part
+ABDOMEN B-Body_Part B-Finding
 : O
 BDI B-Abbreviation B-Finding
 RHA B-Abbreviation B-Finding
-+ B-Abbreviation
++ B-Abbreviation I-Finding
 SIN O
 MASAS B-Finding
 EEII B-Abbreviation B-Body_Part
@@ -13118,7 +13118,7 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-ADENOPATIA B-Disease B-Finding
+ADENOPATIA B-Finding
 SUPERFICIAL I-Finding
 DESDE O
 HACE O
@@ -13127,9 +13127,9 @@ MESES O
 , O
 MULTIPLES O
 TRATAMIENTOS O
-ANTIBIOTICOS B-Medication
+ANTIBIOTICOS B-Procedure
 DE O
-AMPLIO O
+AMPLIO I-Procedure
 ESPECTRO O
 , O
 SE O
@@ -13140,7 +13140,7 @@ OROFARINGEO I-Finding
 QUE I-Finding
 JUSTIFIQUE I-Finding
 ADENOPATIA B-Disease I-Finding
-CERVICAL I-Finding
+CERVICAL I-Disease I-Finding
 . O
 
 EL O
@@ -13152,13 +13152,13 @@ CON I-Finding
 ASPECTO I-Finding
 DE I-Finding
 GANGLIO B-Body_Part I-Finding
-SUPERFICIAL I-Finding
+SUPERFICIAL I-Body_Part I-Finding
 PROMINENTE I-Finding
 DE I-Finding
 15 I-Finding
 MM B-Abbreviation I-Finding
 X I-Finding
-16 I-Finding
+16 O
 MM B-Abbreviation I-Finding
 . O
 
@@ -13166,12 +13166,12 @@ EN O
 CADENA B-Body_Part
 CERVICAL I-Body_Part I-Finding
 POSTERIOR I-Body_Part I-Finding
-IZQUIERDA I-Body_Part I-Finding
+IZQUIERDA I-Body_Part
 AL O
-EXAMEN O
-FISICO O
-IMPRESIONA O
-DE O
+EXAMEN B-Finding
+FISICO I-Finding
+IMPRESIONA I-Finding
+DE I-Finding
 CONSISTENCIA B-Finding
 PETREA I-Finding
 , I-Finding
@@ -13184,13 +13184,13 @@ de I-Disease
 los I-Disease
 ganglios B-Body_Part I-Disease
 linfatico I-Body_Part I-Disease
-s I-Disease
+s I-Body_Part I-Disease
 
 E039 O
 HIPOTIROIDISMO B-Disease
-, O
-NO O
-ESPECIFICADO O
+, I-Disease
+NO I-Disease O
+ESPECIFICADO I-Disease O
 Paciente O
 en O
 control O
@@ -13240,11 +13240,11 @@ DE I-Disease
 LOS I-Disease
 HUESOS B-Body_Part I-Disease
 DEL I-Disease
-CRÁNEO B-Body_Part I-Disease
+CRÁNEO I-Disease
 Y I-Disease
 DE I-Disease
 LA I-Disease
-CARA B-Body_Part I-Disease
+CARA I-Disease
 / O
 - O
 Fundamento O
@@ -13260,17 +13260,17 @@ meses O
 , O
 presenta O
 fontanela B-Body_Part B-Finding
-anterior I-Finding
+anterior I-Body_Part I-Finding
 permeable I-Finding
-1 I-Finding
-dedo B-Body_Part I-Finding
+1 O
+dedo B-Body_Part
 , O
 normotensa B-Finding
 , O
 DSM B-Abbreviation B-Finding
 normal I-Finding
 , O
-PC B-Abbreviation B-Finding
+PC B-Abbreviation
 44 O
 cm B-Abbreviation
 . O
@@ -13280,7 +13280,7 @@ deriva O
 para O
 evaluación O
 por O
-cierre B-Finding O
+cierre B-Finding
 tardio I-Finding
 de I-Finding
 fontanela B-Body_Part I-Finding
@@ -13331,32 +13331,32 @@ prurito B-Finding
 , O
 dolor B-Finding
 , O
-escaso O
-sangrado B-Finding
+escaso B-Finding
+sangrado I-Finding
 ocasional I-Finding
 . O
 
 Destaca O
 lesión B-Finding
 so I-Finding
-- O
-levantada B-Finding
+- I-Finding
+levantada I-Finding
 a I-Finding
 nivel I-Finding
 temporal I-Finding
-derecha I-Finding
+derecha I-Body_Part I-Finding
 , O
 de O
 2cms B-Finding
 de I-Finding
-diámetro I-Finding
-mayor I-Finding
-, I-Finding
-con I-Finding
-superficie I-Finding
+diámetro O
+mayor O
+, O
+con O
+superficie B-Finding
 irregular I-Finding
-, I-Finding
-coloración I-Finding
+, O
+coloración B-Finding
 heterogénea I-Finding
 , I-Finding
 predominio I-Finding
@@ -13368,7 +13368,7 @@ ocre I-Finding
 Sin O
 lesiones B-Finding
 satélites I-Finding
-evidentes I-Finding
+evidentes O
 . O
 
 Se O
@@ -13457,9 +13457,9 @@ DESGASTE I-Finding
 , O
 PRESENCIA O
 DE O
-CANINOS B-Body_Part B-Finding
-CON I-Finding
-PERDIDA I-Finding
+CANINOS B-Body_Part
+CON O
+PERDIDA B-Finding
 DE I-Finding
 CUSPIDE I-Finding
 , O
@@ -13478,21 +13478,21 @@ PIEZA B-Body_Part I-Finding
 ABFRACCIONES B-Finding
 EN I-Finding
 PIEZAS B-Body_Part I-Finding
-1 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-1 I-Body_Part I-Finding
-- I-Body_Part I-Finding
-2 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-1 I-Body_Part I-Finding
+1 I-Body_Part
+. I-Body_Part
+1 I-Body_Part
+- I-Body_Part
+2 I-Body_Part
+. I-Body_Part
+1 I-Body_Part
 . O
 - O
 SE O
 SOLICITA O
 REALIZAR O
-TRATAMIENTO B-Procedure
-EN I-Procedure O
-TTM B-Abbreviation I-Procedure
+TRATAMIENTO O
+EN O
+TTM B-Abbreviation
 . O
 
 Trastornos B-Disease
@@ -13569,8 +13569,8 @@ CRONICA I-Disease
 ISQUEMIA B-Disease B-Finding
 CRITICA I-Disease I-Finding
 TALON B-Body_Part I-Disease I-Finding
-PIE I-Body_Part I-Finding
-IZQUIERDO I-Body_Part I-Finding
+PIE I-Body_Part I-Disease I-Finding
+IZQUIERDO I-Body_Part I-Disease
 . O
 
 DM B-Abbreviation B-Disease
@@ -13612,7 +13612,7 @@ EXAMEN O
 DE O
 TAC B-Abbreviation B-Procedure
 ABDOMINAL I-Procedure
-Y I-Procedure
+Y I-Procedure O
 PELVIS B-Body_Part I-Procedure
 : O
 NODULOS B-Finding
@@ -13627,7 +13627,7 @@ SE O
 SOLICITA O
 IC B-Abbreviation
 A O
-NEFROLOGIA B-Abbreviation
+NEFROLOGIA O
 . O
 
 - O
@@ -13646,7 +13646,7 @@ APS B-Abbreviation
 orden O
 de O
 exodoncia B-Procedure
-4 I-Procedure
+4 O
 . O
 8 O
 - O
@@ -13654,8 +13654,8 @@ exodoncia B-Procedure
 . O
 8semi O
 - O
-incluidaposicion B-Procedure
-vertical I-Procedure
+incluidaposicion O
+vertical O
 - O
 I O
 A O
@@ -13679,9 +13679,9 @@ evaluado O
 en O
 posta O
 de O
-inca B-Disease B-Procedure
-de I-Disease I-Procedure
-orocon I-Procedure
+inca B-Procedure
+de O
+orocon O
 antecedente O
 de O
 episodios O
@@ -13727,16 +13727,16 @@ cabeza B-Body_Part I-Finding
 y O
 que O
 ha O
-ido O
-empeorando O
+ido I-Finding
+empeorando I-Finding O
 en O
 el O
 último O
 tiempo O
 . O
 
-CAE B-Abbreviation B-Body_Part B-Finding
-indemnes I-Body_Part I-Finding
+CAE B-Abbreviation B-Body_Part
+indemnes I-Finding
 solicito O
 evaluación O
 y O
@@ -13746,9 +13746,9 @@ Tinnitus O
 PACIENTE O
 QUE O
 FUE O
-OPERADA O
+OPERADA B-Procedure O
 DE O
-CIRUGIA B-Procedure
+CIRUGIA I-Procedure
 ABIERTA I-Procedure
 POR O
 CARDIOPATIA B-Disease
@@ -13760,19 +13760,19 @@ DE I-Finding
 VOLUMEN I-Finding
 EN I-Finding
 EPIGASTRICO I-Finding
-AL I-Finding
-FILO I-Finding
+AL O
+FILO O
 DE I-Finding
 LA I-Finding
-HERNIA B-Disease I-Finding
+HERNIA B-Disease
 QUIRURGICA O
 QUE O
 LE O
 CAUSA O
 DOLOR B-Finding
-Y O
-HA O
-AUMENTADO O
+Y I-Finding
+HA I-Finding
+AUMENTADO I-Finding
 EN O
 ESTE O
 MES O
@@ -13793,8 +13793,8 @@ periodontitis B-Disease
 . O
 
 Piezas B-Body_Part B-Finding
-4 I-Body_Part
-. I-Body_Part
+4 I-Body_Part I-Finding
+. I-Body_Part I-Finding
 6 I-Body_Part I-Finding
 y I-Body_Part I-Finding
 4 I-Body_Part I-Finding
@@ -13816,8 +13816,8 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-GRAN B-Finding
-INFLAMACION I-Finding
+GRAN O
+INFLAMACION B-Finding
 GINGIVAL I-Finding
 CON I-Finding
 MÚLTIPLES I-Finding
@@ -13830,7 +13830,7 @@ PLACA I-Finding
 BACTERIANA I-Finding
 . O
 
-PAPILAS B-Body_Part
+PAPILAS B-Finding
 DENTARIAS I-Body_Part I-Finding
 INFLAMADAS O
 CON O
@@ -13860,7 +13860,7 @@ QUE O
 PACIENTE O
 SE O
 HAGA O
-DESTARTRAJE O
+DESTARTRAJE I-Procedure
 . O
 
 Periodontitis B-Disease
@@ -13883,9 +13883,9 @@ semiretenidos B-Finding
 pzas B-Abbreviation B-Body_Part I-Finding
 1 I-Body_Part
 - I-Body_Part
-16 I-Body_Part
-- I-Body_Part
-17 I-Body_Part
+16 O
+- O
+17 O
 , O
 este O
 ultima O
@@ -13894,7 +13894,7 @@ pericoronaritis B-Disease
 , O
 esta O
 con O
-antibioterapia B-Medication
+antibioterapia B-Procedure
 . O
 
 se O
@@ -13921,34 +13921,34 @@ SE O
 REALIZA O
 ENCOSCOPIA B-Procedure
 DIGESTIVA I-Procedure
-ALTA O
+ALTA I-Procedure O
 ARROJANDO O
-GASTROPATIA B-Finding
-EROSIVA I-Finding
-PROXIMAL I-Finding
-LEVE I-Finding
+GASTROPATIA B-Disease B-Finding
+EROSIVA I-Disease I-Finding
+PROXIMAL I-Disease I-Finding
+LEVE I-Disease I-Finding
 A I-Finding
 MODERADA I-Finding
-ULCERA B-Finding
-DUODENAL I-Finding
-ACTICA I-Finding
+ULCERA B-Disease B-Finding
+DUODENAL I-Disease I-Finding
+ACTICA O
 CON O
-SIGNOS B-Finding
-DE I-Finding
-SANGRADO I-Finding
+SIGNOS O
+DE O
+SANGRADO B-Finding I-Finding
 FORREST I-Finding
 II I-Finding
 B I-Finding
 SIN O
 SANGRE B-Finding
-FRESCA B-Finding
+FRESCA I-Finding
 EN I-Finding
 EED I-Finding
 . O
 
-P B-Body_Part
-. I-Body_Part
-1 I-Body_Part
+P B-Body_Part B-Finding
+. I-Body_Part I-Finding
+1 I-Body_Part I-Finding
 Y O
 P B-Body_Part B-Finding
 . I-Body_Part I-Finding
@@ -13957,7 +13957,7 @@ SEMIERUPCIONADAS I-Finding
 , O
 P B-Body_Part B-Finding
 . I-Body_Part I-Finding
-17 I-Body_Part
+17 I-Body_Part I-Finding
 Y O
 P B-Body_Part B-Finding
 . I-Body_Part I-Finding
@@ -13968,11 +13968,11 @@ BIRRADICULADAS I-Finding
 , O
 ASOCIADAS O
 A O
-CUADROS O
-DE I-Finding O
+CUADROS B-Finding
+DE I-Finding
 PERICORONARITIS B-Disease I-Finding
-A I-Finding
-REPETICION I-Finding
+A O
+REPETICION O
 . O
 
 RUEGO O
@@ -13986,12 +13986,12 @@ EXODONCIA B-Procedure
 MOLARES B-Body_Part
 . O
 
-prepucio B-Body_Part B-Disease
-redundante I-Disease
-, I-Disease
-fimosis I-Disease
-y I-Disease
-parafimosi I-Disease
+prepucio B-Body_Part B-Finding
+redundante I-Finding
+, I-Finding
+fimosis I-Finding
+y I-Finding
+parafimosi I-Finding
 , O
 paciente O
 sin O
@@ -14006,7 +14006,7 @@ niño O
 sano O
 se O
 pesquiza O
-fimosis B-Disease B-Finding
+fimosis B-Finding
 , O
 segun O
 normas O
@@ -14030,7 +14030,7 @@ MOMENTO O
 en O
 tratamiento O
 INS B-Abbreviation B-Medication
-. I-Abbreviation I-Medication
+. I-Medication
 NPH B-Abbreviation I-Medication
 : O
 40 O
@@ -14039,7 +14039,7 @@ c B-Abbreviation
 / O
 dia O
 , O
-metf B-Abbreviation B-Medication
+metf B-Medication
 850 O
 mg B-Abbreviation
 1x2 O
@@ -14052,10 +14052,10 @@ mg B-Abbreviation
 M3 B-Finding
 , O
 USUARIA O
-POST B-Abbreviation
+POST B-Abbreviation O
 . O
 
-MENOPAUSICA B-Finding
+MENOPAUSICA O
 , O
 HIPOTIROIDISMO B-Disease
 EN O
@@ -14126,16 +14126,16 @@ TEMPORO I-Body_Part I-Finding
 MANDIBULAR I-Body_Part I-Finding
 . O
 
-MORDIDA B-Disease B-Finding
-ABIERTA I-Finding
-POSTERIOR I-Finding
-BILATERAL I-Finding
+MORDIDA B-Disease
+ABIERTA I-Disease
+POSTERIOR I-Disease
+BILATERAL O
 . O
 
 TRAUMA B-Disease
 OCLUSAL I-Disease
 A I-Disease
-NIVEL B-Body_Part I-Disease
+NIVEL I-Disease
 DE I-Disease
 INCISIVAS I-Disease
 . O
@@ -14199,12 +14199,12 @@ ESPACIO O
 PARA O
 UBICACION O
 DE O
-P B-Abbreviation B-Body_Part
+P B-Body_Part
 13 I-Body_Part
 . O
 
 LEVE B-Finding
-APIÑAMIENTO B-Disease I-Finding
+APIÑAMIENTO I-Finding
 ANTERIOR I-Finding
 ( I-Finding
 SUPERIOR I-Finding
@@ -14248,9 +14248,9 @@ LA I-Body_Part I-Finding
 LENGUA I-Body_Part I-Finding
 , O
 SE O
-DIFICULTA B-Finding
-LA I-Finding
-FONACION I-Finding
+DIFICULTA O
+LA O
+FONACION O
 Y O
 DEGLUSION O
 , O
@@ -14259,7 +14259,7 @@ INTERCONSULTA O
 PARA O
 REALIZAR O
 FRENECTOMIA B-Procedure
-LINGUAL B-Body_Part
+LINGUAL I-Procedure
 POR O
 ESPECIALISTA O
 . O
@@ -14298,11 +14298,11 @@ DENTOFACIALES I-Disease
 INCLUSO I-Disease
 LA I-Disease
 MALOCLUSIÓN I-Disease
-) I-Disease O
+) I-Disease
 SE O
 ADJUNTA O
 ANEXO B-Body_Part
-4 I-Body_Part
+4 I-Body_Part O
 SE O
 SOLICITA O
 EVALUACIÓN O
@@ -14329,13 +14329,13 @@ maloclusion I-Disease
 ) I-Disease
 
 ¿ O
-Quiste B-Disease B-Finding
+Quiste B-Disease
 periodontal I-Disease
 lateral I-Disease
 en O
-D B-Body_Part I-Disease
-. I-Body_Part I-Disease
-8 I-Body_Part I-Disease
+D B-Body_Part
+. I-Body_Part
+8 I-Body_Part
 ? O
 . O
 
@@ -14353,7 +14353,7 @@ solicita O
 confirmar O
 o O
 descartar O
-vitalidad O
+vitalidad B-Disease
 de O
 d B-Body_Part
 . I-Body_Part
@@ -14386,13 +14386,13 @@ DESDE O
 LOS O
 6 O
 AÑOS O
-RONQUERA B-Finding
-NOCTURNA I-Finding
+RONQUERA O
+NOCTURNA O
 RESPIRACION B-Finding
 BUCAL I-Finding
 CONGESTION B-Finding
 NASAL I-Finding
-CRONICA I-Finding
+CRONICA O
 VOZ B-Finding
 NASAL I-Finding
 POR O
@@ -14402,8 +14402,8 @@ SE O
 INDICA O
 REALIZAR O
 RX B-Abbreviation B-Procedure
-CAVUM B-Body_Part I-Procedure
-RINOFARINGEO I-Body_Part I-Procedure
+CAVUM O
+RINOFARINGEO B-Procedure
 QUE O
 CONCLUYE O
 AUEMNTO B-Finding
@@ -14421,7 +14421,7 @@ LA I-Finding
 COLUMNA B-Body_Part I-Finding
 AEREA I-Finding
 A I-Finding
-ESE I-Finding
+ESE O
 NIVEL O
 POR O
 LO O
@@ -14459,7 +14459,7 @@ ESPECIFICADO I-Disease
 años O
 . O
 
-C B-Abbreviation B-Disease
+C B-Disease
 . I-Disease
 coronaria I-Disease
 op B-Abbreviation
@@ -14514,8 +14514,8 @@ APS B-Abbreviation
 paciente O
 con O
 AVO B-Finding
-en O
-relación O
+en I-Finding
+relación I-Finding
 a O
 diente B-Body_Part B-Finding
 3 I-Body_Part I-Finding
@@ -14566,13 +14566,13 @@ EN I-Disease
 DIAGNÓSTICO I-Disease
 POR I-Disease
 IMAGEN I-Disease
-DEL I-Disease I-Procedure
-CORAZÓN B-Body_Part I-Disease I-Procedure
-Y I-Disease I-Procedure
-DE I-Disease I-Procedure
-LA I-Disease I-Procedure
-CIRCULACIÓN I-Disease I-Procedure
-CORONARIA I-Disease I-Procedure
+DEL I-Disease
+CORAZÓN B-Body_Part I-Disease
+Y I-Disease
+DE I-Disease
+LA I-Disease
+CIRCULACIÓN I-Disease
+CORONARIA I-Disease
 / O
 - O
 Fundamento O
@@ -14593,38 +14593,38 @@ que O
 en O
 control O
 por O
-peso B-Finding O
+peso O
 se O
 descubren O
-signos B-Finding
-de I-Finding
-isquemia B-Disease I-Finding
+signos O
+de O
+isquemia B-Disease B-Finding
 miocardica I-Finding
 ? O
 se O
 realiza O
 estudio O
 de O
-perfusón B-Procedure
-miocárdica O
+perfusón O
+miocárdica B-Procedure
 con O
-sestamibi B-Finding B-Procedure
-- O
-dipiridamol B-Finding
-compatible B-Finding
-con I-Finding
-leve I-Finding
+sestamibi B-Procedure
+- I-Procedure
+dipiridamol I-Procedure
+compatible O
+con O
+leve B-Finding
 iquemia I-Finding
 apical I-Finding
 . O
 , O
 con O
 fx B-Abbreviation B-Disease
-sistólica I-Disease
-ventricular I-Disease
-izq B-Abbreviation
+sistólica B-Disease B-Finding
+ventricular I-Disease I-Finding
+izq B-Abbreviation I-Disease I-Finding
 conservada I-Finding
-algunos O
+algunos I-Finding
 sintomas I-Finding
 poco I-Finding
 claros I-Finding
@@ -14680,7 +14680,7 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-edco B-Finding
+edco B-Disease B-Finding
 tv B-Abbreviation I-Finding
 . O
 
@@ -14690,11 +14690,11 @@ obs B-Abbreviation
 . O
 
 de O
-quisteov O
-. I-Abbreviation
-izq B-Abbreviation I-Disease
+quisteov B-Abbreviation B-Disease
 . I-Disease
-simple I-Disease
+izq B-Abbreviation I-Body_Part I-Disease
+. I-Disease
+simple O
 de O
 4 O
 . O
@@ -14733,7 +14733,7 @@ APROX B-Abbreviation
 . O
 HA O
 SIDO O
-OPERADO O
+OPERADO B-Procedure O
 HACE O
 4 O
 MESES O
@@ -14742,8 +14742,8 @@ LA O
 MISMA O
 LESION O
 Y O
-RECIDIVA B-Finding
-RAPIDAMENTE I-Finding
+RECIDIVA O
+RAPIDAMENTE O
 . O
 
 NO O
@@ -14752,7 +14752,7 @@ COMPROMISO B-Finding
 GLANGLIONAR I-Finding
 NI O
 SINTOMAS B-Finding
-ASOCIADOS I-Finding
+ASOCIADOS O
 
 PG B-Abbreviation B-Finding
 , O
@@ -14762,9 +14762,9 @@ EMB B-Abbreviation B-Finding
 + O
 4 O
 SEMANAS O
-D B-Disease
-. I-Disease
-GESTACIONAL I-Disease
+D O
+. O
+GESTACIONAL O
 , O
 OBESIDAD B-Disease
 , O
@@ -14788,7 +14788,7 @@ NUTRICIONISTA O
 . O
 
 ( O
-OK B-Abbreviation
+OK B-Abbreviation B-Finding
 ) O
 
 PTOSIS B-Disease
@@ -14799,9 +14799,9 @@ CON O
 APP B-Abbreviation
 : O
 PTOSIS B-Disease
-PALPEBRAL I-Disease
+PALPEBRAL I-Disease I-Finding
 CONGENITA I-Disease
-IZQUIERDA I-Disease
+IZQUIERDA O
 SIN O
 PRESENTAR O
 LESIONES B-Finding
@@ -14826,11 +14826,11 @@ ESTETICA I-Procedure
 . O
 
 PTERIGION B-Disease
-OJO B-Body_Part B-Finding
-IZQUIERDO I-Body_Part I-Finding
-SINTOMATICO B-Finding
+OJO B-Body_Part
+IZQUIERDO I-Body_Part I-Disease
+SINTOMATICO I-Disease
 PTIRIGION B-Finding
-SINTOMATICO I-Finding
+SINTOMATICO I-Disease I-Finding
 CON O
 DOLOR B-Finding
 Y O
@@ -14856,7 +14856,7 @@ CUMPLIDA I-Finding
 DESEO O
 DE O
 ESTERILIZACION B-Procedure
-Atencion O
+Atencion B-Disease
 para O
 la O
 anticoncepcion O
@@ -14915,21 +14915,21 @@ aumentado I-Finding
 Mordida B-Finding
 abierta I-Finding
 anterior I-Finding
-diente B-Body_Part B-Finding
-2 I-Body_Part I-Finding
+diente B-Body_Part
+2 I-Body_Part
 . I-Body_Part I-Finding
 1 I-Body_Part I-Finding
-Mordida B-Finding I-Finding
-borde B-Body_Part I-Finding
-a I-Body_Part I-Finding
-borde B-Body_Part I-Finding
+Mordida I-Finding
+borde B-Body_Part
+a I-Body_Part
+borde B-Body_Part I-Body_Part I-Finding
 2 I-Body_Part I-Finding
-. I-Body_Part I-Finding
+. I-Body_Part
 2 I-Body_Part I-Finding
-con I-Finding
-3 B-Body_Part I-Body_Part I-Finding
-. I-Body_Part I-Finding
-2 I-Body_Part I-Finding
+con I-Body_Part O
+3 I-Body_Part
+. I-Body_Part
+2 I-Body_Part
 se O
 solicita O
 rehabilitacion B-Procedure
@@ -14944,12 +14944,12 @@ diente B-Body_Part I-Disease
 rotada O
 debido O
 a O
-supernumerario B-Disease
-entre O
-pieza B-Body_Part
+supernumerario B-Disease B-Finding
+entre I-Finding
+pieza B-Body_Part I-Finding
 8 I-Body_Part I-Finding
-y I-Body_Part
-9 I-Body_Part
+y I-Body_Part I-Finding
+9 I-Body_Part I-Finding
 . O
 
 El O
@@ -14959,8 +14959,8 @@ ha O
 sido O
 derivado O
 a O
-cirugia B-Procedure
-bucal I-Procedure
+cirugia B-Procedure O
+bucal O
 
 - O
 MIGRAÑA B-Disease
@@ -14974,13 +14974,13 @@ Paciente O
 con O
 antecdente O
 de O
-migraña B-Disease B-Finding
-sin O
-aura B-Finding
+migraña B-Finding
+sin I-Finding
+aura I-Finding
 , O
-vicio B-Disease
-de I-Disease
-refraccion I-Disease
+vicio B-Finding
+de I-Finding
+refraccion I-Finding
 , O
 desde O
 el O
@@ -14994,11 +14994,11 @@ aumento B-Finding
 en I-Finding
 la I-Finding
 frecuencia I-Finding
-e O
-intensidad O
+e I-Finding
+intensidad I-Finding
 de O
 crisis O
-migrañosas O
+migrañosas I-Finding
 . O
 
 Asociadas B-Finding
@@ -15031,14 +15031,14 @@ paracetamol B-Medication
 , O
 opioides B-Medication
 y O
-triptanes B-Medication
+triptanes O
 . O
 
 Sin O
 uso O
 de O
 terapia B-Procedure
-de I-Procedure
+de O
 mantenimiento I-Procedure
 . O
 
@@ -15050,7 +15050,7 @@ buenas O
 condiciones O
 generales O
 , O
-eupneica B-Finding
+eupneica O
 afebril B-Finding
 , O
 pares B-Finding
@@ -15062,7 +15062,7 @@ marcha B-Finding
 simetrica I-Finding
 , O
 romberg B-Finding
-- O
+- B-Abbreviation
 , O
 funciones B-Finding
 corticales B-Body_Part I-Finding
@@ -15084,9 +15084,9 @@ Sin O
 signos B-Finding
 de I-Finding
 HTEC I-Finding
-en I-Finding
+en O
 fondo B-Procedure I-Finding
-de I-Finding I-Procedure
+de I-Procedure
 ojo B-Body_Part I-Procedure
 . O
 
@@ -15126,17 +15126,17 @@ APS B-Abbreviation
 : O
 PACIENTE O
 SUFRE O
-CAIDA O
+CAIDA B-Disease O
 CON O
-CONTUSION B-Disease B-Finding
+CONTUSION B-Disease
 CERVICAL I-Disease
 HACE O
 DOS O
 SEMANAS O
 , O
 SIN O
-FALLA B-Disease B-Finding
-MOTORA I-Disease
+FALLA O
+MOTORA I-Finding
 NI O
 SENSITIVA B-Finding
 , O
@@ -15157,8 +15157,8 @@ INDICA O
 Rx B-Abbreviation B-Procedure
 COLLAR I-Procedure
 BLANDO I-Procedure
-Y I-Procedure
-REPOSO I-Procedure
+Y O
+REPOSO O
 EN O
 SU O
 CASA O
@@ -15238,8 +15238,8 @@ ABSCESO B-Disease
 DENTO I-Disease
 ALVEOLAR I-Disease
 CRONICO I-Disease
-PIEZA B-Body_Part
-TREPANADA B-Procedure
+PIEZA B-Body_Part B-Finding
+TREPANADA O
 ( O
 NO O
 HAY O
@@ -15287,7 +15287,7 @@ APS B-Abbreviation
 : O
 MULTIPARA B-Finding
 DE I-Finding
-3 I-Finding
+3 O
 PARIDAD B-Finding
 CUMPLIDA I-Finding
 , O
@@ -15306,20 +15306,20 @@ pulpar I-Disease
 
 Se O
 realiza O
-trepan B-Procedure O
+trepan B-Procedure
 a O
 ción O
 , O
 irrigación O
 suero B-Medication
-fisiológico O
+fisiológico I-Medication O
 , O
 medicación O
 PMCFA B-Abbreviation B-Medication
 y O
-obturación B-Procedure
-con I-Procedure
-VI B-Abbreviation I-Procedure
+obturación O
+con O
+VI B-Abbreviation
 . O
 
 - O
@@ -15346,10 +15346,10 @@ dolor B-Finding
 a I-Finding
 la I-Finding
 percucion I-Finding
-y O
-alos B-Finding
+y I-Finding
+alos I-Finding
 cambiode I-Finding
-d B-Abbreviation
+d I-Finding
 temperatura O
 . O
 . O
@@ -15379,9 +15379,9 @@ Clínico O
 APS B-Abbreviation
 : O
 Paciente O
-hipertensa B-Disease O
+hipertensa O
 y O
-diabetica B-Disease O
+diabetica B-Disease
 . O
 
 Desdentada B-Disease
@@ -15430,16 +15430,16 @@ ecografista O
 
 Segun O
 informe O
-quiste B-Disease B-Finding
-hepatico I-Disease I-Finding
-simple I-Disease I-Finding
+quiste O
+hepatico O
+simple I-Finding
 , O
-colecistolitiasis B-Disease
+colecistolitiasis B-Disease B-Finding
 , O
 ateromatosis B-Finding
 de I-Finding
 aorta B-Body_Part I-Finding
-abdominal I-Body_Part I-Disease I-Finding
+abdominal I-Body_Part I-Finding
 Colelitiasis B-Disease
 
 - O
@@ -15495,7 +15495,7 @@ MOVILIDAD B-Finding
 G3 I-Finding
 POSIBLIDAD O
 DE O
-EXTRACCIÓN B-Procedure
+EXTRACCIÓN O
 PACIENTE O
 CON O
 OSTEOPOROSIS B-Disease
@@ -15504,7 +15504,7 @@ FIBROMIALGIA B-Disease
 NO O
 RECUERDA O
 QUE O
-FCOS B-Abbreviation B-Finding
+FCOS B-Abbreviation
 USA O
 HABITUALMENTE O
 . O
@@ -15553,7 +15553,7 @@ examen O
 fìsico O
 se O
 visualiza O
-hipertrofia B-Disease B-Finding
+hipertrofia B-Disease
 amigdalina I-Disease I-Finding
 
 - O
@@ -15561,7 +15561,7 @@ ATROFIA B-Disease
 DEL I-Disease
 TESTÍCULO B-Body_Part I-Disease
 - O
-TESTÍCULO B-Body_Part I-Disease
+TESTÍCULO B-Body_Part B-Disease
 NO I-Disease
 DESCENDIDO I-Disease
 PCT B-Abbreviation
@@ -15718,9 +15718,9 @@ DE O
 RETRASO B-Disease
 , O
 NIEGA O
-SIGNOS B-Finding
-DE I-Finding
-ALARMA I-Finding
+SIGNOS O
+DE O
+ALARMA O
 . O
 
 AL O
@@ -15730,22 +15730,22 @@ ORIENTADO B-Finding
 CLOTE B-Abbreviation B-Finding
 , O
 GLASGOW B-Finding
-14 I-Finding
+14 O
 , O
-ATINGENTE B-Finding
-A I-Finding
-MEDIO I-Finding
+ATINGENTE O
+A O
+MEDIO O
 , O
 DICE O
 SOLO O
 MONOSILABOS O
 , O
-AFASICO B-Finding
+AFASICO O
 CON O
 MOVIMIENTO B-Finding
 INVOLUNTARIO I-Finding
 HEMIFACIAL B-Body_Part I-Finding
-DERECHO I-Finding
+DERECHO I-Body_Part I-Finding
 , O
 SIN O
 PARESIA B-Finding
@@ -15761,7 +15761,7 @@ SIN O
 DISDIADOCINESIA B-Finding
 , O
 ROMBERG B-Finding
-- I-Finding
+- B-Abbreviation I-Finding
 , O
 BABINSKY B-Finding
 - O
@@ -15796,9 +15796,9 @@ REUMATOLOGIA O
 PARA O
 SOLICITUD O
 DE O
-EXAMENES B-Procedure O
-DE I-Procedure O
-LABORATORIO O
+EXAMENES B-Procedure
+DE I-Procedure
+LABORATORIO I-Procedure
 ESPECIFICOS O
 . O
 
@@ -15807,7 +15807,7 @@ DENTICION B-Body_Part B-Finding
 PERMANENTE I-Finding
 CON O
 ADM B-Abbreviation B-Disease
-ERUPCION I-Disease
+ERUPCION I-Finding
 RESTRIBULAR O
 ALTA O
 DE O
@@ -15820,7 +15820,7 @@ PIEZA B-Body_Part
 . I-Body_Part
 3 I-Body_Part
 CON O
-APIÑAMIENTO B-Finding
+APIÑAMIENTO B-Disease B-Finding
 DENTARIO I-Finding
 SUPERIOR I-Finding
 E I-Finding
@@ -15846,7 +15846,7 @@ sin O
 anatcedentes B-Finding
 previos I-Finding
 , O
-rnt B-Abbreviation B-Finding
+rnt O
 38 O
 semanas O
 , O
@@ -15866,7 +15866,7 @@ temblor B-Finding
 de I-Finding
 ambas I-Finding
 manos B-Body_Part I-Finding
-muy I-Finding
+muy O
 rapido O
 que O
 se O
@@ -15900,10 +15900,10 @@ generalizado I-Finding
 de I-Finding
 todo I-Finding
 el I-Finding
-cuerpo I-Finding
-y O
+cuerpo B-Body_Part I-Finding
+y I-Finding
 que O
-se O
+se B-Finding
 pone I-Finding
 rigido I-Finding
 y O
@@ -15914,7 +15914,7 @@ blancos O
 , O
 sin O
 hacer O
-sonidos O
+sonidos I-Finding O
 , O
 de O
 segundos O
@@ -15941,12 +15941,12 @@ dias O
 . O
 
 anatcedentes O
-familiares B-Family_Member O
+familiares O
 : O
 padre B-Family_Member
 con O
-trastorno B-Disease
-ansioso I-Disease O
+trastorno B-Disease O
+ansioso O
 . O
 
 al O
@@ -15959,8 +15959,8 @@ PC B-Abbreviation B-Finding
 39 O
 cm B-Abbreviation
 , O
-fontanela B-Body_Part B-Finding
-baierta I-Finding
+fontanela B-Body_Part
+baierta I-Body_Part
 3 O
 cm B-Abbreviation
 normotensa B-Finding
@@ -15993,13 +15993,13 @@ PIEZA B-Body_Part
 . O
 
 PIEZA B-Body_Part
-TREPANADA B-Procedure
+TREPANADA O
 ( O
 ANATOMIA B-Finding
 APTA I-Finding
-PARA I-Finding
-REALIZAR I-Finding
-ENDODONCIA I-Procedure
+PARA O
+REALIZAR O
+ENDODONCIA O
 ) O
 
 - O
@@ -16038,8 +16038,8 @@ POR O
 SISTEMA O
 PUBLICO O
 PARA O
-RESOLUCION O
-QUIRURGICA O
+RESOLUCION B-Procedure O
+QUIRURGICA I-Procedure
 . O
 
 SE O
@@ -16067,16 +16067,16 @@ BLEFAROSPASMO B-Disease
 , O
 USUARIA O
 DE O
-TOXINA B-Medication
+TOXINA O
 BOTULINICA O
 , O
 REFIERE O
 OJO B-Body_Part B-Finding
 SECO I-Finding
-+ B-Abbreviation I-Finding
-OTROS O
-SINTOMAS I-Finding
-SICA I-Disease I-Finding
++ B-Abbreviation
+OTROS B-Disease
+SINTOMAS I-Disease
+SICA I-Disease
 SIN O
 ESTUDIO O
 
@@ -16105,18 +16105,18 @@ PIEZA B-Body_Part
 1 I-Body_Part
 . I-Body_Part
 2 I-Body_Part
-TREPANADA O
+TREPANADA B-Procedure
 POR O
-CARIES B-Disease B-Finding
-PENETRANTE I-Disease I-Finding
+CARIES B-Finding
+PENETRANTE I-Finding
 CON O
 PREVIA O
 SINTOMATOLOGIA B-Finding
 DOLOROSA I-Finding
 COMPATIBLE O
 CON O
-PULPITIS B-Finding
-REVERSIBLE I-Finding
+PULPITIS B-Disease B-Finding
+REVERSIBLE I-Disease I-Finding
 
 HEMORRAGIA B-Disease
 DEL I-Disease
@@ -16157,10 +16157,10 @@ BIRADICULAR O
 CON O
 LEVE O
 DIALERACION I-Finding
-DISTAL I-Finding O
+DISTAL O
 , O
 CON O
-CERAMICA O
+CERAMICA B-Procedure
 AL O
 CANAL B-Body_Part
 MANDIBULAR I-Body_Part
@@ -16202,7 +16202,7 @@ y I-Body_Part I-Finding
 . I-Body_Part I-Finding
 8 I-Body_Part I-Finding
 semierupcionados I-Finding
-e O
+e I-Finding
 impactados I-Finding
 en O
 segundos O
@@ -16237,10 +16237,10 @@ hace O
 6 O
 meses O
 post B-Abbreviation
-no O
-utilzacion O
-de O
-lentes B-Finding
+no I-Finding
+utilzacion I-Finding
+de I-Finding
+lentes I-Finding
 opticos I-Finding
 prescripto O
 por O
@@ -16268,23 +16268,23 @@ leve I-Finding
 bilateral I-Finding
 . O
 
-Fascitis B-Disease
-plantar I-Disease
-bilateral I-Disease
-leve O
+Fascitis B-Body_Part B-Disease B-Finding
+plantar I-Body_Part I-Disease I-Finding
+bilateral I-Disease I-Finding
+leve I-Finding
 izq B-Abbreviation I-Finding
 y O
 leve B-Finding
 a I-Finding
 modereda I-Finding
-der B-Abbreviation
+der B-Abbreviation I-Finding
 . O
 
 Hipotiroidismo B-Disease
 . O
 
 Pre O
-Dm2 O
+Dm2 B-Abbreviation B-Disease
 . O
 
 - O
@@ -16304,10 +16304,10 @@ en I-Finding
 zona B-Body_Part I-Finding
 maxilar I-Body_Part I-Finding
 derecha I-Body_Part I-Finding
-, O
-actualmente O
-sin O
-inflamacion B-Finding
+, I-Finding
+actualmente I-Finding
+sin I-Finding
+inflamacion I-Finding
 , O
 desdentada B-Disease
 total I-Disease
@@ -16329,20 +16329,20 @@ le O
 realizaron O
 TAC B-Abbreviation B-Procedure
 de I-Procedure
-maxilar B-Body_Part I-Procedure
+maxilar I-Procedure
 , O
 sin O
-patologia O
+patologia B-Finding
 , O
 señala O
 que O
 las O
 protesis B-Finding
-que I-Finding
+que O
 usa I-Finding
-le I-Finding
-provocan I-Finding
-dolor I-Finding
+le O
+provocan O
+dolor B-Finding
 . O
 
 Se O
@@ -16354,8 +16354,8 @@ removible I-Procedure
 
 F981 B-Disease
 ENCOPRESIS B-Disease
-NO O
-ORGANICA B-Disease
+NO I-Disease
+ORGANICA I-Disease
 PACIENTE O
 ACTUALMENTE O
 EN O
@@ -16383,7 +16383,7 @@ MIOPIA B-Disease
 REQUIERE O
 CAMBIO O
 DE O
-LENTES B-Procedure
+LENTES O
 PORQUE O
 YA O
 NO O
@@ -16411,7 +16411,7 @@ POSICIÓN I-Disease
 DEL I-Disease
 DIENTE B-Body_Part I-Disease
 PIEZA B-Body_Part B-Finding
-# I-Body_Part I-Finding
+# I-Body_Part
 3 I-Body_Part I-Finding
 . I-Body_Part I-Finding
 8 I-Body_Part I-Finding
@@ -16448,7 +16448,7 @@ DOLOR B-Finding
 cardiopatia B-Disease
 coronaria I-Disease
 sin O
-antecedentes B-Finding
+antecedentes O
 morbisos O
 alergia B-Finding
 pnc O
@@ -16456,10 +16456,10 @@ dolor B-Finding
 iniciado I-Finding
 a I-Finding
 dorso B-Body_Part I-Finding
-nintensidad I-Body_Part I-Finding
-de I-Body_Part I-Finding
-6710 I-Body_Part I-Finding
-permanente I-Finding
+nintensidad O
+de O
+6710 O
+permanente O
 
 - O
 NO O
@@ -16482,27 +16482,27 @@ AÑOS O
 CON O
 DG B-Abbreviation
 DE O
-HERNIA B-Disease
-HIATAL I-Disease
-DE O
-LARGA O
-DATA O
+HERNIA B-Disease B-Finding
+HIATAL I-Disease I-Finding
+DE I-Finding
+LARGA I-Finding
+DATA I-Finding
 EN O
-TTO B-Abbreviation
-CON O
+TTO B-Abbreviation B-Procedure
+CON I-Procedure
 IBP B-Abbreviation B-Medication
 , O
 CONSULTA O
 POR O
 PERISTENCIA O
 DE O
-SINTOMATOLOGIA O
+SINTOMATOLOGIA B-Finding
 E O
-INTENSIFICACION O
+INTENSIFICACION B-Finding
 DEL I-Finding
-REFLUJO O
+REFLUJO I-Finding
 
-G478 B-Disease O
+G478 B-Disease
 OTROS B-Disease
 TRASTORNOS I-Disease
 DEL I-Disease
@@ -16513,7 +16513,7 @@ ANTEC B-Abbreviation B-Finding
 MÉDICOS I-Finding
 RELEVANTES O
 RESPIRADORA B-Finding
-BUCAL O
+BUCAL I-Finding
 OCASIONAL O
 MADRE B-Family_Member
 REFIERE O
@@ -16521,11 +16521,11 @@ QUE O
 DURANTE O
 LA O
 NOCHE O
-RONCA I-Finding
+RONCA B-Finding
 , O
 CON O
 EPISODIOS B-Finding
-DE I-Finding O
+DE I-Finding
 APNEA I-Finding
 , O
 BRUXISMO B-Disease
@@ -16560,7 +16560,7 @@ sem B-Abbreviation
 , O
 PTV B-Abbreviation B-Procedure
 sin O
-complicaciones B-Disease
+complicaciones O
 - O
 hospitalizaciones O
 no O
@@ -16582,7 +16582,7 @@ los O
 4 O
 meses O
 , O
-madre B-Family_Member
+madre B-Family_Member B-Finding
 fuera I-Finding
 de I-Finding
 la I-Finding
@@ -16593,10 +16593,10 @@ los I-Finding
 m B-Abbreviation I-Finding
 ) O
 - O
-angulo B-Finding
-acetabular I-Finding
+angulo B-Body_Part B-Finding
+acetabular I-Body_Part I-Finding
 Dº B-Abbreviation I-Finding
-32 I-Finding
+32 B-Body_Part B-Finding I-Finding
 º I-Finding
 izquierdo I-Finding
 28 I-Finding
@@ -16607,8 +16607,8 @@ cotiloideas I-Body_Part I-Finding
 bien I-Finding
 formadas I-Finding
 fosetas B-Body_Part I-Finding
-de I-Body_Part I-Finding
-impactacion I-Body_Part I-Finding
+de I-Finding
+impactacion I-Finding
 impresionan I-Finding
 centradas I-Finding
 . O
@@ -16617,9 +16617,9 @@ nucleos B-Finding
 osificacion I-Finding
 femoral B-Body_Part I-Finding
 aun I-Finding
-ausentes B-Finding
-- I-Finding
-impresiona I-Finding
+ausentes I-Finding
+- O
+impresiona B-Finding
 arco I-Finding
 de I-Finding
 Shenton I-Finding
@@ -16660,7 +16660,7 @@ discrepancia B-Finding
 dentomandibular I-Finding
 negativa I-Finding
 con I-Finding
-apiñamiento B-Disease I-Finding
+apiñamiento I-Finding
 . O
 
 Anomalias B-Disease
@@ -16688,15 +16688,15 @@ mandibular I-Disease
 Maxilar B-Body_Part B-Finding
 II I-Body_Part I-Finding
 . I-Finding
-1 O
-Kennedy B-Finding
-Mandibula B-Body_Part I-Finding
+1 I-Finding
+Kennedy B-Finding I-Finding
+Mandibula B-Body_Part
 I I-Finding
 . I-Finding
 1 I-Finding
-Kennedy B-Finding I-Finding
-IC B-Abbreviation I-Finding
-a I-Finding
+Kennedy I-Finding
+IC B-Abbreviation
+a O
 rehabilitacion O
 Otras B-Disease
 afecciones I-Disease
@@ -16712,7 +16712,7 @@ de I-Disease
 sosten I-Disease
 
 LUXACION B-Disease
-, O
+, I-Disease
 ESQUINCE I-Disease
 Y I-Disease
 DESGARRO I-Disease
@@ -16724,7 +16724,7 @@ DEL I-Body_Part I-Disease
 TOBILLO I-Body_Part I-Disease
 Y I-Disease
 DEL I-Disease
-PIEL B-Body_Part I-Disease
+PIEL I-Body_Part I-Disease
 , O
 FRACTURA B-Disease
 DE I-Disease
@@ -16736,12 +16736,12 @@ NO I-Disease
 ESPECIFICADO I-Disease
 
 J351 B-Disease
-HIPERTROFIA I-Disease
+HIPERTROFIA B-Disease
 DE I-Disease
 LAS I-Disease
 AMIGDALAS B-Body_Part I-Disease
 AMÍGDALAS I-Body_Part I-Disease
-GRADO I-Body_Part I-Disease
+GRADO I-Disease
 3 I-Disease
 . O
 
@@ -16758,13 +16758,13 @@ APNEAS B-Finding
 
 ICC B-Abbreviation B-Disease
 COMPENSADA O
-CAMB O
+CAMB B-Finding
 IOS B-Finding
 INESPECIFICOS I-Finding
 DEL I-Finding
 ST I-Finding
 , O
-PROGRESIVOS B-Finding
+PROGRESIVOS O
 DESDE O
 EL O
 2012 O
@@ -16772,18 +16772,18 @@ EL O
 ENFERMEDAD B-Disease
 OBSTRUCTIVA I-Disease
 CORONARIA I-Disease
-) O
-ANGINE B-Disease B-Finding
-MESENTERICA I-Disease I-Finding
+) I-Disease
+ANGINE B-Disease
+MESENTERICA I-Disease
 DURANTE O
 ACTIVIDAD B-Finding
 FISICA I-Finding
 
 MIOMA B-Disease B-Finding
-SOSPECHOSO I-Disease I-Finding
+SOSPECHOSO I-Finding
 DE I-Finding
 CUELLO B-Body_Part I-Finding
-POSTERIOR I-Body_Part
+POSTERIOR I-Body_Part I-Finding
 , O
 ECO B-Abbreviation B-Procedure
 19 O
@@ -16791,13 +16791,13 @@ ECO B-Abbreviation B-Procedure
 11 O
 - O
 15 O
-MIOMA B-Disease B-Finding
+MIOMA B-Finding
 SOSPECHOSO I-Finding
-DE I-Finding O
+DE I-Finding
 C B-Abbreviation I-Finding
 . I-Abbreviation I-Finding
 POSTERIOR I-Finding
-TV B-Abbreviation
+TV B-Abbreviation I-Finding
 DE O
 57 O
 * O
@@ -16829,7 +16829,7 @@ y O
 EMG B-Abbreviation B-Procedure
 sin O
 indicación O
-qx B-Abbreviation
+qx B-Abbreviation B-Procedure
 actual O
 . O
 
@@ -16892,7 +16892,7 @@ sugerente O
 de O
 isquemia B-Finding
 corovaria I-Finding
-y I-Finding
+y O
 Ecocardiograma B-Procedure
 con O
 disfuncion B-Finding
@@ -16943,23 +16943,23 @@ P B-Body_Part B-Finding
 . I-Body_Part I-Finding
 3 I-Body_Part I-Finding
 OSTEITIS B-Disease I-Finding
-PERIAPICAL I-Disease I-Finding
+PERIAPICAL I-Disease
 . O
 
 PIEZA B-Body_Part
 TREPANADA B-Procedure
-11 O
-06 O
-12 O
+11 B-Body_Part
+06 I-Body_Part
+12 I-Body_Part
 SE O
 DEJA O
 CON O
 MOTITA B-Medication
-ESTERIL I-Procedure
+ESTERIL O
 CON O
 PMCF B-Abbreviation B-Medication
 Y O
-CEMENTO B-Finding
+CEMENTO O
 TEMPORAL I-Finding
 . O
 
@@ -17026,12 +17026,12 @@ Dg B-Abbreviation
 1 O
 . O
 
-Tetraparesia B-Disease B-Finding
-de I-Disease I-Finding
+Tetraparesia B-Disease
+de I-Disease
 predominio I-Disease
 derecho I-Disease
-de I-Disease O
-causa O
+de O
+causa I-Disease O
 perinatal O
 2 O
 . O
@@ -17047,9 +17047,9 @@ sem B-Abbreviation
 
 RDSM B-Abbreviation B-Disease
 ( O
-motor B-Disease
-y I-Disease
-lenguaje I-Disease
+motor O
+y O
+lenguaje O
 ) O
 4 O
 . O
@@ -17078,11 +17078,11 @@ HACE O
 MES O
 DE O
 2X2 B-Finding
-CM B-Abbreviation
-QUE O
-HA O
-IDO O
-AUMENTANDO B-Finding
+CM B-Abbreviation I-Finding
+QUE I-Finding
+HA I-Finding
+IDO I-Finding
+AUMENTANDO I-Finding
 DE I-Finding
 TAMAÑO I-Finding
 EN I-Finding
@@ -17096,9 +17096,9 @@ SUPERFICIAL I-Finding
 DE I-Finding
 CONSISTENCIA I-Finding
 DURA I-Finding
-, O
-MOTIVO O
-MEDIANTE O
+, I-Finding
+MOTIVO I-Finding
+MEDIANTE I-Finding
 EL O
 CUAL O
 SE O
@@ -17112,11 +17112,11 @@ DE I-Disease
 LA I-Disease
 PRÓSTATA B-Body_Part I-Disease
 PACIENTECON O
-RETENCION B-Disease B-Finding
-DE I-Disease I-Finding
-ORINA I-Disease I-Finding
-EN O
-2 O
+RETENCION B-Finding
+DE I-Finding
+ORINA I-Finding
+EN I-Finding
+2 I-Finding
 EPISIODOS I-Finding
 , O
 CON O
@@ -17162,9 +17162,9 @@ TRATAMIENTO O
 
 PACIENTE O
 PRESENTA O
-DISLALIAS B-Finding
+DISLALIAS B-Disease B-Finding
 , O
-OPERADO B-Procedure O
+OPERADO B-Procedure
 EN O
 EL O
 MES O
@@ -17195,15 +17195,15 @@ pieza B-Body_Part
 . I-Body_Part
 1 I-Body_Part
 , O
-caries B-Disease B-Finding
+caries B-Finding
 penetrante I-Disease I-Finding
 , O
-trepanada B-Finding B-Procedure
+trepanada B-Procedure
 , O
 paramonoclorofenol B-Medication
 en O
 camara B-Body_Part I-Procedure
-pulpar I-Body_Part I-Procedure
+pulpar I-Body_Part
 y O
 obturacion B-Finding
 provisoria I-Finding
@@ -17213,7 +17213,7 @@ fermin B-Finding
 requiere O
 tratamiento B-Procedure
 de I-Procedure
-conducto I-Procedure
+conducto B-Body_Part I-Procedure
 Caries B-Disease
 del I-Disease
 cemento B-Body_Part I-Disease
@@ -17259,10 +17259,10 @@ DESAJUSTADA I-Finding
 
 DOLOR B-Finding
 AGUDO I-Finding
-PIEZA B-Body_Part I-Finding
-3 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-2 I-Body_Part I-Finding
+PIEZA B-Body_Part
+3 I-Body_Part
+. I-Body_Part
+2 I-Body_Part
 . O
 
 APERTURA B-Finding
@@ -17280,9 +17280,9 @@ DE I-Finding
 VOLUMEN I-Finding
 LADO I-Finding
 IZQUIERDO I-Finding
-HACE I-Finding
-1 I-Finding
-SEMANA I-Finding
+HACE O
+1 O
+SEMANA O
 . O
 
 PACIENTE O
@@ -17294,7 +17294,7 @@ INFERIOR I-Disease
 EVALUAR O
 POSIBILIDAD O
 DE O
-BASE B-Procedure
+BASE O
 METALICA I-Procedure
 INFERIOR I-Procedure
 Y I-Procedure
@@ -17319,7 +17319,7 @@ con O
 indicacion O
 de O
 anticohagulante B-Procedure
-plaquetario I-Procedure
+plaquetario O
 por O
 cardiologo O
 
@@ -17332,15 +17332,15 @@ Clínico O
 APS B-Abbreviation
 : O
 PTERIGION B-Disease
-OJO B-Body_Part I-Disease
-DERECHO I-Body_Part I-Disease
-QUE O
-COMPROMETE B-Finding
+OJO B-Body_Part B-Finding
+DERECHO I-Body_Part I-Finding
+QUE I-Finding
+COMPROMETE I-Finding
 EJE I-Finding
 VISUAL I-Finding
 . O
 SOLICITO O
-EVLAAUCION O
+EVLAAUCION B-Procedure
 Y O
 TTO B-Abbreviation
 POR O
@@ -17364,7 +17364,7 @@ Respirador B-Finding
 bucal I-Finding
 y O
 roncador B-Finding
-nocturno O
+nocturno I-Finding
 Portador O
 de O
 SBOR B-Abbreviation B-Disease
@@ -17380,10 +17380,10 @@ EN I-Disease
 EL I-Disease
 CUELLO B-Body_Part I-Disease
 adenopatia I-Body_Part I-Disease
-con I-Disease
-signos I-Disease
-de I-Disease I-Finding
-malignidad I-Disease I-Finding
+con O
+signos B-Finding
+de I-Finding
+malignidad I-Finding
 / O
 - O
 Fundamento O
@@ -17409,8 +17409,8 @@ progresivo I-Finding
 en I-Finding
 cara B-Body_Part I-Finding
 izquierda I-Body_Part I-Finding
-de I-Body_Part I-Finding
-cuello B-Body_Part I-Body_Part I-Finding
+de I-Finding
+cuello B-Body_Part I-Finding
 , O
 asociado O
 a O
@@ -17437,36 +17437,36 @@ rosadas I-Finding
 faringe B-Body_Part I-Finding
 sin O
 alteraciones B-Finding
-llene B-Finding I-Finding
+llene I-Finding
 capilar I-Finding
 conservado I-Finding
 presencia B-Finding
 de I-Finding
 masa I-Finding
 ( O
-probable B-Finding
+probable B-Finding I-Finding
 adenopatia I-Finding
-) I-Finding
-de I-Finding
-10 I-Finding
-x B-Abbreviation I-Finding
-10 I-Finding
-x B-Abbreviation I-Finding
-6 I-Finding
-centimetros I-Finding
-, I-Finding
-de I-Finding
-consistencia I-Finding
+) O
+de O
+10 O
+x O
+10 O
+x O
+6 O
+centimetros O
+, O
+de O
+consistencia B-Finding
 intermedia I-Finding
-, I-Finding
-adherida I-Finding
+, O
+adherida B-Finding
 a I-Finding
 planos I-Finding
 profundos I-Finding
 , I-Finding
 dolorosa I-Finding
-, O
-sin O
+, I-Finding
+sin I-Finding
 cambios I-Finding
 de I-Finding
 coloracion I-Finding
@@ -17530,7 +17530,7 @@ APS B-Abbreviation
 : O
 G8 B-Finding
 P4 I-Finding
-A4 I-Finding
+A4 B-Finding
 V3 O
 Prolapso B-Disease
 uterino I-Disease
@@ -17581,7 +17581,7 @@ edad O
 se O
 le O
 ralizo O
-injerto O
+injerto B-Procedure
 y O
 estuvo O
 en O
@@ -17613,17 +17613,17 @@ sin O
 embargo O
 , O
 presenta O
-dedos B-Body_Part B-Finding
-en I-Finding
-garra I-Finding
-leve I-Finding
+dedos B-Body_Part
+en O
+garra B-Disease
+leve O
 por O
 capacidad O
-de I-Finding
-piel B-Body_Part I-Finding
-para I-Finding
-adpatrase I-Finding
-al I-Finding
+de O
+piel B-Body_Part
+para O
+adpatrase O
+al O
 movimiento O
 . O
 
@@ -17655,14 +17655,14 @@ CARIES B-Disease
 DENTINARIA I-Disease
 PROFUNDA I-Disease
 , O
-CERCANA B-Finding O
+CERCANA B-Finding
 A I-Finding
 CAMARA B-Body_Part I-Finding
 PULPAR I-Body_Part I-Finding
 CON O
-ALTAS B-Finding I-Finding
-POSIBILIDADES I-Finding
-DE I-Finding
+ALTAS O
+POSIBILIDADES I-Finding O
+DE O
 PERFORACION I-Finding
 , O
 SE O
@@ -17674,7 +17674,7 @@ TRATAMIENTO O
 
 TROMBOFILIA B-Disease
 - O
-BRADICARDIA B-Disease B-Finding
+BRADICARDIA B-Disease
 NO O
 ESTUDIADA O
 - O
@@ -17683,14 +17683,14 @@ PCTE B-Abbreviation
 
 QUE O
 HA O
-PRESENTADDO B-Finding
-SINCOPES I-Finding
+PRESENTADDO O
+SINCOPES O
 Y O
 REFIERE O
 ESTUDIO O
 HOLTER B-Procedure
-BRADICARDIA B-Disease B-Finding
-< B-Abbreviation O
+BRADICARDIA B-Finding
+< B-Abbreviation I-Finding
 60 O
 
 diente B-Body_Part
@@ -17702,12 +17702,12 @@ penetrantes I-Disease
 se O
 realiza O
 acceso O
-endodntico B-Procedure
+endodntico O
 diente B-Body_Part
 con O
-tratamiento B-Finding
+tratamiento O
 previamente I-Finding
-iniciado I-Finding
+iniciado O
 . O
 
 solicito O
@@ -17771,9 +17771,9 @@ y O
 le O
 molesta O
 actualmente O
-mucho B-Finding
-al I-Finding
-hablar I-Finding
+mucho O
+al O
+hablar O
 . O
 
 - O
@@ -17792,16 +17792,16 @@ Clínico O
 APS B-Abbreviation
 : O
 PACIENTE O
-MULTIGESTA B-Abbreviation B-Finding
+MULTIGESTA B-Finding
 G6 B-Finding
 P3 B-Finding
-A3 B-Finding
-MO I-Finding
+A3 B-Disease
+MO O
 . O
 
 DOS O
 PARTOS B-Procedure
-PRETERMINO I-Disease I-Procedure
+PRETERMINO I-Procedure
 ( O
 GEMELAR O
 ) O
@@ -17833,8 +17833,8 @@ UROCULTIVO B-Procedure
 QUE O
 INFORMA O
 NUEVAMENTE O
-E O
-. I-Abbreviation
+E B-Abbreviation B-Finding
+. I-Abbreviation I-Finding
 COLI I-Abbreviation
 MAS O
 DE O
@@ -17868,9 +17868,9 @@ de I-Disease
 las I-Disease
 vias B-Body_Part I-Disease
 genitourinarias I-Body_Part I-Disease
-en I-Disease
+en O
 el I-Disease
-embarazo I-Disease
+embarazo O
 
 - O
 DIENTES B-Body_Part B-Disease
@@ -17886,32 +17886,32 @@ APS B-Abbreviation
 pacte B-Abbreviation
 con O
 pzas B-Abbreviation B-Body_Part B-Finding
-1 I-Body_Part
-. I-Body_Part
-8 I-Body_Part
-- I-Body_Part
-2 I-Body_Part
-. I-Body_Part
-8 I-Body_Part
-- I-Body_Part
-3 I-Body_Part
-. I-Body_Part
-8 I-Body_Part
-- I-Body_Part
-4 I-Body_Part
+1 I-Body_Part I-Finding
 . I-Body_Part I-Finding
 8 I-Body_Part I-Finding
-cariiadas I-Finding
+- I-Body_Part I-Finding
+2 I-Body_Part I-Finding
+. I-Body_Part I-Finding
+8 I-Body_Part I-Finding
+- I-Body_Part I-Finding
+3 I-Body_Part I-Finding
+. I-Body_Part I-Finding
+8 I-Body_Part I-Finding
+- I-Body_Part I-Finding
+4 I-Body_Part I-Finding
+. I-Body_Part I-Finding
+8 I-Body_Part I-Finding
+cariiadas I-Body_Part I-Finding
 y I-Finding
-semiincluidas B-Disease I-Finding
+semiincluidas I-Finding
 Dientes B-Body_Part B-Disease
 incluidos I-Disease
 e I-Disease
 impactados I-Disease
 
-ADM B-Abbreviation B-Disease
+ADM B-Abbreviation
 : O
-DIENTES B-Body_Part
+DIENTES B-Body_Part B-Finding
 8 I-Body_Part
 Y I-Body_Part
 9 I-Body_Part
@@ -17920,14 +17920,14 @@ CON O
 DIASTEMA B-Finding
 INTERINSISIVO I-Finding
 , O
-DTES B-Body_Part
-. I-Body_Part
-7 I-Body_Part
-Y I-Body_Part
-10 I-Body_Part
-PALATINIZADOS O
+DTES B-Body_Part B-Finding
+. I-Body_Part I-Finding
+7 I-Body_Part I-Finding
+Y I-Body_Part I-Finding
+10 I-Body_Part I-Finding
+PALATINIZADOS I-Finding
 Y O
-GIROVERSIONMESIAL O
+GIROVERSIONMESIAL B-Finding
 , O
 DISMINUCION B-Finding
 ESPACIO I-Finding
@@ -17937,7 +17937,7 @@ ERUPCION I-Finding
 Y I-Finding
 11 I-Finding
 OVANJET I-Finding
-AUMENTADO O
+AUMENTADO I-Finding
 4 O
 MM B-Abbreviation
 . O
@@ -17952,11 +17952,11 @@ solicita O
 tratamiento O
 con O
 PFU B-Abbreviation B-Procedure
-Pza B-Abbreviation B-Body_Part
-30 I-Body_Part I-Procedure
-con O
-endodoncia I-Finding I-Procedure
-realizada O
+Pza B-Abbreviation B-Body_Part B-Finding
+30 I-Body_Part I-Finding
+con I-Finding
+endodoncia I-Finding
+realizada I-Finding
 y O
 amplia B-Finding
 destrucción I-Finding
@@ -17968,7 +17968,7 @@ hipertension B-Disease
 esencial I-Disease
 ( I-Disease
 primaria I-Disease
-) O
+) I-Disease
 sobrepeso B-Disease
 enfermedad B-Disease
 renal I-Disease
@@ -17978,7 +17978,7 @@ etepa I-Disease
 disminucion B-Finding
 renal I-Finding
 : O
-vgf O
+vgf B-Medication
 : O
 38 O
 - O
@@ -18007,7 +18007,7 @@ DENTOFACIALES I-Disease
 INCLUSO I-Disease
 LA I-Disease
 MALOCLUSIÓN I-Disease
-) I-Disease
+) O
 / O
 - O
 Fundamento O
@@ -18023,7 +18023,7 @@ canina I-Finding
 : I-Finding
 mesioclusión I-Finding
 izquierda I-Finding
-Falta O
+Falta I-Finding
 de I-Finding
 espacio I-Finding
 superior I-Finding
@@ -18036,15 +18036,15 @@ dientes B-Body_Part
 1 I-Body_Part
 . I-Body_Part
 1 I-Body_Part
-y I-Body_Part
+y O
 2 I-Body_Part
 . I-Body_Part
 1 I-Body_Part
 . O
 
 Falta B-Finding O
-de I-Finding O
-espacio I-Finding
+de O
+espacio O
 inferior O
 : O
 aprox B-Abbreviation
@@ -18091,7 +18091,7 @@ desviacion B-Finding
 de I-Finding
 menton B-Body_Part I-Finding
 a I-Finding
-izq B-Abbreviation I-Finding
+izq B-Abbreviation I-Body_Part I-Finding
 
 - O
 PERIODONTITIS B-Disease
@@ -18138,16 +18138,16 @@ realiza O
 trepanacíon B-Finding
 , O
 irrigacíon B-Procedure
-con O
+con I-Procedure O
 suero B-Medication
-+ B-Abbreviation
-motita O
++ B-Abbreviation I-Procedure
+motita I-Procedure
 con I-Procedure
 paramono B-Abbreviation B-Medication I-Procedure
 + B-Abbreviation
 restauracíon B-Finding
 de O
-eugenato B-Finding B-Medication
+eugenato B-Medication
 . O
 
 - O
@@ -18164,7 +18164,7 @@ Clínico O
 APS B-Abbreviation
 : O
 apiñamiento B-Finding
-grupo I-Finding
+grupo B-Body_Part I-Finding
 V I-Body_Part I-Finding
 falta B-Finding
 de I-Finding
@@ -18199,8 +18199,8 @@ I I-Finding
 esqueletal I-Finding
 Relacion B-Finding
 molar I-Finding
-: O
-mesioclusion B-Finding
+: I-Finding
+mesioclusion I-Finding
 bilateral I-Finding
 Relacion B-Finding
 canina I-Finding
@@ -18234,24 +18234,24 @@ Diente B-Body_Part B-Finding
 2 I-Body_Part I-Finding
 en I-Finding
 palatoversion I-Finding
-Mordida B-Finding
+Mordida B-Disease B-Finding
 cruzada I-Finding
 posterior I-Finding
 derecha I-Finding
 ( O
-diente B-Body_Part
-1 I-Body_Part
-. I-Body_Part
-4 I-Body_Part
-con O
-4 B-Body_Part
-. I-Body_Part
-4 I-Body_Part
-y I-Body_Part
-4 I-Body_Part
-. I-Body_Part
-5 I-Body_Part
-) O
+diente B-Body_Part B-Finding
+1 I-Body_Part I-Finding
+. I-Body_Part I-Finding
+4 I-Body_Part I-Finding
+con I-Finding
+4 B-Body_Part I-Finding
+. I-Body_Part I-Finding
+4 I-Body_Part I-Finding
+y I-Body_Part I-Finding
+4 I-Body_Part I-Finding
+. I-Body_Part I-Finding
+5 I-Body_Part I-Finding
+) I-Finding
 Anomalias B-Disease
 dentofaciales I-Disease
 ( I-Disease
@@ -18261,8 +18261,8 @@ maloclusion I-Disease
 ) I-Disease
 
 - O
-MORDIDA B-Finding
-INVERTIDA I-Finding
+MORDIDA B-Disease
+INVERTIDA I-Disease
 . O
 
 - O
@@ -18374,18 +18374,18 @@ ADULTO I-Disease
 MODERADA I-Disease
 GRUPOS B-Body_Part
 I I-Body_Part
-Y I-Body_Part I-Finding
-III I-Body_Part I-Finding
+Y I-Body_Part
+III I-Body_Part
 , O
 INCIPIENTE O
-GRUPO B-Body_Part
-IV I-Body_Part I-Finding
-, I-Body_Part I-Finding
-V I-Body_Part I-Finding
-, I-Body_Part I-Finding
-VI I-Body_Part I-Finding
+GRUPO B-Body_Part B-Finding
+IV I-Body_Part
+, I-Body_Part
+V I-Body_Part
+, I-Body_Part
+VI I-Body_Part
 Y O
-AVANZADA I-Finding
+AVANZADA O
 PZA B-Abbreviation B-Body_Part
 07 I-Body_Part
 . O
@@ -18395,15 +18395,15 @@ CARIES B-Disease B-Finding
 DENTINARIA I-Disease I-Finding
 PENETRANTE I-Disease I-Finding
 Diente B-Body_Part
-4 I-Body_Part I-Finding
-caries B-Disease I-Finding
+4 I-Body_Part
+caries B-Disease
 penetrante I-Disease I-Finding
 . O
 
 RX B-Abbreviation B-Procedure
 muestra O
-conducto B-Body_Part
-esclerosado O
+conducto B-Body_Part B-Finding
+esclerosado I-Finding
 , O
 con O
 curvatura B-Finding
@@ -18418,7 +18418,7 @@ de O
 caries B-Disease
 y O
 acceso O
-endodóntico I-Procedure
+endodóntico O
 , O
 irrigación O
 y O
@@ -18441,7 +18441,7 @@ PIEZA B-Body_Part
 3 I-Body_Part
 . I-Body_Part
 5 I-Body_Part
-29 O
+29 I-Body_Part
 REMANENTE O
 EN O
 MANDIBULAR O
@@ -18449,10 +18449,10 @@ DERIVO O
 PARA O
 CONFECCION O
 DE O
-P B-Body_Part B-Procedure
-. I-Body_Part I-Procedure
-REMOVIBLE I-Body_Part I-Procedure
-BIMAXILAR I-Body_Part I-Procedure
+P B-Procedure
+. I-Procedure
+REMOVIBLE I-Procedure
+BIMAXILAR I-Procedure
 , O
 SEGUN O
 NECESIDAD O
@@ -18474,7 +18474,7 @@ CONTROL O
 MEDICO O
 DESTACA O
 HIPERTROFIA B-Disease
-AMIGDALIANA I-Disease
+AMIGDALIANA I-Disease I-Finding
 , O
 PERO O
 ADEMAS O
@@ -18511,11 +18511,11 @@ APS B-Abbreviation
 : O
 Paciente O
 con O
-problema B-Finding
-cronico I-Finding
-de I-Finding
-rodilla B-Body_Part I-Finding
-derecha I-Body_Part I-Finding
+problema B-Disease
+cronico I-Disease
+de I-Disease
+rodilla B-Body_Part I-Disease
+derecha I-Body_Part I-Disease
 , O
 estuvo O
 en O
@@ -18536,7 +18536,7 @@ día O
 viernes O
 y O
 sufrio O
-esguince B-Disease
+esguince O
 de I-Disease
 rodilla B-Body_Part I-Disease
 , O
@@ -18545,14 +18545,14 @@ con O
 dolor B-Finding
 , O
 bostezo B-Finding
-+ B-Abbreviation I-Finding
++ I-Finding
 a I-Finding
 izquierda I-Finding
 , O
 cajon B-Finding
 anterio I-Finding
-y I-Finding
-posterio I-Finding
+y O
+posterio I-Finding O
 - O
 , O
 rx B-Abbreviation B-Procedure
@@ -18624,8 +18624,8 @@ extraccion I-Disease
 o I-Disease
 enfermedad I-Disease
 periodental I-Disease
-, O
-desdentada B-Disease
+, I-Disease
+desdentada I-Disease
 superior I-Disease
 e I-Disease
 inferior I-Disease
@@ -18646,8 +18646,8 @@ Clínico O
 APS B-Abbreviation
 : O
 Pcte B-Abbreviation
-presente O
-mordida B-Finding
+presente B-Finding
+mordida I-Finding
 invertida I-Finding
 Anomalias B-Disease
 dentofaciales I-Disease
@@ -18670,8 +18670,8 @@ AUMENTO B-Finding
 DEVOLUMEN I-Finding
 LABIO B-Body_Part I-Finding
 INFERIOR I-Body_Part I-Finding
-, I-Finding
-COLOR I-Finding
+, O
+COLOR B-Finding
 BLAMQUESINO I-Finding
 BLANDO I-Finding
 A I-Finding
@@ -18688,7 +18688,7 @@ solicito O
 evaluar O
 pza B-Abbreviation B-Body_Part
 9 I-Body_Part
-y O
+y I-Body_Part
 ver O
 posibilidad O
 de O
@@ -18696,7 +18696,7 @@ retratamiento B-Procedure
 actualmente O
 presenta O
 PFU B-Abbreviation B-Finding B-Procedure
-cementada I-Finding I-Procedure
+cementada I-Finding
 con I-Finding
 dycal I-Finding
 x B-Abbreviation
@@ -18765,12 +18765,12 @@ Fundamento O
 Clínico O
 APS B-Abbreviation
 : O
-GM6 O
+GM6 B-Finding
 - O
 QUISTE B-Disease
 OVARICO I-Disease
 - O
-COLPOCISTOCELE B-Disease B-Finding
+COLPOCISTOCELE B-Disease
 ANT B-Abbreviation
 - O
 MENORRAGIA B-Finding
@@ -18791,11 +18791,11 @@ bucal I-Finding
 reducido I-Finding
 por O
 presentar O
-sintomalotoligia O
-dolorosa B-Finding
+sintomalotoligia B-Finding
+dolorosa B-Finding I-Finding
 en I-Finding
-A B-Body_Part I-Finding
-. I-Finding
+A I-Finding
+. I-Abbreviation I-Finding
 T I-Abbreviation I-Body_Part I-Finding
 . I-Abbreviation I-Body_Part I-Finding
 M I-Abbreviation I-Body_Part I-Finding
@@ -18803,7 +18803,7 @@ M I-Abbreviation I-Body_Part I-Finding
 izquierda I-Body_Part I-Finding
 . O
 
-R32X O
+R32X B-Disease
 INCONTINENCIA B-Disease
 URINARIA I-Disease
 , I-Disease
@@ -18816,7 +18816,7 @@ DE O
 CIRUGÍA B-Procedure
 VESICAL I-Procedure
 POR O
-PERCRETISMO B-Finding
+PERCRETISMO O
 PLACENTARIO I-Finding
 EN O
 SU O
@@ -18824,11 +18824,11 @@ SU O
 EMBARAZO B-Finding
 QUE O
 REQUIRIÓ O
-HISTERECTOMÍA B-Procedure O
+HISTERECTOMÍA B-Procedure
 DE O
 URGENCIA O
 Y O
-RECONSTRUCCIÓN B-Disease B-Finding
+RECONSTRUCCIÓN B-Disease
 VESICAL I-Disease I-Finding
 . O
 
@@ -18841,8 +18841,8 @@ de O
 desgastes B-Finding
 de I-Finding
 molares B-Body_Part I-Finding
-de I-Finding
-seis I-Finding
+de O
+seis O
 años O
 exagerado O
 a O
@@ -18864,23 +18864,23 @@ mas O
 integral O
 . O
 
-SSMO172 B-Disease
+SSMO172 O
 - O
 CONSULTA O
 DE O
 GERIATRIA O
 GENERAL O
 / O
-problemas O
-de O
-relacion O
-por O
-no O
+problemas B-Finding
+de I-Finding
+relacion I-Finding
+por I-Finding
+no I-Finding
 escuchar I-Finding
 y O
-trastornos B-Disease B-Finding
-de I-Finding
-memoria I-Finding
+trastornos B-Disease
+de I-Disease
+memoria I-Disease
 
 K099 B-Disease
 QUISTE B-Disease
@@ -18922,8 +18922,8 @@ FAVOR O
 EVALUAR O
 POR O
 ESPECIALIDAD O
-PATOLOGIA O
-BUCAL O
+PATOLOGIA B-Disease
+BUCAL I-Disease
 
 - O
 PERIODONTITIS B-Disease
@@ -18943,9 +18943,9 @@ DESDENTADA B-Disease
 PARCIAL I-Disease
 SUPERIOR I-Disease
 Y O
-PORTADORA B-Finding O
-DE O
-PROTESIS B-Finding
+PORTADORA B-Finding
+DE I-Finding
+PROTESIS I-Finding
 PRESENTA O
 PERIODONTITIS B-Disease
 MARGINAL I-Disease
@@ -18974,10 +18974,10 @@ ARTICULAR I-Finding
 EN I-Finding
 HOMERAL I-Finding
 TENDINOSIS B-Disease I-Finding
-DEL I-Finding
-SUPRAESPINOSO B-Body_Part I-Finding
-HOMBRO I-Body_Part I-Finding
-IZQ B-Abbreviation I-Body_Part I-Finding
+DEL I-Disease I-Finding
+SUPRAESPINOSO B-Body_Part I-Disease I-Finding
+HOMBRO I-Body_Part I-Disease
+IZQ B-Abbreviation I-Body_Part I-Disease
 
 - O
 OTROS B-Disease
@@ -18999,10 +18999,10 @@ muchos O
 mareos B-Finding
 , O
 cefaleas B-Finding
-, O
-le O
+, I-Finding
+le I-Finding
 cuesta I-Finding
-ver I-Finding O
+ver I-Finding
 , O
 ve B-Finding
 borroso I-Finding
@@ -19039,7 +19039,7 @@ Chañaral O
 se O
 le O
 dieron O
-lentes B-Finding
+lentes B-Procedure
 , O
 pero O
 se O
@@ -19098,30 +19098,30 @@ ANTEC B-Abbreviation
 . O
 
 2 O
-ABORTOS B-Finding
-ANTERIORES O
+ABORTOS B-Disease B-Finding
+ANTERIORES I-Finding
 
-PZA B-Abbreviation B-Body_Part B-Finding
-1 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-3 I-Body_Part I-Finding
+PZA B-Abbreviation B-Body_Part
+1 I-Body_Part
+. I-Body_Part
+3 I-Body_Part
 - I-Body_Part
-2 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-3 I-Body_Part I-Finding
-- I-Body_Part I-Finding
-4 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-3 I-Body_Part I-Finding
-- I-Body_Part I-Finding
-3 I-Body_Part I-Finding
-. I-Body_Part I-Finding
-3 I-Body_Part I-Finding
-RETENIDAS I-Finding
-POR I-Finding
-FALTA I-Finding
+2 I-Body_Part
+. I-Body_Part
+3 I-Body_Part
+- I-Body_Part
+4 I-Body_Part
+. I-Body_Part
+3 I-Body_Part
+- I-Body_Part
+3 I-Body_Part
+. I-Body_Part
+3 I-Body_Part
+RETENIDAS B-Finding
+POR O
+FALTA O
 DE I-Finding
-ESPACIOFORMACION I-Finding
+ESPACIOFORMACION B-Finding I-Finding
 RADICULAR I-Finding
 HASTA I-Finding
 1 I-Finding
@@ -19133,7 +19133,7 @@ APICAL I-Finding
 ¿ O
 OVERJET B-Finding
 AUMENTADO I-Finding
-CLASE B-Finding
+CLASE I-Finding
 II I-Finding
 
 - O
@@ -19175,7 +19175,7 @@ Periodontitis B-Disease
 apical I-Disease
 cronica I-Disease
 
-D B-Disease
+D B-Abbreviation B-Disease
 . I-Disease
 INTELECTUAL I-Disease
 LEVE I-Disease
@@ -19192,12 +19192,12 @@ RDSM B-Abbreviation B-Disease
 GLOBAL I-Disease
 TEL B-Abbreviation B-Disease
 MIXTO I-Disease
-, O
-2DARIO O
-A I-Disease
-D B-Abbreviation I-Abbreviation I-Disease
+, I-Disease
+2DARIO I-Disease
+A I-Abbreviation
+D I-Abbreviation
 . I-Abbreviation I-Disease
-I I-Abbreviation I-Disease
+I I-Abbreviation
 . O
 
 - O
@@ -19216,13 +19216,13 @@ AÑOS O
 DMIR B-Abbreviation
 CON O
 ANT B-Abbreviation
-DE O
-RETINOPATIA B-Disease
-DERECHA I-Disease I-Procedure
+DE I-Finding
+RETINOPATIA B-Disease I-Finding
+DERECHA I-Disease I-Finding
 TRATADA O
 QUIRUGICAMENTE O
 CON O
-LASER B-Medication
+LASER B-Procedure
 HACE O
 6 O
 MESES O
@@ -19265,7 +19265,7 @@ periodontal I-Finding
 , O
 movilidad B-Finding
 dentaria I-Finding
-cambio I-Finding
+cambio B-Finding
 en I-Finding
 la I-Finding
 posicion I-Finding
@@ -19284,7 +19284,7 @@ BRAZO B-Body_Part I-Finding
 DERECHA I-Body_Part I-Finding
 HACE O
 MESES O
-DOLOROSO O
+DOLOROSO B-Finding
 MODERADO I-Finding
 . O
 
@@ -19331,9 +19331,9 @@ PULPAR I-Finding
 . O
 
 PULPA B-Body_Part B-Finding
-VIATL I-Finding
+VIATL I-Body_Part I-Finding
 EN I-Finding
-ESTADO I-Finding
-IRREVERSIBLE I-Finding
+ESTADO B-Disease I-Finding
+IRREVERSIBLE I-Disease I-Finding
 . O
 

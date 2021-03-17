@@ -118,6 +118,38 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
     print(f"\tTest Best F1-Score: {test_f1} \n")
     return history
     
+def train_full(model, optimizer, loss_function, data_loader, train_data, test_data, epochs, batch_size, tags, vocab, entities, checkpoint_path, threshold):
+    history = {"num_params": model.count_parameters(),
+    'train_loss': [],
+    'train_f1': []
+    }
+    
+
+    
+    n_epoch = 1
+
+
+    while n_epoch<=epochs:
+        start_time = time.time()
+        num_steps = (train_data['size']) // batch_size
+        train_data_iterator = data_loader.iterator(train_data, batch_size, len(tags), shuffle=True)
+        train_loss, train_f1 = epoch(model, optimizer, loss_function, train_data_iterator, num_steps, tags, vocab, entities, threshold)
+        print(f"\tTrain Loss: {train_loss} ")
+        print(f"\tTrain F1-Score: {train_f1}\n")
+        history['train_loss'].append(train_loss)
+        history['train_f1'].append(train_f1)
+        n_epoch+=1
+        model.save_state(checkpoint_path)
+    
+    if checkpoint_path:
+        model.load_state(checkpoint_path)
+        
+    num_steps = (test_data['size']) // batch_size
+    test_data_iterator = data_loader.iterator(test_data, batch_size, len(tags), shuffle=False)
+    test_loss,test_f1 = evaluate(model, loss_function, test_data_iterator, num_steps, tags, vocab, entities, threshold,  show_results = True)
+    print(f"\tTest Loss: {test_loss}")
+    print(f"\tTest Best F1-Score: {test_f1} \n")
+    return history
       
             
 

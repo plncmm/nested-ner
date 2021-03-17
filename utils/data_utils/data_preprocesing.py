@@ -50,5 +50,6 @@ def create_dataset_from_conll(train_path, test_path, dev_path, dataset):
     dtrain = {'data': x_train, 'labels': y_train, 'size': len(x_train)}
     dval = {'data': x_val, 'labels': y_val, 'size': len(x_val)}
     dtest = {'data': x_test, 'labels': y_test, 'size': len(x_test)}
+    dtrain_full = {'data': x_train + x_val, 'labels': y_train + y_val, 'size': len(x_train) + len(x_val)}
     
-    return dtrain, dval, dtest, vocab, vectorizer.tag_to_index, vectorizer.index_to_word    
+    return dtrain, dval, dtest, dtrain_full, vocab, vectorizer.tag_to_index, vectorizer.index_to_word    

@@ -14,9 +14,9 @@ def epoch(model, optimizer, loss_function, data_iterator, num_steps, tags, vocab
     real = []
     pred = []
     for _ in range(num_steps):
-        train_batch, labels_batch, lens = next(data_iterator)
+        train_batch, labels_batch, chars_batch, lens = next(data_iterator)
         optimizer.zero_grad()
-        output_batch = model.forward(train_batch, lens) 
+        output_batch = model.forward(train_batch, chars_batch, lens) 
         loss = loss_function(output_batch.view(-1, output_batch.shape[-1]), labels_batch.view(-1, labels_batch.shape[-1]).type_as(output_batch))
         epoch_loss.append(loss.item()*train_batch.shape[0])
         output_batch = output_batch.detach().numpy()
@@ -81,6 +81,7 @@ def train(model, optimizer, loss_function, data_loader, train_data, val_data, te
         history['train_loss'].append(train_loss)
         history['train_f1'].append(train_f1)
         num_steps = (val_data['size']) // batch_size
+        
         val_data_iterator = data_loader.iterator(val_data, batch_size, len(tags), shuffle=False)
         val_loss, val_f1 = evaluate(model, loss_function, val_data_iterator, num_steps, tags, vocab, entities, threshold, show_results = False)
         print(f"\tValidation Loss: {val_loss}")

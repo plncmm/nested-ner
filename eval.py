@@ -16,8 +16,8 @@ def evaluate(model, loss_function, data_iterator, num_steps, tags, vocab, entiti
      
     with torch.no_grad():
       for _ in range(num_steps):
-          data_batch, labels_batch, lens = next(data_iterator)
-          output_batch = model(data_batch, lens)
+          data_batch, labels_batch, chars_batch, lens = next(data_iterator)
+          output_batch = model(data_batch, chars_batch, lens)
           loss = loss_function(output_batch.view(-1, output_batch.shape[-1]), labels_batch.view(-1, labels_batch.shape[-1]).type_as(output_batch))
           eval_loss.append(loss.item()*data_batch.shape[0])
           output_batch = output_batch.detach().numpy()

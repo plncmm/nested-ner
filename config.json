@@ -3,16 +3,16 @@
     "pretrained_embeddings": true,
     "static_embeddings": false, 
     "embedding_dim": 300, 
-    "lstm_dim": 128, 
-    "embedding_dropout": 0.3, 
+    "lstm_dim": 100, 
+    "embedding_dropout": 0.5, 
     "lstm_dropout": 0.5, 
     "linear_dropout": 0, 
     "lstm_layers": 2, 
     "use_bilstm": true, 
-    "max_epochs": 15, 
+    "max_epochs": 20, 
     "batch_size": 8, 
     "patience": 3, 
     "no_improvement": 5, 
     "lr": 0.001,
-    "threshold": 0.6
+    "threshold": 0.5
 }

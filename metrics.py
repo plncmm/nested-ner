@@ -147,6 +147,7 @@ def tabulate_f1_score(prec, recall, f1, include_mean=False):
     return tabulate(f1_tokens, headers=['Entity type', 'Precision', 'Recall', 'F1-Score', 'Support', 'Tokens mean'])
 
 def micro_f1_score(true, pred, entities):
+    # Esta función la puedo modificar para devolver un diccionario con los micro f1-score de cada entidad.
     tp = 0
     fn = 0
     fp = 0

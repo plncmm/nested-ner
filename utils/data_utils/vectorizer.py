@@ -1,6 +1,13 @@
 class Vectorizer():
+    
+    """
+        Initializes a Vectorizer
+        :param vocab: word vocabulary
+        :param tags: entity types
+        :param char_vocab: char vocabulary
 
-  
+    """
+    
     def __init__(self, vocab, tags, char_vocab):
         self.vocab = vocab
         self.tags = tags
@@ -54,25 +61,25 @@ class Vectorizer():
         new_sentence = list(map(lambda x: self.index_to_word[x], sent))
         return new_sentence
 
-    def sentence_to_char_index(self, sent):
+    def char_sentence_to_index(self, sent):
         new_char_sentence = []
         for word in sent:
-            aux_sentence = []
+            word_array = []
             for char in word:
                 if char in self.char_vocab:
-                    aux_sentence.append(self.char_to_index[char])
+                    word_array.append(self.char_to_index[char])
                 else:
-                    aux_sentence.append(self.char_to_index['UNK'])
-            new_char_sentence.append(aux_sentence)
+                    word_array.append(self.char_to_index['UNK'])
+            new_char_sentence.append(word_array)
         return new_char_sentence
     
     def index_to_char_sentence(self, sent):
         new_char_sentence = []
         for word in sent:
-            aux_sentence = []
+            word_array = []
             for char in word:
-                aux_sentence.append(self.index_to_char[char])
-            new_char_sentence.append(aux_sentence)
+                word_array.append(self.index_to_char[char])
+            new_char_sentence.append(word_array)
         return new_char_sentence
 
     
@@ -90,6 +97,6 @@ class Vectorizer():
 
     def transform_to_index(self, sents, labels):
         new_sents = [self.sentence_to_index(sent) for sent in sents]
-        char_sents = [self.sentence_to_char_index(sent) for sent in sents]
+        char_sents = [self.char_sentence_to_index(sent) for sent in sents]
         new_labels = [[self.labels_to_index(tag) for tag in tags] for tags in labels]
         return new_sents, new_labels, char_sents

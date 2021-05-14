@@ -8,6 +8,8 @@ from utils.nn_utils.nn_utils import create_embedding_weights, plot_history
 from model import SequenceMultilabelingTagger
 from torch.optim import Adam
 from train import train, train_full
+import logging
+logging.basicConfig(filename='log.log', filemode='w', format='%(asctime)s - %(message)s', level=logging.INFO)
 
 if __name__ == "__main__":
     # Loading Hyparameters.
@@ -19,13 +21,14 @@ if __name__ == "__main__":
     device = params["device"]
     available_gpu = torch.cuda.is_available()
     if available_gpu:
-        print(f"GPU is available: {torch.cuda.get_device_name(0)}")
+        logging.info(f"GPU is available: {torch.cuda.get_device_name(0)}")
         use_device = torch.device(device)
     else:
         use_device = torch.device(device)
    
     
     # Waiting list dataset and wl pre-trained embeddings.
+    logging.info("Loading dataset..")
     if params['dataset'] == 'wl':
         entities = ['Finding', 'Procedure', 'Disease', 'Body_Part', 'Abbreviation', 'Family_Member', 'Medication']
         dtrain, dval, dtest, dtrain_full, vocab, char_vocab, tags, vocab_dict, vectorizer = create_dataset_from_conll(
@@ -34,7 +37,7 @@ if __name__ == "__main__":
                                                                                                     'data/wl/wl_multilabel_dev.conll', 
                                                                                                     'wl'
         )
-        embed_path = 'embeddings/wl/clinical.vec'
+        embed_path = 'embeddings/wl/cwlce.vec'
     
     # GENIA dataset and BioNLP embeddings.
     if params['dataset'] == 'genia':
@@ -45,7 +48,7 @@ if __name__ == "__main__":
                                                                                                     'data/genia/genia_multilabel_dev.conll', 
                                                                                                     'genia'
         )
-        embed_path = 'embeddings/bionlp.bin'
+        embed_path = 'embeddings/genia/bio_nlp_vec.bin'
 
 
     # Sequence Multilabeling Model.
@@ -92,7 +95,7 @@ if __name__ == "__main__":
             tags, 
             vocab_dict, 
             entities, 
-            checkpoint_path=f"pretrained_model/{params['dataset']}/{params['dataset']}-best.pt", 
+            checkpoint_path=f"models/{params['dataset']}/{params['dataset']}-best.pt", 
             threshold = params['threshold'],
             device = device
         )
@@ -112,7 +115,7 @@ if __name__ == "__main__":
             entities, 
             no_improvement=params["no_improvement"], 
             patience = params["patience"], 
-            checkpoint_path=f"pretrained_model/{params['dataset']}/{params['dataset']}-best.pt", 
+            checkpoint_path=f"models/{params['dataset']}/{params['dataset']}-best.pt", 
             threshold = params['threshold'],
             device = device
         )

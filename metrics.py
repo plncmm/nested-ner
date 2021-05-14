@@ -47,60 +47,6 @@ def keep_bio_format(pred):
   
     return new_pred
 
-def get_multi_conll_entities(entities_dict, entities):
-    new_dict = {}
-    for entity in entities:
-        new_dict[entity]=[]
-    
-    for k,v in entities_dict.items():
-        v = sorted(v, key=lambda item: item[1])
-        idx = 0
-        while(idx<len(v)):
-            largo = 0
-            if v[idx][0].startswith('B-'):
-                if idx==len(v)-1:
-                    new_dict[k].append((f'B-{k}', v[idx][1], v[idx][1]))
-                    break
-                else:
-                    start_pos = v[idx][1]
-                    actual_idx = idx
-                    for tag in v[actual_idx+1:]:
-                        if tag[0].startswith('B-'):
-                            new_dict[k].append((f'B-{k}', start_pos, start_pos+largo))
-                            idx+=1
-                            break
-                        elif tag[0].startswith('I-') and tag[1]!=start_pos+largo+1:
-                            new_dict[k].append((f'B-{k}', start_pos, start_pos+largo))
-                            idx+=1
-                            break
-                        
-                        else:
-                            idx+=1
-                            largo+=1
-                            if idx == len(v)-1:
-                                new_dict[k].append((f'B-{k}', start_pos, start_pos+largo))
-                                break
-                            
-            else:
-                idx+=1
-    return new_dict
-
-
-def get_entities_from_multi_label_conll(labels, entities):
-    
-    entities_dict = {}
-    for entity in entities:
-        entities_dict[entity]=[]
-    
-    for k, _ in entities_dict.items():
-        for i, label in enumerate(labels):
-            for tag in label: 
-                if tag[2:]==k:
-                    entities_dict[k].append([tag, i])
-    
-    multi_conll_entities = get_multi_conll_entities(entities_dict, entities)
-    return multi_conll_entities
-
 def entity_f1_score(true, pred, entities):
     prec_dict = {}
     recall_dict = {}

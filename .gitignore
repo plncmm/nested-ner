@@ -8,6 +8,7 @@ venv/
 # Ignore models and embeddings data
 embeddings/
 pretrained_model/
+models/
 
 
 

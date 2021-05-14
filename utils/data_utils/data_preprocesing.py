@@ -1,8 +1,9 @@
 import codecs
 import sys
-sys.path.append('')
 from utils.wl_utils.wl_utils import simplify_entity
 from utils.data_utils.vectorizer import Vectorizer
+import logging
+sys.path.append('')
 
 def create_vocab_and_tags(sentences, labels,  dataset):
     vocab_file = codecs.open(f'data/{dataset}/vocab.txt', 'w', 'UTF-8')
@@ -44,8 +45,10 @@ def create_dataset_from_conll(train_path, test_path, dev_path, dataset):
     train_sentences, train_labels = get_sentences_and_labels(train_annotations)
     test_sentences, test_labels =  get_sentences_and_labels(test_annotations)
     dev_sentences, dev_labels = get_sentences_and_labels(dev_annotations)
+    logging.info('Creating vocabulary and tags..')
     vocab, tags, char_vocab = create_vocab_and_tags(train_sentences + dev_sentences + test_sentences, train_labels + dev_labels + test_labels, dataset)
     vectorizer = Vectorizer(vocab, tags, char_vocab)
+    logging.info('Creating input vectors..')
     x_train, y_train, x_chars_train = vectorizer.transform_to_index(train_sentences, train_labels)
     x_val, y_val, x_chars_val = vectorizer.transform_to_index(dev_sentences, dev_labels)
     x_test, y_test, x_chars_test = vectorizer.transform_to_index(test_sentences, test_labels)

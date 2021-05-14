@@ -79,7 +79,7 @@ class SequenceMultilabelingTagger(nn.Module):
 
             if corpus == 'genia':
                 embedding_types.append(TransformerWordEmbeddings(
-                    'bert-large-uncased', 
+                    'bert-large-cased', 
                     layers = 'all', 
                     layer_mean = True, 
                     subtoken_pooling = 'mean'
@@ -87,7 +87,7 @@ class SequenceMultilabelingTagger(nn.Module):
 
             if corpus == 'wl':
                 embedding_types.append(TransformerWordEmbeddings(
-                    'dccuchile/bert-base-spanish-wwm-uncased', 
+                    'dccuchile/bert-base-spanish-wwm-cased', 
                     layers = 'all', 
                     layer_mean = True, 
                     subtoken_pooling = 'mean'
@@ -95,11 +95,11 @@ class SequenceMultilabelingTagger(nn.Module):
 
         if use_flair_embeddings:
             if corpus == 'genia':
-                embedding_types.append(FlairEmbeddings('pubmed-forward'))
-                embedding_types.append(FlairEmbeddings('pubmed-backward'))
+                embedding_types.append(FlairEmbeddings('news-forward'))
+                embedding_types.append(FlairEmbeddings('news-backward'))
             if corpus == 'wl':
-                embedding_types.append(FlairEmbeddings('es-forward'))
-                embedding_types.append(FlairEmbeddings('es-backward'))
+                embedding_types.append(FlairEmbeddings('spanish-forward'))
+                embedding_types.append(FlairEmbeddings('spanish-backward'))
 
         self.flair_embeddings: StackedEmbeddings = StackedEmbeddings(embeddings = embedding_types)
         
@@ -187,7 +187,7 @@ class W2vWordEmbeddings(TokenEmbeddings):
     def __init__(self, embeddings):
         self.name = embeddings
         self.static_embeddings = False
-        self.precomputed_word_embeddings = KeyedVectors.load_word2vec_format(embeddings, binary=True)
+        self.precomputed_word_embeddings = KeyedVectors.load_word2vec_format(embeddings, binary=False)
         self.__embedding_length: int = self.precomputed_word_embeddings.vector_size
         super().__init__()
 

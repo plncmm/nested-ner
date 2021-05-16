@@ -1,0 +1,6 @@
+2021-05-14 16:43:32,907 - GPU is available: GeForce RTX 2080
+2021-05-14 16:43:32,907 - Loading dataset..
+2021-05-14 16:43:33,116 - Creating vocabulary and tags..
+2021-05-14 16:43:33,187 - Creating input vectors..
+2021-05-14 16:43:47,610 - loading projection weights from embeddings/wl/cwlce.vec
+2021-05-14 16:43:57,138 - loaded (57112, 300) matrix from embeddings/wl/cwlce.vec
